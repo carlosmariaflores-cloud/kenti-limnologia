@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Kenti Limnología"
+version: 0.6.1
+date-released: 2026-10-13
+license: MIT
+repository-code: "https://github.com/carlosmariaflores-cloud/kenti-limnologia"
+authors:
+  - family-names: Flores
+    given-names: Carlos María
+    email: carlosmaria.flores@gmail.com
+    affiliation: "Atoj S.A.S., Tafí Viejo, Tucumán, Argentina"

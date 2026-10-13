@@ -1,0 +1,111 @@
+{
+ "NOMBRE": "Kenti Macroinvertebrados",
+ "DESCRIPCION": "taxones por sitio con la familia completada sola, diversidad alfa y beta, PCA e índices bióticos (BMWP', ASPT' y ABI), con exportación a Excel.",
+ "ADJ": "macroinvertebrados",
+ "CAMPANIA": "Macroinvertebrados bentónicos · índices bióticos",
+ "AVATAR": "MI",
+ "USUARIO": "Macroinvertebrados",
+ "TABLA_INTRO": "Primera fila los sitios; primera columna los taxones, al nivel que se haya llegado: especie, género, familia o un grupo como Oligochaeta. La Familia, a la izquierda, se completa sola: Kenti la propone y la marca en azul; lo que escribas tú no lo cambia. Los índices bióticos se calculan con esa familia. Una celda vacía cuenta como cero.",
+ "VERSION": "0.6.1",
+ "GROUP": {
+  "key": "kenti-macroinvertebrados-v1",
+  "appId": "kenti-macroinvertebrados",
+  "prefix": "P",
+  "estadoLabel": "Estado del sitio",
+  "simpleTable": true,
+  "archivoRespaldo": "datos-macroinvertebrados.respaldo.json",
+  "tablaIntro": "Primera fila los sitios; primera columna los taxones, al nivel que se haya llegado: especie, género, familia o un grupo como Oligochaeta. La Familia, a la izquierda, se completa sola: Kenti la propone y la marca en azul; lo que escribas tú no lo cambia. Los índices bióticos se calculan con esa familia. Una celda vacía cuenta como cero.",
+  "nombre": "Kenti Macroinvertebrados",
+  "slug": "Kenti-Macroinvertebrados",
+  "taxLabel": "Taxón",
+  "taxOne": "taxón",
+  "taxPl": "taxones",
+  "grupoPl": "macroinvertebrados",
+  "units": [
+   {
+    "id": "individuos",
+    "label": "Individuos",
+    "plural": "individuos"
+   }
+  ],
+  "alphaIndices": [
+   "S",
+   "N",
+   "H",
+   "Simp",
+   "D",
+   "Mg",
+   "J"
+  ],
+  "biotic": true,
+  "siteField": {
+   "key": "altitud",
+   "label": "Altitud (m s.n.m.)",
+   "sym": "Alt",
+   "short": "altitud",
+   "pcaLabel": "Altitud",
+   "pcaSym": "Alt (m)",
+   "d": 0,
+   "note": "Altitud (m s.n.m.): un valor por sitio. El ABI está calibrado para los Andes desde 2000 m; bajo esa altitud se calcula igual y se marca."
+  },
+  "fq": [
+   {
+    "id": "ph",
+    "name": "pH",
+    "units": [
+     ""
+    ]
+   },
+   {
+    "id": "temp",
+    "name": "Temperatura",
+    "units": [
+     "°C"
+    ]
+   },
+   {
+    "id": "cond",
+    "name": "Conductividad",
+    "units": [
+     "µS/cm",
+     "mS/cm"
+    ]
+   },
+   {
+    "id": "od",
+    "name": "OD",
+    "units": [
+     "mg/L",
+     "%"
+    ]
+   },
+   {
+    "id": "tds",
+    "name": "TDS",
+    "units": [
+     "mg/L",
+     "ppm",
+     "g/L"
+    ]
+   }
+  ],
+  "fqLabel": "Fisicoquímicos",
+  "attrs": [
+   {
+    "key": "familia",
+    "label": "Familia",
+    "kind": "familia",
+    "header": "^famil",
+    "placeholder": "",
+    "emptyTitle": "Sin familia: sin ella el taxón no entra en el BMWP', el ASPT' ni el ABI",
+    "help": "Se completa sola desde el nombre del taxón. En azul, propuesta de Kenti; en ámbar, grafía corregida o género ambiguo. Escribe encima para cambiarla; bórrala para volver a la propuesta."
+   }
+  ],
+  "attrsLeft": true,
+  "famAuto": {
+   "reino": "Animalia"
+  },
+  "sites": [],
+  "species": []
+ }
+}

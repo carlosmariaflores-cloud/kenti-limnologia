@@ -1,0 +1,648 @@
+# Diccionario complementario (módulo Peces / ictiología): español → portugués (Brasil). Una entrada por línea: texto en español, TAB, texto traducido.
+# Se suma a i18n/en.tsv y i18n/pt.tsv. Mismos marcadores {0}, {#0}, {t0} que los demás diccionarios; el orden de las claves es el mismo en ictio-en.tsv e ictio-pt.tsv.
+Kenti Ictiológico	Kenti Ictiologia
+Kenti Ictiológico: tabla de peces, diversidad alfa, diversidad beta, correlación y PCA por sitio, con exportación a Excel.	Kenti Ictiologia: tabela de peixes, diversidade alfa, diversidade beta, correlação e PCA por sítio, com exportação para o Excel.
+ictiológico	ictiologia
+Monitoreo ambiental Salar de Olaroz · Campaña 2, junio 2026	Monitoramento ambiental Salar de Olaroz · Campanha 2, junho de 2026
+Ictiología	Ictiologia
+Índices	Índices
+Tallas y condición	Tamanhos e condição
+Individuos por especie y sitio. Una celda vacía en un sitio relevado cuenta como cero; los sitios no relevados o no aplicables quedan como NA y no entran en los análisis.	Indivíduos por espécie e sítio. Uma célula vazia em um sítio amostrado conta como zero; os sítios não amostrados ou não aplicáveis ficam como NA e não entram nas análises.
+Agregar especie	Adicionar espécie
+peces	peixes
+Esfuerzo de muestreo por sitio	Esforço de amostragem por sítio
+Un valor por sitio, en la unidad que elijas. Con él Kenti calcula la CPUE (captura ÷ esfuerzo) por sitio y por especie.	Um valor por sítio, na unidade que você escolher. Com ele o Kenti calcula a CPUE (captura ÷ esforço) por sítio e por espécie.
+horas-red, m², minutos…	horas-rede, m², minutos…
+Vaciar esfuerzo	Limpar esforço
+Tallas, peso y condición	Tamanhos, peso e condição
+Una fila por pez: sitio, especie, longitud y peso (sexo y anomalías, opcionales). Con eso Kenti calcula la relación longitud–peso, el factor de condición y la estructura de tallas. Lo que falte sólo deja sin calcular el resultado que lo necesita.	Uma linha por peixe: sítio, espécie, comprimento e peso (sexo e anomalias, opcionais). Com isso o Kenti calcula a relação comprimento–peso, o fator de condição e a estrutura de tamanhos. O que faltar apenas deixa sem cálculo o resultado que depende disso.
+Longitud	Comprimento
+total (LT)	total (CT)
+estándar (LS)	padrão (CP)
+furcal (LF)	furcal (CF)
+Cargar de Excel	Carregar do Excel
+Armar la tabla de la pestaña 1 con estos individuos	Montar a tabela da aba 1 com estes indivíduos
+Cuenta los individuos (o suma los pesos) por especie y sitio y arma con eso la tabla de la pestaña 1	Conta os indivíduos (ou soma os pesos) por espécie e sítio e monta com isso a tabela da aba 1
+Planilla de individuos	Planilha de indivíduos
+Pega desde Excel en la celda A1 (columnas en cualquier orden: Sitio, Especie, Longitud, Peso, Sexo, Anomalías) o escribe fila por fila. El peso va en gramos.	Cole do Excel na célula A1 (colunas em qualquer ordem: Sítio, Espécie, Comprimento, Peso, Sexo, Anomalias) ou digite linha por linha. O peso é em gramas.
+Relación longitud–peso por especie	Relação comprimento–peso por espécie
+, ajustada por mínimos cuadrados sobre log₁₀ W y log₁₀ L con todos los individuos de la especie (todos los sitios). Hacen falta al menos 5 peces con longitud y peso.	, ajustada por mínimos quadrados sobre log₁₀ W e log₁₀ L com todos os indivíduos da espécie (todos os sítios). São necessários pelo menos 5 peixes com comprimento e peso.
+Dispersión log–log de	Dispersão log–log de
+Factor de condición de Fulton por sitio (media ± desvío)	Fator de condição de Fulton por sítio (média ± desvio)
+b ≈ 3: crecimiento isométrico; b > 3: alometría positiva (los grandes son más robustos); b < 3: alometría negativa. La prueba compara b con 3 (t de Student, n − 2 grados de libertad). Fulton: K = 100·W/L³ (W en g, L en cm). Condición relativa de Le Cren: Kn = W / (a·L	b ≈ 3: crescimento isométrico; b > 3: alometria positiva (os maiores são mais robustos); b < 3: alometria negativa. O teste compara b com 3 (t de Student, n − 2 graus de liberdade). Fulton: K = 100·W/L³ (W em g, L em cm). Condição relativa de Le Cren: Kn = W / (a·L
+), con la curva de la propia especie; Kn ≈ 1 es la condición media de la especie en la campaña.	), com a curva da própria espécie; Kn ≈ 1 é a condição média da espécie na campanha.
+Condición por especie y sitio	Condição por espécie e sítio
+Media del factor de condición de Fulton (K) y de la condición relativa (Kn) con su n. Compara sitios dentro de una misma especie, nunca entre especies.	Média do fator de condição de Fulton (K) e da condição relativa (Kn) com seu n. Compare sítios dentro de uma mesma espécie, nunca entre espécies.
+Estructura de tallas	Estrutura de tamanhos
+Histogramas de frecuencia de longitud por sitio para la especie elegida. La línea punteada es la talla de primera madurez, si la cargas.	Histogramas de frequência de comprimento por sítio para a espécie escolhida. A linha pontilhada é o tamanho de primeira maturação, se você o informar.
+automática	automática
+Talla de madurez	Tamanho de maturação
+Anomalías externas y sexos	Anomalias externas e sexo
+Porcentaje de individuos con anomalías (deformidades, erosión de aletas, lesiones, tumores: DELT) por sitio, y proporción de sexos por especie. El porcentaje de anomalías entra como métrica del IBI.	Porcentagem de indivíduos com anomalias (deformidades, erosão das nadadeiras, lesões, tumores: DELT) por sítio e proporção de sexos por espécie. A porcentagem de anomalias entra como métrica do IBI.
+Ricker, W. E. 1975. Computation and interpretation of biological statistics of fish populations. Bulletin of the Fisheries Research Board of Canada 191. (CPUE y relación longitud–peso.)	Ricker, W. E. 1975. Computation and interpretation of biological statistics of fish populations. Bulletin of the Fisheries Research Board of Canada 191. (CPUE e relação comprimento–peso.)
+Índice de Integridad Biótica (IBI) de peces	Índice de Integridade Biótica (IBI) de peixes
+Índice multimétrico de Karr (1981): cada métrica de la comunidad se puntúa 5, 3 o 1 según se parezca a lo esperado en un sitio sin alteración, y el IBI es la suma. No existe una versión calibrada para el NOA, así que las métricas que entran y sus límites los define el profesional para su cuenca; Kenti puntúa, suma, clasifica y deja escrito qué se usó.	Índice multimétrico de Karr (1981): cada métrica da comunidade recebe pontuação 5, 3 ou 1 conforme se aproxime do esperado em um sítio sem alteração, e o IBI é a soma. Não existe uma versão calibrada para o NOA; por isso, as métricas incluídas e seus limites são definidos pelo profissional para sua bacia; o Kenti pontua, soma, classifica e deixa registrado o que foi usado.
+Rasgos por especie	Atributos por espécie
+Las especies salen de la tabla de la pestaña 1. Completa lo que sepas: cada rasgo habilita sus métricas. Una especie sin rasgo queda fuera de esa métrica (se informa), no bloquea el cálculo.	As espécies vêm da tabela da aba 1. Preencha o que souber: cada atributo habilita suas métricas. Uma espécie sem atributo fica fora dessa métrica (isso é informado) e não bloqueia o cálculo.
+Vaciar rasgos	Limpar atributos
+Origen: nativa o exótica (introducida, como	Origem: nativa ou exótica (introduzida, como
+). Tolerancia a la degradación del hábitat y la calidad del agua: intolerante, intermedia o tolerante. Gremio trófico del adulto: omnívoro, insectívoro/invertívoro, piscívoro, herbívoro/detritívoro. Hábitat: bentónica o de columna de agua. También se puede pegar una tabla con esas columnas.	). Tolerância à degradação do hábitat e à qualidade da água: intolerante, intermediária ou tolerante. Guilda trófica do adulto: onívoro, insetívoro/invertívoro, piscívoro, herbívoro/detritívoro. Hábitat: bentônica ou de coluna d'água. Também é possível colar uma tabela com essas colunas.
+Métricas y límites de puntaje	Métricas e limites de pontuação
+Marca las métricas que entran y escribe los límites: con ↑ la métrica sube con la integridad (≥ límite 5 puntúa 5, ≥ límite 3 puntúa 3, el resto 1); con ↓ baja (≤ límite 5 puntúa 5, ≤ límite 3 puntúa 3, el resto 1).	Marque as métricas que entram e escreva os limites: com ↑ a métrica aumenta com a integridade (≥ limite 5 pontua 5, ≥ limite 3 pontua 3, o restante 1); com ↓ ela diminui (≤ limite 5 pontua 5, ≤ limite 3 pontua 3, o restante 1).
+Proponer límites	Sugerir limites
+Trisección del máximo observado para las métricas de riqueza y abundancia (Karr et al. 1986) y los cortes fijos de Karr (1981) para las proporciones	Trissecção do máximo observado para as métricas de riqueza e abundância (Karr et al. 1986) e os cortes fixos de Karr (1981) para as proporções
+Como el número de métricas lo eliges tú, el IBI se expresa también como porcentaje del máximo posible (5 puntos por métrica) y la clase sale de ese porcentaje. Los cortes se pueden cambiar.	Como o número de métricas é escolhido por você, o IBI também é expresso como porcentagem do máximo possível (5 pontos por métrica), e a classe é definida a partir dessa porcentagem. Os cortes podem ser alterados.
+Karr, J. R., K. D. Fausch, P. L. Angermeier, P. R. Yant e I. J. Schlosser. 1986. Assessing biological integrity in running waters: a method and its rationale. Illinois Natural History Survey, Special Publication 5. 28 pp.	Karr, J. R., K. D. Fausch, P. L. Angermeier, P. R. Yant e I. J. Schlosser. 1986. Assessing biological integrity in running waters: a method and its rationale. Illinois Natural History Survey, Special Publication 5. 28 pp.
+Escala orientativa de Kenti, proporcional a las cinco clases de Karr (1981), que con 12 métricas van de 12 a 60 puntos.	Escala orientativa do Kenti, proporcional às cinco classes de Karr (1981), que com 12 métricas vão de 12 a 60 pontos.
+Un valor justo en el corte va a la clase superior.	Um valor exatamente no corte vai para a classe superior.
+Si tu cuenca tiene una versión regional del IBI con sus propias clases, úsala y declárala en el informe.	Se sua bacia tiver uma versão regional do IBI com classes próprias, use-a e declare-a no relatório.
+Estado del sitio para peces	Situação do sítio para peixes
+Una planilla: la primera fila son los sitios y la primera columna, las especies. Los valores son individuos, captura por unidad de esfuerzo o biomasa, según «Medida»; una celda vacía cuenta como cero. Los fisicoquímicos (opcionales) se cargan en la pestaña de diversidad alfa; el esfuerzo de muestreo (opcional), debajo de esta tabla.	Uma única planilha: a primeira linha contém os sítios e a primeira coluna, as espécies. Os valores são indivíduos, captura por unidade de esforço ou biomassa, conforme a «Medida»; uma célula vazia conta como zero. Os dados físico-químicos (opcionais) são informados na aba de diversidade alfa; o esforço de amostragem (opcional), abaixo desta tabela.
+Red de espera	Rede de espera
+Red de arrastre	Rede de arrasto
+Pesca eléctrica	Pesca elétrica
+Atarraya	Tarrafa
+Trampa	Armadilha
+Observación directa	Observação direta
+red de espera	rede de espera
+red de arrastre	rede de arrasto
+pesca eléctrica	pesca elétrica
+atarraya	tarrafa
+trampa	armadilha
+observación directa	observação direta
+Arte de muestreo	Petrecho de amostragem
+Individuos (captura)	Indivíduos (captura)
+CPUE (individuos por unidad de esfuerzo)	CPUE (indivíduos por unidade de esforço)
+CPUE total (N)	CPUE total (N)
+Con CPUE, N es la suma de las capturas por unidad de esfuerzo y las proporciones se calculan sobre esa suma. Margalef se pensó para conteos de individuos: con CPUE sirve sólo para comparar sitios entre sí. Anota en el informe cuál es la unidad de esfuerzo (horas de red, metros de arrastre, minutos de pesca eléctrica).	Com a CPUE, N é a soma das capturas por unidade de esforço e as proporções são calculadas sobre essa soma. O índice de Margalef foi concebido para contagens de indivíduos: com a CPUE, serve apenas para comparar os sítios entre si. Registre no relatório qual é a unidade de esforço (horas de rede, metros de arrasto, minutos de pesca elétrica).
+Biomasa (g)	Biomassa (g)
+Biomasa total (N)	Biomassa total (N)
+Biomasa	Biomassa
+Con biomasa, N es la suma de los gramos y las proporciones se calculan sobre esa suma: Shannon y Simpson pasan a medir cómo se reparte la biomasa entre especies. Margalef y la comparación con la riqueza pierden sentido con biomasa; úsalos con cuidado.	Com a biomassa, N é a soma dos gramas e as proporções são calculadas sobre essa soma: Shannon e Simpson passam a medir como a biomassa se distribui entre as espécies. O índice de Margalef e a comparação com a riqueza perdem o sentido com biomassa; use-os com cuidado.
+biomasa	biomassa
+ind/esfuerzo	ind/esforço
+gramos	gramas
+individuos por {0}	indivíduos por {0}
+ind/esfuerzo por {0}	ind/esforço por {0}
+gramos por {0}	gramas por {0}
+Unidad de esfuerzo	Unidade de esforço
+unidad de esfuerzo	unidade de esforço
+CPUE ({0} por {1})	CPUE ({0} por {1})
+Primero carga la tabla de {0}: los sitios salen de ahí.	Primeiro carregue a tabela de {0}: os sítios vêm de lá.
+Esfuerzo ({0})	Esforço ({0})
+Esfuerzo	Esforço
+Esfuerzo en {0}	Esforço em {0}
+CPUE calculada en {#0} de {#1} sitios.	CPUE calculada em {0} de {1} sítios.
+Dividir por el esfuerzo no cambia Shannon, Simpson ni Pielou (son proporciones dentro del sitio): cambia la comparación de abundancias entre sitios, Margalef y Bray-Curtis.	Dividir pelo esforço não altera Shannon, Simpson nem Pielou (são proporções dentro do sítio): altera a comparação de abundâncias entre sítios, Margalef e Bray-Curtis.
+La CPUE por sitio queda disponible en las pestañas 2 y 4 y en el Excel.	A CPUE por sítio fica disponível nas abas 2 e 4 e no Excel.
+Escribe el esfuerzo de cada sitio o pega una columna de valores.	Escreva o esforço de cada sítio ou cole uma coluna de valores.
+Si el esfuerzo fue distinto entre sitios, la CPUE es la forma de compararlos.	Se o esforço foi diferente entre os sítios, a CPUE é a forma de compará-los.
+No es un número mayor que cero	Não é um número maior que zero
+Se pegaron {#0} valores de esfuerzo	{0} valores de esforço colados
+Se vació el esfuerzo	Esforço limpo
+Peso (g)	Peso (g)
+Sexo	Sexo
+Anomalías	Anomalias
+Celda A1 de individuos	Célula A1 de indivíduos
+Haz clic aquí y pega tu planilla de individuos (Ctrl+V)	Clique aqui e cole sua planilha de indivíduos (Ctrl+V)
+Longitud ({0})	Comprimento ({0})
++ pez	+ peixe
+Quitar la fila {#0}	Remover a linha {0}
+Sitio del pez {#0}	Sítio do peixe {0}
+Especie del pez {#0}	Espécie do peixe {0}
+Longitud del pez {#0}	Comprimento do peixe {0}
+Peso (g) del pez {#0}	Peso (g) do peixe {0}
+Sexo del pez {#0}	Sexo do peixe {0}
+Anomalías del pez {#0}	Anomalias do peixe {0}
+… y {0} filas más (se usan todas en los cálculos; para editarlas, corrige el Excel y vuelve a cargarlo)	… e mais {0} linhas (todas são usadas nos cálculos; para editá-las, corrija o Excel e carregue-o novamente)
+{#0} pez	{0} peixe
+{#0} peces	{0} peixes
+{#0} con longitud	{0} com comprimento
+{#0} con peso	{0} com peso
+sin individuos	sem indivíduos
+especies que no están en la tabla de la pestaña 1: {0} (se analizan igual; revisa la escritura)	espécies que não estão na tabela da aba 1: {0} (são analisadas mesmo assim; revise a grafia)
+No se reconocen las columnas: la primera fila tiene que decir Sitio, Especie, Longitud, Peso…	Colunas não reconhecidas: a primeira linha deve indicar Sítio, Espécie, Comprimento, Peso…
+Se cargaron {#0} individuos	{0} indivíduos carregados
+sin columna de: {0}	sem coluna de: {0}
+Se vació la planilla de individuos	Planilha de indivíduos limpa
+No hay individuos con especie	Não há indivíduos com espécie
+Tabla de la pestaña 1 armada con {#0} individuos ({1} por especie y sitio)	Tabela da aba 1 montada com {0} indivíduos ({1} por espécie e sítio)
+biomasa en g	biomassa em g
+{#0} sitios nuevos	{0} sítios novos
+{#0} especies nuevas	{0} espécies novas
+{#0} filas sin {1} no se contaron	{0} linhas sem {1} não foram contadas
+peso	peso
+sitio	sítio
+pez	peixe
+sólo {#0} {1} con longitud y peso (hacen falta 5)	apenas {0} {1} com comprimento e peso (são necessários 5)
+sin peces con longitud y peso	nenhum peixe com comprimento e peso
+todos los peces tienen la misma longitud	todos os peixes têm o mesmo comprimento
+alometría positiva	alometria positiva
+alometría negativa	alometria negativa
+isometría (b no difiere de 3)	isometria (b não difere de 3)
+Todavía no hay individuos cargados.	Ainda não há indivíduos carregados.
+Peces	Peixes
+Coeficiente	Coeficiente
+Exponente	Expoente
+IC 95 %	IC 95 %
+de b	de b
+Ajuste	Ajuste
+Rango (cm)	Amplitude (cm)
+Lectura	Interpretação
+No está en la tabla de la pestaña 1	Não está na tabela da aba 1
+No se ajusta: {0}.	Não é possível ajustar: {0}.
+No se ajusta: {0}	Não é possível ajustar: {0}
+no se ajusta: {0}	não é possível ajustar: {0}
+Sin relación ajustada.	Nenhuma relação ajustada.
+Sin datos de condición.	Sem dados de condição.
+Hacen falta peces con longitud y peso.	São necessários peixes com comprimento e peso.
+media (n)	média (n)
+Todos	Todos
+Con anomalías	Com anomalias
+Machos	Machos
+Hembras	Fêmeas
+Juveniles / indet.	Juvenis / indet.
+Sin dato	Sem dado
+Proporción	Proporção
+sólo machos	somente machos
+Hacen falta peces con longitud.	São necessários peixes com comprimento.
+Todos los sitios	Todos os sítios
+{#0} % bajo la talla de madurez	{0} % abaixo do tamanho de maturação
+Clase de talla ({0})	Classe de tamanho ({0})
+n · media ± desvío · mín–máx	n · média ± DP · mín–máx
+Histograma de tallas	Histograma de tamanhos
+Relación longitud–peso de {0}	Relação comprimento–peso de {0}
+Longitud (cm, escala log)	Comprimento (cm, escala log)
+Peso (g, escala log)	Peso (g, escala log)
+Sin peces con longitud y peso por sitio.	Nenhum peixe com comprimento e peso por sítio.
+Factor de condición por sitio de {0}	Fator de condição por sítio de {0}
+línea punteada: media de todos los sitios {#0}	linha pontilhada: média de todos os sítios {0}
+línea punteada: media de todos los sitios	linha pontilhada: média de todos os sítios
+madurez	maturação
+IC95 inf	IC95 inf
+IC95 sup	IC95 sup
+IC95 inf.	IC95 inf.
+IC95 sup.	IC95 sup.
+EE de b	EP de b
+L mín (cm)	L mín (cm)
+L máx (cm)	L máx (cm)
+Índice	Índice
+{t0} media	{0} média
+{t0} desvío	{0} DP
+desvío	DP
+K de Fulton	K de Fulton
+Kn de Le Cren	Kn de Le Cren
+LT	CT
+LS	CP
+LF	CF
+Origen	Origem
+Nativa	Nativa
+Exótica	Exótica
+Tolerancia	Tolerância
+Intolerante	Intolerante
+Intermedia	Intermediária
+Tolerante	Tolerante
+Gremio trófico	Guilda trófica
+Omnívoro	Onívoro
+Insectívoro / invertívoro	Insetívoro / invertívoro
+Piscívoro	Piscívoro
+Herbívoro / detritívoro	Herbívoro / detritívoro
+Hábitat	Hábitat
+Bentónica	Bentônica
+Columna de agua	Coluna d'água
+origen	origem
+tolerancia	tolerância
+gremio trófico	guilda trófica
+hábitat	hábitat
+Primero carga la tabla de {0} en la pestaña 1.	Primeiro carregue a tabela de {0} na aba 1.
+Origen de {0}	Origem de {0}
+Tolerancia de {0}	Tolerância de {0}
+Gremio trófico de {0}	Guilda trófica de {0}
+Hábitat de {0}	Hábitat de {0}
+Hacen falta una fila de encabezados y al menos una especie.	São necessárias uma linha de cabeçalhos e pelo menos uma espécie.
+No se reconocen columnas de rasgos: la primera fila tiene que decir Origen, Tolerancia, Gremio trófico o Hábitat.	Colunas de atributos não reconhecidas: a primeira linha deve indicar Origem, Tolerância, Guilda trófica ou Hábitat.
+Se vaciaron los rasgos	Atributos limpos
+Límites propuestos para {#0} métricas: revísalos y ajústalos a tu cuenca	Limites sugeridos para {0} métricas: revise-os e ajuste-os à sua bacia
+No hay métricas con datos para proponer límites	Não há métricas com dados para sugerir limites
+Se quitaron los límites: el IBI no se calcula hasta cargar otros	Limites removidos: o IBI não é calculado até que outros sejam informados
+Quitar límites	Remover limites
+Riqueza total de especies	Riqueza total de espécies
+Riqueza de especies nativas	Riqueza de espécies nativas
+Riqueza de especies intolerantes	Riqueza de espécies intolerantes
+Riqueza de especies bentónicas	Riqueza de espécies bentônicas
+% de individuos de especies nativas	% de indivíduos de espécies nativas
+% de individuos de especies exóticas	% de indivíduos de espécies exóticas
+% de individuos de especies tolerantes	% de indivíduos de espécies tolerantes
+% de individuos omnívoros	% de indivíduos onívoros
+% de individuos insectívoros / invertívoros	% de indivíduos insetívoros / invertívoros
+% de individuos piscívoros	% de indivíduos piscívoros
+Abundancia total (N o CPUE del sitio)	Abundância total (N ou CPUE do sítio)
+% de individuos con anomalías (DELT)	% de indivíduos com anomalias (DELT)
+% de individuos exóticos	% de indivíduos exóticos
+% exót	% exót
+Propuesta: para riqueza y abundancia, trisección del máximo observado entre los sitios (≥ 2/3 del máximo puntúa 5, ≥ 1/3 puntúa 3), como en Karr et al. (1986); para las proporciones, los cortes de Karr (1981): omnívoros < 20 / 20–45 / > 45 %, insectívoros > 45 / 20–45 / < 20 %, piscívoros > 5 / 1–5 / < 1 %, anomalías < 2 / 2–5 / > 5 %; para tolerantes y exóticas, < 5 / 5–20 / > 20 % (propuesta de Kenti, sin cita).	Sugestão: para riqueza e abundância, trissecção do máximo observado entre os sítios (≥ 2/3 do máximo pontua 5, ≥ 1/3 pontua 3), como em Karr et al. (1986); para as proporções, os cortes de Karr (1981): onívoros < 20 / 20–45 / > 45 %, insetívoros > 45 / 20–45 / < 20 %, piscívoros > 5 / 1–5 / < 1 %, anomalias < 2 / 2–5 / > 5 %; para tolerantes e exóticas, < 5 / 5–20 / > 20 % (sugestão do Kenti, sem citação).
+Son un punto de partida, no una calibración.	São um ponto de partida, não uma calibração.
+ninguna especie presente tiene {0}	nenhuma espécie presente tem {0}
+sin especies presentes	sem espécies presentes
+sin individuos cargados en la pestaña 5	sem indivíduos carregados na aba 5
+sin valor	sem valor
+sin datos	sem dados
+Integridad comparable a la de un sitio sin alteración	Integridade comparável à de um sítio sem alteração
+Riqueza algo menor que la esperada; especies sensibles presentes	Riqueza um pouco menor que a esperada; espécies sensíveis presentes
+Faltan especies intolerantes; dominan tolerantes y omnívoros	Faltam espécies intolerantes; dominam as tolerantes e onívoras
+Pocas especies, mayoría tolerantes; peces en mal estado	Poucas espécies, maioria tolerantes; peixes em mau estado
+Casi sin peces, o sólo tolerantes con anomalías	Quase sem peixes, ou apenas tolerantes com anomalias
+Excelente	Excelente
+Pobre	Pobre
+Muy pobre	Muito pobre
+Entra	Incluída
+Métrica	Métrica
+Necesita	Requer
+Límite 5	Limite 5
+Límite 3	Limite 3
+Valores observados	Valores observados
+Dirección: ↑ sube con la integridad, ↓ baja	Direção: ↑ sobe com a integridade, ↓ cai
+individuos (pestaña 5)	indivíduos (aba 5)
+Incluir {0}	Incluir {0}
+Límite para 5 puntos de {0}	Limite para 5 pontos de {0}
+Límite para 3 puntos de {0}	Limite para 3 pontos de {0}
+Sitio {#0}	Sítio {0}
+{#0} métricas entran en el IBI (máximo {#1} puntos).	{0} métricas entram no IBI (máximo de {1} pontos).
+Ninguna métrica tiene límites: el IBI no se calcula.	Nenhuma métrica tem limites: o IBI não é calculado.
+Marca las métricas y escribe sus límites, o usa «Proponer límites».	Marque as métricas e informe seus limites, ou use «Sugerir limites».
+Marcadas pero sin los dos límites (no entran): {0}.	Marcadas, mas sem os dois limites (não entram): {0}.
+IBI (% del máximo)	IBI (% do máximo)
+Valor de cada métrica y, debajo, su puntaje (5 · 3 · 1).	Valor de cada métrica e, abaixo, sua pontuação (5 · 3 · 1).
+IBI = suma de puntajes; % = IBI sobre el máximo posible con las métricas que pudieron calcularse en ese sitio.	IBI = soma das pontuações; % = IBI sobre o máximo possível com as métricas que puderam ser calculadas nesse sítio.
+Las métricas se muestran igual aunque no haya límites; sin límites no hay puntaje ni IBI.	As métricas são exibidas mesmo sem limites; sem limites não há pontuação nem IBI.
+Sin límites: no puntúa	Sem limites: não pontua
+Suma	Soma
+% máx.	% máx.
+Calculada sobre el {#0} % de los individuos (el resto son especies sin {1})	Calculada sobre {0} % dos indivíduos (o restante são espécies sem {1})
+de {#0} ({#1} de {#2} métricas)	de {0} ({1} de {2} métricas)
+especies sin rasgo que quedan fuera de alguna métrica: {0}	espécies sem atributo que ficam fora de alguma métrica: {0}
+IBI con {#0} de {#1} métricas: {2}	IBI com {0} de {1} métricas: {2}
+Máximo	Máximo
+Métricas	Métricas
+% del máximo	% do máximo
+Cargar la planilla de individuos	Carregar a planilha de indivíduos
+Reemplaza la planilla de individuos.	Substitui a planilha de indivíduos.
+Una fila por pez.	Uma linha por peixe.
+Primera fila: encabezados (Sitio, Especie, Longitud, Peso, Sexo, Anomalías, en cualquier orden; sobran las que no tengas).	Primeira linha: cabeçalhos (Sítio, Espécie, Comprimento, Peso, Sexo, Anomalias, em qualquer ordem; as que você não tiver podem ser omitidas).
+Si el encabezado de longitud dice «mm» o «cm», se toma esa unidad.	Se o cabeçalho de comprimento indicar «mm» ou «cm», essa unidade é adotada.
+El peso en gramos.	O peso em gramas.
+Cargar individuos	Carregar indivíduos
+Cargar los rasgos por especie	Carregar os atributos por espécie
+Agrega o corrige los rasgos de las especies que coincidan por nombre con la tabla de la pestaña 1.	Adiciona ou corrige os atributos das espécies cujo nome coincidir com a tabela da aba 1.
+Primera fila: Especie y alguna de Origen, Tolerancia, Gremio trófico, Hábitat.	Primeira linha: Espécie e alguma entre Origem, Tolerância, Guilda trófica, Hábitat.
+Valores: nativa/exótica; intolerante/intermedia/tolerante; omnívoro/insectívoro/piscívoro/herbívoro; bentónica/columna.	Valores: nativa/exótica; intolerante/intermediária/tolerante; onívoro/insetívoro/piscívoro/herbívoro; bentônica/coluna.
+Cargar rasgos	Carregar atributos
+Rasgos cargados: {#0} valores ({1})	Atributos carregados: {0} valores ({1})
+especies que no están en la tabla: {0}	espécies que não estão na tabela: {0}
+valores no reconocidos: {0}	valores não reconhecidos: {0}
+6 Peces · CPUE y tallas	6 Peixes · CPUE e tamanhos
+Esfuerzo y CPUE · relación longitud–peso · condición · tallas	Esforço e CPUE · relação comprimento–peso · condição · tamanhos
+Esfuerzo de muestreo y CPUE por sitio	Esforço de amostragem e CPUE por sítio
+no declarada	não declarada
+Unidad de esfuerzo: {0}. CPUE = {1} del sitio ÷ esfuerzo. La CPUE por especie está más abajo.	Unidade de esforço: {0}. CPUE = {1} do sítio ÷ esforço. A CPUE por espécie está mais abaixo.
+Sin esfuerzo cargado: no se calculó la CPUE.	Sem esforço informado: a CPUE não foi calculada.
+CPUE por especie y sitio	CPUE por espécie e sítio
+log₁₀ W = log₁₀ a + b · log₁₀ L, con L en cm y W en g, todos los sitios juntos; mínimo 5 peces.	log₁₀ W = log₁₀ a + b · log₁₀ L, com L em cm e W em g, todos os sítios juntos; mínimo de 5 peixes.
+Longitud cargada: {0} en {1}.	Comprimento informado: {0} em {1}.
+Intervalo de confianza del 95 % de b y prueba t de b = 3 (n − 2 g.l.).	Intervalo de confiança de 95 % de b e teste t de b = 3 (n − 2 g.l.).
+Sin individuos cargados.	Nenhum indivíduo carregado.
+K de Fulton = 100·W/L³ (W en g, L en cm).	K de Fulton = 100·W/L³ (W em g, L em cm).
+Kn de Le Cren = W / (a·L^b) con la curva de la propia especie.	Kn de Le Cren = W / (a·L^b), com a curva da própria espécie.
+Media, desvío y n por sitio.	Média, desvio padrão e n por sítio.
+± desvío	± DP
+Sin peces con longitud y peso.	Nenhum peixe com comprimento e peso.
+Estructura de tallas ({0}, {1})	Estrutura de tamanhos ({0}, {1})
+frecuencias por clase y sitio	frequências por classe e sítio
+talla de madurez {#0}	tamanho de maturação {0}
+clase de {#0} {t1}	classe de {0} {1}
+Clase de talla	Classe de tamanho
+Media	Média
+% bajo la talla de madurez	% abaixo do tamanho de maturação
+Anomalías externas (DELT) por sitio	Anomalias externas (DELT) por sítio
+Longitud–peso	Comprimento–peso
+Relación longitud–peso	Relação comprimento–peso
+Factor de condición de Fulton por sitio	Fator de condição de Fulton por sítio
+Media ± desvío (n)	Média ± DP (n)
+Condición por sitio	Condição por sítio
+Índice multimétrico de Karr (1981): cada métrica puntúa 5, 3 o 1 según los límites definidos por el profesional para la cuenca; el IBI es la suma.	Índice multimétrico de Karr (1981): cada métrica pontua 5, 3 ou 1 conforme os limites definidos pelo profissional para a bacia; o IBI é a soma.
+Sin versión calibrada para el NOA: los límites usados se declaran abajo.	Sem versão calibrada para o NOA: os limites usados são declarados abaixo.
+Métricas que entran: {0} (máximo {#1} puntos). % = IBI sobre el máximo posible con las métricas calculables en cada sitio.	Métricas incluídas: {0} (máximo de {1} pontos). % = IBI sobre o máximo possível com as métricas calculáveis em cada sítio.
+No había límites cargados: las métricas se informan sin puntaje y no hay IBI.	Não havia limites informados: as métricas são apresentadas sem pontuação e não há IBI.
+Avisos por sitio	Avisos por sítio
+especies sin rasgo, fuera de alguna métrica: {0}	espécies sem atributo, fora de alguma métrica: {0}
+IBI con {#0} de {#1} métricas; sin calcular: {2}	IBI com {0} de {1} métricas; não calculadas: {2}
+{t0} calculada sobre el {#1} % de los individuos	{0} calculada sobre {1} % dos indivíduos
+Todas las métricas se calcularon con todas las especies presentes.	Todas as métricas foram calculadas com todas as espécies presentes.
+Métricas y límites usados	Métricas e limites usados
+Dirección	Direção
+sube con la integridad	sobe com a integridade
+baja con la integridad	cai com a integridade
+sí	sim
+no	não
+individuos (anomalías)	indivíduos (anomalias)
+Clases (porcentaje del máximo posible)	Classes (porcentagem do máximo possível)
+IBI por sitio	IBI por sítio
+Porcentaje del máximo posible	Porcentagem do máximo possível
+{#0} métricas	{0} métricas
+color según la clase	cor conforme a classe
+Código del sitio	Código do sítio
+Nombre del sitio {0}	Nome do sítio {0}
+Estado de {0}	Situação de {0}
+Nombre científico	Nome científico
+Clic en A1 y Ctrl+V pega la tabla entera · Enter o flechas para moverte · escribe en «+ sitio» o «+ especie» para agregar	Clique em A1 e Ctrl+V cola a tabela inteira · Enter ou as setas para se mover · digite em «+ sítio» ou «+ espécie» para adicionar
+especies. La celda de arriba a la izquierda puede tener cualquier cosa o estar vacía. Las filas y columnas de Total, Familia u Orden se ignoran;	espécies. A célula superior esquerda pode conter qualquer coisa ou ficar vazia. As linhas e colunas de Total, Família ou Ordem são ignoradas;
+o	ou
+{0} por sitio	{0} por sítio
+Cocientes de Nygaard	Quocientes de Nygaard
+fitoplancton	fitoplâncton
+Cinco cocientes entre grupos de algas, calculados con el	Cinco quocientes entre grupos de algas, calculados com o
+número de taxones	número de táxons
+de cada grupo presente en el sitio (no con la abundancia). El grupo de cada taxón se carga en la columna «Grupo» de la pestaña 1.	de cada grupo presente no sítio (e não com a abundância). O grupo de cada táxon é informado na coluna «Grupo» da aba 1.
+Cuándo y cómo se usan	Quando e como são usados
+Orientan sobre el estado trófico de lagos, lagunas y embalses a partir de la composición del fitoplancton.	Orientam sobre o estado trófico de lagos, lagoas e reservatórios a partir da composição do fitoplâncton.
+Idea	Ideia
+La hipótesis de Nygaard	A hipótese de Nygaard
+Las	As
+desmidiáceas	desmidiáceas
+y las	e as
+diatomeas pennadas	diatomáceas penadas
+predominan en aguas pobres en nutrientes; las	predominam em águas pobres em nutrientes; as
+cianobacterias	cianobactérias
+, las	, as
+diatomeas centrales	diatomáceas cêntricas
+euglenofitas	euglenófitas
+, en aguas ricas. Cuanto más pesan los segundos frente a los primeros, más alto el cociente.	, em águas ricas. Quanto mais pesam as segundas em relação às primeiras, maior o quociente.
+Cálculo	Cálculo
+Los cinco cocientes	Os cinco quocientes
+Cianofíceo	Cianofíceo
+= Cianobacterias / Desmidiáceas	= Cianobactérias / Desmidiáceas
+Clorofíceo	Clorofíceo
+= Chlorococcales / Desmidiáceas	= Chlorococcales / Desmidiáceas
+Diatomeas	Diatomáceas
+= Centrales / Pennadas	= Cêntricas / Penadas
+Euglenofíceo	Euglenofíceo
+= Euglenofitas / (Cianobacterias + Chlorococcales)	= Euglenófitas / (Cianobactérias + Chlorococcales)
+Compuesto	Composto
+= (Cianobacterias + Chlorococcales + Centrales + Euglenofitas) / Desmidiáceas	= (Cianobactérias + Chlorococcales + Cêntricas + Euglenófitas) / Desmidiáceas
+Cada término es el número de taxones del grupo presentes en el sitio.	Cada termo é o número de táxons do grupo presentes no sítio.
+Cuidado	Cuidado
+Límites	Limites
+Sin desmidiáceas	Sem desmidiáceas
+(frecuente en lagunas salinas de la Puna) no se calculan el cianofíceo, el clorofíceo ni el compuesto: salen «s/c» y se informa.	(frequente em lagoas salinas da Puna), os quocientes cianofíceo, clorofíceo e composto não são calculados: aparece «n/c» e isso é informado.
+Los rangos de oligotrofia y eutrofia de los cocientes simples se superponen y varían entre autores: úsalos junto con los nutrientes y la clorofila, no solos.	As faixas de oligotrofia e eutrofia dos quocientes simples se sobrepõem e variam entre autores: use-os junto com os nutrientes e a clorofila, e não isoladamente.
+Hace falta identificar al menos a género para asignar el grupo.	É necessário identificar pelo menos até gênero para atribuir o grupo.
+Pasa el cursor sobre un cociente para ver su lectura según los rangos de referencia.	Passe o cursor sobre um quociente para ver sua interpretação segundo as faixas de referência.
+Escala del cociente compuesto	Escala do quociente composto
+Rangos de referencia y citas	Faixas de referência e citações
+IBD · Índice Biológico de Diatomeas	IBD · Índice Biológico de Diatomáceas
+fitobentos	fitobentos
+Calidad biológica del agua a partir de las diatomeas bentónicas, sobre 20. El cruce con la tabla va por el	Qualidade biológica da água a partir das diatomáceas bentônicas, em escala de 20. O cruzamento com a tabela é feito pelo
+código Omnidia	código Omnidia
+de 4 letras, que se carga en la columna «Código Omnidia» de la pestaña 1.	de 4 letras, que é informado na coluna «Código Omnidia» da aba 1.
+Cuándo y cómo se usa	Quando e como é usado
+Norma NF T90-354 con los perfiles de la macro oficial de 2008.	Norma NF T90-354 com os perfis da macro oficial de 2008.
+Cuándo	Quando
+Diatomeas bentónicas	Diatomáceas bentônicas
+Ríos y arroyos, con diatomeas raspadas de sustratos duros y un conteo de unas 400 valvas por muestra. Con la tabla de conteos de valvas por taxón y sitio.	Rios e riachos, com diatomáceas raspadas de substratos duros e uma contagem de cerca de 400 valvas por amostra. Com a tabela de contagens de valvas por táxon e sítio.
+Perfiles ecológicos	Perfis ecológicos
+Cada taxón tiene una probabilidad de aparecer en cada una de 7 clases de calidad (P1 a P7) y un valor indicador (V). Con la abundancia relativa en ‰ (A):	Cada táxon tem uma probabilidade de ocorrer em cada uma das 7 classes de qualidade (P1 a P7) e um valor indicador (V). Com a abundância relativa em ‰ (A):
+= Σ i·F(i), de 1 a 7 ·	= Σ i·F(i), de 1 a 7 ·
+= 4,75·B − 8,5, acotado entre 1 y 20.	= 4,75·B − 8,5, limitado entre 1 e 20.
+Entran los taxones con código en la tabla y abundancia igual o mayor que el umbral.	Entram os táxons com código na tabela e abundância igual ou superior ao limiar.
+La tabla es europea (2008): taxones andinos o con nomenclatura nueva pueden no estar. Kenti informa, por sitio, qué parte del conteo entra en el cálculo; si es poca, el IBD representa poco de la muestra.	A tabela é europeia (2008): táxons andinos ou com nomenclatura nova podem não constar. O Kenti informa, por sítio, qual parte da contagem entra no cálculo; se for pequena, o IBD representa pouco da amostra.
+Kenti no cruza por nombre: propone códigos cuando el nombre coincide exacto con la tabla, y tú decides si los usas.	O Kenti não cruza por nome: sugere códigos quando o nome coincide exatamente com a tabela, e você decide se os usa.
+Tabla del IBD	Tabela do IBD
+Se carga desde Excel o CSV y queda guardada con tus datos. Sin tabla, el IBD no se calcula.	É carregada a partir de Excel ou CSV e fica salva com seus dados. Sem tabela, o IBD não é calculado.
+Abundancia mínima por taxón (‰)	Abundância mínima por táxon (‰)
+Por defecto 1 ‰, el umbral de la macro de 2008 con la que se verificó el cálculo.	Padrão 1 ‰, o limiar da macro de 2008 com a qual o cálculo foi verificado.
+Queda anotado en el Excel.	Fica registrado no Excel.
+Completar esos códigos	Completar esses códigos
+B es el promedio ponderado de las 7 clases; el IBD lo lleva a una nota sobre 20.	B é a média ponderada das 7 classes; o IBD a converte em uma nota em escala de 20.
+Clases de calidad del IBD	Classes de qualidade do IBD
+p. ej. 74	p. ex. 74
+especies. La celda A1 puede tener cualquier cosa o estar vacía.	espécies. A célula A1 pode conter qualquer coisa ou ficar vazia.
+Escala de clases: Cammaerts, R., D. Cammaerts, M. Riboux y R. Vargas (2008), citada en Leaño Sanabria, S. y M. Pérez Barriga. 2020. Acta Nova 9 (4): 569-591.	Escala de classes: Cammaerts, R., D. Cammaerts, M. Riboux e R. Vargas (2008), citada em Leaño Sanabria, S. e M. Pérez Barriga. 2020. Acta Nova 9 (4): 569-591.
+Domínguez y Fernández (1998) definen el ASPT' pero no publican rangos de interpretación para el NOA.	Domínguez e Fernández (1998) definem o ASPT', mas não publicam faixas de interpretação para o NOA.
+Esta escala viene de otra región: úsala como referencia orientativa y cítala en el informe.	Esta escala vem de outra região: use-a como referência orientativa e cite-a no relatório.
+No hay rangos universales: los límites se calculan por cuenca.	Não há faixas universais: os limites são calculados por bacia.
+El límite Excelente/Bueno es el percentil 25 del ABI de los sitios de referencia de la cuenca; los otros límites son el 61 %, 36 % y 15 % de ese valor (ejemplos publicados: Guayllabamba, Ecuador, 96; Cañete, Perú, 74).	O limite Excelente/Bom é o percentil 25 do ABI dos sítios de referência da bacia; os demais limites são 61 %, 36 % e 15 % desse valor (exemplos publicados: Guayllabamba, Equador, 96; Cañete, Peru, 74).
+Agua de calidad no alterada	Água de qualidade não alterada
+No contaminada o de manera no perceptible	Não poluída ou de maneira não perceptível
+Pésimo	Péssimo
+Calidad excelente	Qualidade excelente
+Calidad moderada	Qualidade moderada
+Calidad pésima	Qualidade péssima
+rango {0}	faixa {0}
+Carga el valor de referencia de la cuenca en «Tablas de puntaje»	Informe o valor de referência da bacia em «Tabelas de pontuação»
+Color según la escala de Cammaerts et al. (2008), orientativa	Cor conforme a escala de Cammaerts et al. (2008), orientativa
+Límites: 100 %, 61 %, 36 % y 15 % del valor de referencia.	Limites: 100 %, 61 %, 36 % e 15 % do valor de referência.
+Diatomeas centrales	Diatomáceas cêntricas
+Diatomeas pennadas	Diatomáceas penadas
+Euglenofitas	Euglenófitas
+Otro	Outro
+Cian.	Cian.
+Indica si es una diatomea central o pennada: cada una va en un cociente distinto	Indica se é uma diatomácea cêntrica ou penada: cada uma entra em um quociente diferente
+Indica si es Chlorococcales, Desmidiáceas u Otro	Indica se é Chlorococcales, Desmidiáceas ou Outro
+Grupo no reconocido: usa Cianobacterias, Chlorococcales, Desmidiáceas, Diatomeas centrales, Diatomeas pennadas, Euglenofitas u Otro	Grupo não reconhecido: use Cianobactérias, Chlorococcales, Desmidiáceas, Diatomáceas cêntricas, Diatomáceas penadas, Euglenófitas ou Outro
+Cianobacterias / Desmidiáceas	Cianobactérias / Desmidiáceas
+sin desmidiáceas	sem desmidiáceas
+Chlorococcales / Desmidiáceas	Chlorococcales / Desmidiáceas
+Centrales / Pennadas	Cêntricas / Penadas
+sin diatomeas pennadas	sem diatomáceas penadas
+Euglenofitas / (Cianobacterias + Chlorococcales)	Euglenófitas / (Cianobactérias + Chlorococcales)
+sin cianobacterias ni Chlorococcales	sem cianobactérias nem Chlorococcales
+(Cianobacterias + Chlorococcales + Centrales + Euglenofitas) / Desmidiáceas	(Cianobactérias + Chlorococcales + Cêntricas + Euglenófitas) / Desmidiáceas
+Nygaard (1949)	Nygaard (1949)
+Oligotrófico	Oligotrófico
+Menor que 1: aguas pobres en nutrientes	Menor que 1: águas pobres em nutrientes
+Eutrófico	Eutrófico
+1 o más: aguas ricas en nutrientes (valores cercanos a 1 con desmidiáceas pueden indicar distrofia)	1 ou mais: águas ricas em nutrientes (valores próximos de 1 com desmidiáceas podem indicar distrofia)
+Nygaard, G. 1949. Hydrobiological studies on some Danish ponds and lakes. Part II: The quotient hypothesis and some new or little known phytoplankton organisms. Det Kongelige Danske Videnskabernes Selskab, Biologiske Skrifter 7 (1): 1-293. Lectura aplicada en el NOA por Mirande, V. y B. C. Tracanna. 2005. Boletín de la Sociedad Argentina de Botánica 40 (3-4).	Nygaard, G. 1949. Hydrobiological studies on some Danish ponds and lakes. Part II: The quotient hypothesis and some new or little known phytoplankton organisms. Det Kongelige Danske Videnskabernes Selskab, Biologiske Skrifter 7 (1): 1-293. Leitura aplicada no NOA por Mirande, V. e B. C. Tracanna. 2005. Boletín de la Sociedad Argentina de Botánica 40 (3-4).
+Hamaidi-Chergui et al. (2014)	Hamaidi-Chergui et al. (2014)
+Menor que 2	Menor que 2
+Mesotrófico	Mesotrófico
+Entre 2 y 6	Entre 2 e 6
+Mayor que 6	Maior que 6
+Hamaidi-Chergui, F., M. B. Errahmani, M. S. Hamaidi, F. Benouaklil y H. Kais. 2014. Preliminary survey of phytoplankton of Lakhal Lake Dam (southeast of Algeria) by using Palmer and Nygaard's algal index. Lakes, Reservoirs and Ponds 8 (2): 122-136.	Hamaidi-Chergui, F., M. B. Errahmani, M. S. Hamaidi, F. Benouaklil e H. Kais. 2014. Preliminary survey of phytoplankton of Lakhal Lake Dam (southeast of Algeria) by using Palmer and Nygaard's algal index. Lakes, Reservoirs and Ponds 8 (2): 122-136.
+Rangos de los cuatro cocientes simples: Nygaard (1949), tal como los tabulan Hamaidi-Chergui et al. (2014).	Faixas dos quatro quocientes simples: Nygaard (1949), conforme tabuladas por Hamaidi-Chergui et al. (2014).
+Los rangos de oligotrofia y eutrofia se superponen y varían entre autores.	As faixas de oligotrofia e eutrofia se sobrepõem e variam entre autores.
+Superpuesto	Sobreposto
+El valor cae en los dos rangos: no discrimina	O valor cai nas duas faixas: não discrimina
+Dentro del rango oligotrófico ({0})	Dentro da faixa oligotrófica ({0})
+Dentro del	Dentro da
+Por encima del	Acima da
+{0} rango eutrófico ({1})	{0} faixa eutrófica ({1})
+Fuera de rango	Fora da faixa
+Fuera de los rangos de referencia	Fora das faixas de referência
+Calidad biológica muy buena	Qualidade biológica muito boa
+Calidad biológica buena	Qualidade biológica boa
+Calidad biológica aceptable (passable)	Qualidade biológica aceitável (passable)
+Calidad biológica mala	Qualidade biológica ruim
+Calidad biológica muy mala	Qualidade biológica muito ruim
+AFNOR. 2007. NF T90-354. Qualité de l'eau: détermination de l'Indice Biologique Diatomées (IBD). Perfiles ecológicos y valores indicadores de la macro oficial del IBD (octubre 2008). Descripción del método en Coste, M., S. Boutry, J. Tison-Rosebery y F. Delmas. 2009. Improvements of the Biological Diatom Index (BDI): description and efficiency of the new version (BDI-2006). Ecological Indicators 9: 621-650.	AFNOR. 2007. NF T90-354. Qualité de l'eau: détermination de l'Indice Biologique Diatomées (IBD). Perfis ecológicos e valores indicadores da macro oficial do IBD (outubro de 2008). Descrição do método em Coste, M., S. Boutry, J. Tison-Rosebery e F. Delmas. 2009. Improvements of the Biological Diatom Index (BDI): description and efficiency of the new version (BDI-2006). Ecological Indicators 9: 621-650.
+No se encontraron filas con código, 7 probabilidades que sumen 1 y valor indicador	Não foram encontradas linhas com código, 7 probabilidades que somem 1 e valor indicador
+Tabla del IBD: {0} taxones cargados	Tabela do IBD: {0} táxons carregados
+Cociente compuesto de Nygaard	Quociente composto de Nygaard
+Taxones por grupo de Nygaard en cada sitio	Táxons por grupo de Nygaard em cada sítio
+Sin grupo reconocido	Sem grupo reconhecido
+Primero carga la tabla de fitoplancton en la pestaña 1.	Primeiro carregue a tabela de fitoplâncton na aba 1.
+No se calcula: {0}	Não calculado: {0}
+Ningún taxón tiene grupo todavía. Complétalo en la columna «Grupo» de la pestaña 1: sin grupos, los cocientes no se pueden calcular.	Nenhum táxon tem grupo ainda. Preencha-o na coluna «Grupo» da aba 1: sem grupos, os quocientes não podem ser calculados.
+grupo no reconocido	grupo não reconhecido
+no se calcula: {0}	não calculado: {0}
+Los taxones sin grupo o con grupo no reconocido no entran en ningún cociente. «s/c»: sin calcular porque el denominador es cero.	Os táxons sem grupo ou com grupo não reconhecido não entram em nenhum quociente. «n/c»: não calculado porque o denominador é zero.
+Todos los taxones presentes tienen un grupo reconocido.	Todos os táxons presentes têm um grupo reconhecido.
+Taxones por grupo	Táxons por grupo
+Número de taxones presentes de cada grupo de Nygaard	Número de táxons presentes em cada grupo de Nygaard
+Cociente compuesto por sitio	Quociente composto por sítio
+Sin cargar: el IBD no se calcula	Não carregada: o IBD não é calculado
+Tabla del IBD (código Omnidia, 7 perfiles y valor indicador)	Tabela do IBD (código Omnidia, 7 perfis e valor indicador)
+código o nombre	código ou nome
+1 taxón sin código tiene el mismo nombre que un taxón de la tabla.	1 táxon sem código tem o mesmo nome que um táxon da tabela.
+{0} taxones sin código tienen el mismo nombre que un taxón de la tabla.	{0} táxons sem código têm o mesmo nome que um táxon da tabela.
+Primero carga la tabla de fitobentos en la pestaña 1.	Primeiro carregue a tabela de fitobentos na aba 1.
+Carga la tabla del IBD (arriba) para calcular el índice.	Carregue a tabela do IBD (acima) para calcular o índice.
+Conteo	Contagem
+Con perfil	Com perfil
+Del conteo	Da contagem
+sobre 20	em escala de 20
+Taxones con código de la tabla y abundancia sobre el umbral	Táxons com código da tabela e abundância acima do limiar
+Porcentaje del conteo que representan los taxones usados	Porcentagem da contagem representada pelos táxons usados
+Promedio ponderado de las 7 clases	Média ponderada das 7 classes
+⚠ bajo	⚠ baixo
+Menos de la mitad del conteo tiene perfil en la tabla: el IBD representa poco de la muestra	Menos da metade da contagem tem perfil na tabela: o IBD representa pouco da amostra
+sin código	sem código
+código que no está en la tabla	código que não está na tabela
+bajo el umbral de {0} ‰: {1}	abaixo do limiar de {0} ‰: {1}
+Estos taxones cuentan en el total del conteo (el ‰ de cada taxón se calcula sobre todo lo contado) pero no aportan perfil al IBD.	Esses táxons contam no total da contagem (o ‰ de cada táxon é calculado sobre tudo o que foi contado), mas não fornecem perfil ao IBD.
+Todos los taxones presentes tienen código y perfil en la tabla.	Todos os táxons presentes têm código e perfil na tabela.
+IBD por sitio	IBD por sítio
+Sobre 20 · color según la clase de calidad	Em escala de 20 · cor conforme a classe de qualidade
+Parte del conteo con perfil	Parte da contagem com perfil
+Porcentaje de las valvas contadas que entran en el cálculo	Porcentagem das valvas contadas que entram no cálculo
+Se muestran los primeros 60.	São exibidos os primeiros 60.
+Código	Código
+Denominación	Denominação
+Sin coincidencias.	Sem correspondências.
+Lectura aplicada	Interpretação aplicada
+según la escala elegida	conforme a escala escolhida
+Cociente	Quociente
+Fórmula (número de taxones)	Fórmula (número de táxons)
+Clases del IBD	Classes do IBD
+Límites de la norma NF T90-354. Un valor justo en el límite va a la clase superior.	Limites da norma NF T90-354. Um valor exatamente no limite vai para a classe superior.
+Se completó 1 código	1 código foi preenchido
+Se completaron {0} códigos	{0} códigos foram preenchidos
+revísalo	revise-o
+revísalos	revise-os
+{0} por coincidencia exacta de nombre: {1} en la pestaña 1	{0} por coincidência exata de nome: {1} na aba 1
+Cobertura (%)	Cobertura (%)
+Cob	Cob
+Cobertura	Cobertura
+Cob (%)	Cob (%)
+Cobertura (%): un valor por sitio, cargado en la pestaña de diversidad alfa. En la fila Total (γ) va el promedio de los sitios que la tienen.	Cobertura (%): um valor por sítio, informado na aba de diversidade alfa. Na linha Total (γ) aparece a média dos sítios que o têm.
+{#0} filas no válidas ({1})	{0} linhas inválidas ({1})
+{#0} códigos repetidos, se usó el primero	{0} códigos repetidos, foi usado o primeiro
+{#0} filas descartadas al cargar	{0} linhas descartadas ao carregar
+cianofíceo	cianofíceo
+clorofíceo	clorofíceo
+diatomeas	diatomáceas
+euglenofíceo	euglenofíceo
+compuesto	composto
+Se completó 1 código por coincidencia exacta de nombre: revísalo en la pestaña 1	1 código foi preenchido por coincidência exata de nome: revise-o na aba 1
+Se completaron {#0} códigos por coincidencia exacta de nombre: revísalos en la pestaña 1	{0} códigos foram preenchidos por coincidência exata de nome: revise-os na aba 1
+bajo el umbral: {0}	abaixo do limiar: {0}
+sin código: {0}	sem código: {0}
+código que no está en la tabla: {0}	código que não está na tabela: {0}
+sin grupo: {0}	sem grupo: {0}
+grupo no reconocido: {0}	grupo não reconhecido: {0}
+(la otra tabla y la tabla del IBD no cambian)	(a outra tabela e a tabela do IBD não mudam)
+Cada una tiene su propia tabla.	Cada uma tem sua própria tabela.
+Planilla de {0}: {#1} sitios. {2}	Planilha de {0}: {1} sítios. {2}
+Planilla de {0}: {#1} sitios. Cada clase tiene su propia tabla.	Planilha de {0}: {1} sítios. Cada classe tem sua própria tabela.
+Suma las dos tablas.	Soma as duas tabelas.
+Los sitios se reconocen por su nombre: si un sitio está en una sola tabla, la otra clase cuenta 0 allí (NA en la planilla).	Os sítios são reconhecidos pelo nome: se um sítio está em apenas uma tabela, a outra classe conta 0 ali (NA na planilha).
+Para cargar o agregar, elige {0}.	Para carregar ou adicionar, escolha {0}.
+{#0} de {#1} sitios con {2} relevados.	{0} de {1} sítios com {2} amostrados.
+{0} sin relevar	{0} não amostrado
+no aplica a ninguna clase	não se aplica a nenhuma classe
+Entra un sitio si cada clase fue relevada o no corresponde allí.	Um sítio entra se cada classe foi amostrada ou não se aplica ali.
+Fuera del conjunto: {0}.	Fora do conjunto: {0}.
+Especie nueva	Nova espécie
+Valor de una especie nueva	Valor de uma nova espécie
+No entra en ningún cociente de Nygaard	Não entra em nenhum quociente de Nygaard
+El código Omnidia tiene 4 letras	O código Omnidia tem 4 letras
+Ese código no está en la tabla del IBD cargada	Esse código não está na tabela do IBD carregada
+Cargar la tabla del IBD	Carregar a tabela do IBD
+Reemplaza la tabla del IBD que haya cargada.	Substitui a tabela do IBD que já estiver carregada.
+Cada fila necesita el código Omnidia (4 letras), la denominación, las 7 probabilidades del perfil ecológico (clases 1 a 7, que suman 1) y el valor indicador.	Cada linha precisa do código Omnidia (4 letras), da denominação, das 7 probabilidades do perfil ecológico (classes 1 a 7, que somam 1) e do valor indicador.
+Conviene que la primera fila tenga los encabezados (Código, Denominación, P1 a P7, V).	É recomendável que a primeira linha tenha os cabeçalhos (Código, Denominação, P1 a P7, V).
+Una tabla de unos 2000 taxones puede tardar unos segundos en leerse.	Uma tabela de cerca de 2000 táxons pode levar alguns segundos para ser lida.
+Si trae una columna «{0}» junto al taxón, se toma también.	Se houver uma coluna «{0}» junto ao táxon, ela também é lida.
+Cargar tabla del IBD	Carregar tabela do IBD
+No se encontraron filas con código Omnidia, 7 probabilidades que sumen 1 y valor indicador.	Não foram encontradas linhas com código Omnidia, 7 probabilidades que somem 1 e valor indicador.
+Como estás en la vista conjunta, la tabla necesita una columna Clase ({0}) y reemplaza todo.	Como você está na visão conjunta, a tabela precisa de uma coluna Classe ({0}) e substitui tudo.
+en la tabla de	na tabela de
+{#0} filas sin clase reconocida, no se cargaron	{0} linhas sem classe reconhecida não foram carregadas
+Se cargó la tabla de {0}: {#1} {2}. La de {3} no cambió	A tabela de {0} foi carregada: {1} {2}. A de {3} não mudou
+Se reemplazaron los {0}: {#1} {2}	Os {0} foram substituídos: {1} {2}
+En la vista conjunta hace falta una columna «Clase» con {0}. También puedes elegir primero {1} y pegar cada tabla por separado.	Na visão conjunta é necessária uma coluna «Classe» com {0}. Você também pode escolher primeiro {1} e colar cada tabela separadamente.
+No se reconoció la clase de ninguna fila. En la columna Clase usa {0}.	Não foi reconhecida a classe de nenhuma linha. Na coluna Classe use {0}.
+CPUE total	CPUE total
+Biomasa total	Biomassa total
+cpue	CPUE
+Cobertura (%) de {0}	Cobertura (%) de {0}
+Promedio de los sitios con {0}	Média dos sítios com {0}
+cobertura	cobertura
+6 Cocientes de Nygaard	6 Quocientes de Nygaard
+Calculados con el número de taxones de cada grupo presente en el sitio (no con la abundancia).	Calculados com o número de táxons de cada grupo presente no sítio (e não com a abundância).
+«s/c»: no se calcula porque el denominador es cero.	«n/c»: não calculado porque o denominador é zero.
+s/c	n/c
+Escala del cociente compuesto: {0} ({1}).	Escala do quociente composto: {0} ({1}).
+Taxones (S)	Táxons (S)
+Lectura del compuesto	Interpretação do composto
+Taxones sin grupo, grupos no reconocidos y cocientes sin calcular	Táxons sem grupo, grupos não reconhecidos e quocientes não calculados
+Todos los taxones tienen grupo reconocido y todos los cocientes se calcularon.	Todos os táxons têm grupo reconhecido e todos os quocientes foram calculados.
+Fórmulas y rangos de referencia	Fórmulas e faixas de referência
+escala elegida	escala escolhida
+Clases del cociente compuesto	Classes do quociente composto
+Grupo asignado a cada taxón	Grupo atribuído a cada táxon
+Grupo cargado	Grupo informado
+Grupo de Nygaard	Grupo de Nygaard
+no reconocido	não reconhecido
+Taxones por grupo de Nygaard	Táxons por grupo de Nygaard
+sin grupo (gris claro), de abajo hacia arriba	sem grupo (cinza-claro), de baixo para cima
+Cociente compuesto	Quociente composto
+«—»: sin desmidiáceas	«—»: sem desmidiáceas
+Índice Biológico de Diatomeas	Índice Biológico de Diatomáceas
+Tabla del IBD: {#0} taxones, archivo «{1}», cargada el {2}. Umbral de abundancia por taxón: {3} ‰. Cruce por código Omnidia.	Tabela do IBD: {0} táxons, arquivo «{1}», carregada em {2}. Limiar de abundância por táxon: {3} ‰. Cruzamento por código Omnidia.
+No hay tabla del IBD cargada: el índice no se calculó.	Não há tabela do IBD carregada: o índice não foi calculado.
+F(i) = Σ A·P(i)·V / Σ A·V (A: abundancia relativa en ‰ sobre todo el conteo) · B = Σ i·F(i) · IBD = 4,75·B − 8,5, acotado entre 1 y 20.	F(i) = Σ A·P(i)·V / Σ A·V (A: abundância relativa em ‰ sobre toda a contagem) · B = Σ i·F(i) · IBD = 4,75·B − 8,5, limitado entre 1 e 20.
+Conteo (N)	Contagem (N)
+% del conteo	% da contagem
+Taxones que no entran en el cálculo	Táxons que não entram no cálculo
+Estos taxones cuentan en el total del conteo pero no aportan perfil al IBD.	Esses táxons contam no total da contagem, mas não fornecem perfil ao IBD.
+Perfiles usados (taxones con código presentes en algún sitio)	Perfis usados (táxons com código presentes em algum sítio)
+Taxón cargado	Táxon informado
+Denominación en la tabla	Denominação na tabela
+Porcentaje de las valvas contadas que entran en el cálculo del IBD	Porcentagem das valvas contadas que entram no cálculo do IBD
+Buscar en la tabla	Buscar na tabela
+Se quitó la tabla del IBD	Tabela do IBD removida
+La tabla ahora es sólo de individuos: se conservaron tus individuos. La tabla de cobertura por especie ya no se usa y quedó copiada en {0}. La cobertura se carga ahora por sitio, en la pestaña de diversidad alfa.	A tabela agora é somente de indivíduos: seus indivíduos foram mantidos. A tabela de cobertura por espécie não é mais usada e foi copiada em {0}. A cobertura agora é informada por sítio, na aba de diversidade alfa.
+La tabla ahora es de individuos. Los valores que habías pegado se tomaron como individuos. La cobertura se carga ahora por sitio, en la pestaña de diversidad alfa.	A tabela agora é de indivíduos. Os valores que você havia colado foram tomados como indivíduos. A cobertura agora é informada por sítio, na aba de diversidade alfa.
+La tabla ahora es sólo de individuos. La cobertura se carga por sitio, en la pestaña de diversidad alfa.	A tabela agora é somente de indivíduos. A cobertura é informada por sítio, na aba de diversidade alfa.
+Color según la escala Nygaard (1949) · «—»: sin desmidiáceas, no se calcula	Cor conforme à escala de Nygaard (1949) · «—»: sem desmidiáceas, não se calcula
+Color según la escala Hamaidi-Chergui et al. (2014) · «—»: sin desmidiáceas, no se calcula	Cor conforme à escala de Hamaidi-Chergui et al. (2014) · «—»: sem desmidiáceas, não se calcula
+Color según la escala Nygaard (1949)	Cor conforme à escala de Nygaard (1949)
+Color según la escala Hamaidi-Chergui et al. (2014)	Cor conforme à escala de Hamaidi-Chergui et al. (2014)
+Un valor justo en el límite va a la clase superior.	Um valor exatamente no limite vai para a classe superior.
+Límites de la norma NF T90-354.	Limites da norma NF T90-354.
+{#0} filas con un sitio que no está en la tabla de la pestaña 1 ({1}): entran en la relación longitud–peso, no en los resultados por sitio	{0} linhas com um sítio que não está na tabela da aba 1 ({1}): entram na relação comprimento–peso, não nos resultados por sítio
+Tabla de la pestaña 1 armada con {#0} individuos ({1} por especie y sitio) · {2}	Tabela da aba 1 montada com {0} indivíduos ({1} por espécie e sítio) · {2}
+{t0} (sin valor)	{0} (sem valor)
+{t0} (ninguna especie presente tiene origen)	{0} (nenhuma espécie presente tem origem)
+arte de muestreo	petrecho de amostragem

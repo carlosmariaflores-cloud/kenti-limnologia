@@ -1,0 +1,137 @@
+{
+ "NOMBRE": "Kenti Fitoplancton",
+ "DESCRIPCION": "tabla de taxones de fitoplancton, diversidad alfa y beta, correlación y PCA por sitio y cocientes de Nygaard, con exportación a Excel.",
+ "ADJ": "fitoplancton",
+ "CAMPANIA": "Fitoplancton · diversidad e índices",
+ "AVATAR": "FP",
+ "USUARIO": "Fitoplancton",
+ "TABLA_INTRO": "Una planilla: la primera fila son los sitios y la primera columna, los taxones. Sigue una columna con el Grupo (para los cocientes de Nygaard; se completa solo desde GBIF). Una celda vacía cuenta como cero. Los fisicoquímicos (opcionales) se cargan en la pestaña de diversidad alfa.",
+ "VERSION": "0.6.1",
+ "GROUP": {
+  "key": "kenti-fitoplancton-v1",
+  "appId": "kenti-fitoplancton",
+  "prefix": "FI-",
+  "estadoLabel": "Estado del sitio para fitoplancton",
+  "simpleTable": true,
+  "archivoRespaldo": "datos-fitoplancton.respaldo.json",
+  "tablaIntro": "Una planilla: la primera fila son los sitios y la primera columna, los taxones. Sigue una columna con el Grupo (para los cocientes de Nygaard; se completa solo desde GBIF). Una celda vacía cuenta como cero. Los fisicoquímicos (opcionales) se cargan en la pestaña de diversidad alfa.",
+  "fito": true,
+  "taxonline": true,
+  "noConjunto": true,
+  "viewNote": "",
+  "conjuntoLabel": "Fitoplancton",
+  "conjuntoPl": "fitoplancton",
+  "subgroups": [
+   {
+    "id": "fitoplancton",
+    "label": "Fitoplancton",
+    "pl": "fitoplancton",
+    "one": "Taxón",
+    "match": "fitopl|phytopl|plancton",
+    "indices": [
+     "nygaard"
+    ],
+    "attrs": [
+     {
+      "key": "grupo",
+      "label": "Grupo",
+      "kind": "nygaard",
+      "header": "^(grupo|group)",
+      "placeholder": "grupo",
+      "emptyTitle": "Sin grupo: este taxón no entra en los cocientes de Nygaard",
+      "help": "Grupo de Nygaard: Cianobacterias, Chlorococcales, Desmidiáceas, Diatomeas centrales, Diatomeas pennadas, Euglenofitas u Otro",
+      "list": [
+       "Cianobacterias",
+       "Chlorococcales",
+       "Desmidiáceas",
+       "Diatomeas centrales",
+       "Diatomeas pennadas",
+       "Euglenofitas",
+       "Otro"
+      ]
+     }
+    ]
+   }
+  ],
+  "alphaIndices": [
+   "S",
+   "N",
+   "H",
+   "Simp",
+   "D",
+   "Mg",
+   "J"
+  ],
+  "fq": [
+   {
+    "id": "ph",
+    "name": "pH",
+    "units": [
+     ""
+    ]
+   },
+   {
+    "id": "temp",
+    "name": "Temperatura",
+    "units": [
+     "°C"
+    ]
+   },
+   {
+    "id": "cond",
+    "name": "Conductividad",
+    "units": [
+     "µS/cm",
+     "mS/cm"
+    ]
+   },
+   {
+    "id": "od",
+    "name": "OD",
+    "units": [
+     "mg/L",
+     "% sat."
+    ]
+   },
+   {
+    "id": "tds",
+    "name": "TDS",
+    "units": [
+     "mg/L",
+     "g/L"
+    ]
+   }
+  ],
+  "units": [
+   {
+    "id": "conteo",
+    "label": "Conteo (células, individuos o valvas)",
+    "plural": "conteo"
+   },
+   {
+    "id": "cel_ml",
+    "label": "Densidad (cél/mL)",
+    "plural": "cél/mL",
+    "nLabel": "Densidad total (N)",
+    "nShort": "Densidad",
+    "note": "Con densidades, N es la suma de las densidades y las proporciones se calculan sobre esa suma. Margalef se pensó para conteos: con densidad sirve sólo para comparar sitios entre sí. Nygaard usa número de taxones: la medida no lo cambia."
+   },
+   {
+    "id": "cel_l",
+    "label": "Densidad (cél/L)",
+    "plural": "cél/L",
+    "nLabel": "Densidad total (N)",
+    "nShort": "Densidad",
+    "note": "Con densidades, N es la suma de las densidades y las proporciones se calculan sobre esa suma. Margalef se pensó para conteos: con densidad sirve sólo para comparar sitios entre sí. Nygaard usa número de taxones: la medida no lo cambia."
+   }
+  ],
+  "sites": [],
+  "species": [],
+  "grupoPl": "fitoplancton",
+  "nombre": "Kenti Fitoplancton",
+  "slug": "Kenti-Fitoplancton",
+  "taxLabel": "Taxón",
+  "taxOne": "taxón",
+  "taxPl": "taxones"
+ }
+}

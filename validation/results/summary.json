@@ -1,0 +1,211 @@
+{
+ "core_errors": {
+  "Zooplankton": [],
+  "Periphyton": [],
+  "Phytoplankton": [],
+  "Fish (shared engine)": []
+ },
+ "core_sites": {
+  "Zooplankton": 166,
+  "Periphyton": 184,
+  "Phytoplankton": 158,
+  "Fish (shared engine)": 124
+ },
+ "core_taxa_range": {
+  "Zooplankton": [
+   7,
+   68
+  ],
+  "Periphyton": [
+   11,
+   70
+  ],
+  "Phytoplankton": [
+   6,
+   68
+  ],
+  "Fish (shared engine)": [
+   13,
+   70
+  ]
+ },
+ "core_sites_range": {
+  "Zooplankton": [
+   3,
+   12
+  ],
+  "Periphyton": [
+   3,
+   12
+  ],
+  "Phytoplankton": [
+   3,
+   12
+  ],
+  "Fish (shared engine)": [
+   3,
+   12
+  ]
+ },
+ "cof_ties": {
+  "Zooplankton": [
+   0.0006819481068681688
+  ],
+  "Periphyton": [],
+  "Phytoplankton": [
+   0.027824967786197363
+  ],
+  "Fish (shared engine)": []
+ },
+ "core_max": {
+  "Zooplankton": {
+   "alfa": 1.7462298274040222e-10,
+   "beta": 4.440892098500626e-16,
+   "cof": 6.661338147750939e-16,
+   "pearson": 3.928957486589706e-09,
+   "pca_val": 1.7486012637846216e-14,
+   "pca_carga": 2.102873430942509e-12,
+   "pca_pt": 3.4808822491072533e-12
+  },
+  "Periphyton": {
+   "alfa": 5.820766091346741e-11,
+   "beta": 5.551115123125783e-16,
+   "cof": 6.661338147750939e-16,
+   "pearson": 3.547162563677375e-14,
+   "pca_val": 4.440892098500626e-15,
+   "pca_carga": 5.984990281149294e-12,
+   "pca_pt": 1.2192913345643319e-11
+  },
+  "Phytoplankton": {
+   "alfa": 1.4551915228366852e-11,
+   "beta": 6.661338147750939e-16,
+   "cof": 1.2878587085651816e-14,
+   "pearson": 3.8968828164342995e-14,
+   "pca_val": 3.1530333899354446e-14,
+   "pca_carga": 4.829137090212043e-12,
+   "pca_pt": 8.854508597687383e-12
+  },
+  "Fish (shared engine)": {
+   "alfa": 1.1641532182693481e-10,
+   "beta": 9.992007221626409e-16,
+   "cof": 5.551115123125783e-16,
+   "pearson": 3.058664432842306e-14,
+   "pca_val": 4.440892098500626e-15,
+   "pca_carga": 4.026778910315443e-13,
+   "pca_pt": 1.0599854327608682e-12
+  }
+ },
+ "core_n": {
+  "Zooplankton": 24,
+  "Periphyton": 24,
+  "Phytoplankton": 24,
+  "Fish (shared engine)": 16
+ },
+ "peces_n": 30,
+ "peces_errors": [],
+ "peces_inds": 5663,
+ "peces_sites": 158,
+ "peces_species": 255,
+ "ibi_metric_values": [
+  1896,
+  1896
+ ],
+ "ibi_flags": {
+  "ibi_limites_ok": [
+   30,
+   30
+  ],
+  "ibi_puntaje_ok": [
+   30,
+   30
+  ],
+  "ibi_suma_ok": [
+   30,
+   30
+  ],
+  "ibi_clase_ok": [
+   30,
+   30
+  ]
+ },
+ "peces_max": {
+  "lw_a": 1.734723475976807e-16,
+  "lw_b": 8.888273613646441e-16,
+  "lw_se": 5.6066262743570405e-15,
+  "lw_lo": 3.552713678800501e-14,
+  "lw_hi": 7.495680448811904e-15,
+  "lw_r2": 1.3322676295501878e-15,
+  "lw_t": 8.882010497899843e-14,
+  "lw_p": 6.383227280082338e-13,
+  "K_n_ok": 0.0,
+  "K_media": 7.324057743077261e-16,
+  "K_sd": 1.1180961299161772e-13,
+  "Kn_media": 7.833713757442393e-15,
+  "cpue": 0.0,
+  "ibi_pct": 0.0,
+  "ibi_metrica_max_dif": 0.0
+ },
+ "nygaard": {
+  "es": {
+   "n": 30,
+   "sites": 214,
+   "maxdif": 0.0,
+   "all_ok": true,
+   "errors": 0
+  },
+  "en": {
+   "n": 20,
+   "sites": 167,
+   "maxdif": 0.0,
+   "all_ok": true,
+   "errors": 0
+  },
+  "pt": {
+   "n": 20,
+   "sites": 135,
+   "maxdif": 0.0,
+   "all_ok": true,
+   "errors": 0
+  }
+ },
+ "lang_core": {
+  "Zooplankton EN": {
+   "n": 12,
+   "errors": 0,
+   "maxalfa": 5.820766091346741e-11,
+   "maxbeta": 5.551115123125783e-16,
+   "maxcof": 5.551115123125783e-16,
+   "maxpearson": 3.7442271505483404e-14
+  },
+  "Zooplankton PT": {
+   "n": 12,
+   "errors": 0,
+   "maxalfa": 5.820766091346741e-11,
+   "maxbeta": 5.551115123125783e-16,
+   "maxcof": 7.771561172376096e-16,
+   "maxpearson": 1.3416060645133013e-08
+  },
+  "Phytoplankton EN": {
+   "n": 12,
+   "errors": 0,
+   "maxalfa": 4.656612873077393e-10,
+   "maxbeta": 1.1102230246251565e-15,
+   "maxcof": 6.661338147750939e-16,
+   "maxpearson": 9.00316316157106e-11
+  },
+  "Periphyton PT": {
+   "n": 12,
+   "errors": 0,
+   "maxalfa": 1.4551915228366852e-11,
+   "maxbeta": 4.440892098500626e-16,
+   "maxcof": 7.771561172376096e-16,
+   "maxpearson": 4.3520742565306136e-14
+  }
+ },
+ "peces_lang": {
+  "n": 7,
+  "ncells": 8271,
+  "ok": true,
+  "maxrel": 0.0
+ }
+}

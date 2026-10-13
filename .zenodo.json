@@ -1,0 +1,8 @@
+{
+  "title": "Kenti Limnología: free, offline, trilingual software for freshwater community data",
+  "upload_type": "software",
+  "creators": [{"name": "Flores, Carlos María", "affiliation": "Atoj S.A.S., Tafí Viejo, Tucumán, Argentina"}],
+  "license": "MIT",
+  "keywords": ["limnology", "diversity indices", "biotic integrity", "reproducible analysis", "open-source"],
+  "language": "eng"
+}

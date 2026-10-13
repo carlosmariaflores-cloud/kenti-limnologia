@@ -1,0 +1,109 @@
+{
+ "NOMBRE": "Kenti Fitobentos",
+ "DESCRIPCION": "tabla de taxones de fitobentos, diversidad alfa y beta, correlación y PCA por sitio, con exportación a Excel.",
+ "ADJ": "fitobentos",
+ "CAMPANIA": "Fitobentos · diversidad",
+ "AVATAR": "FB",
+ "USUARIO": "Fitobentos",
+ "TABLA_INTRO": "Una planilla: la primera fila son los sitios y la primera columna, los taxones. Una celda vacía cuenta como cero. Los fisicoquímicos (opcionales) se cargan en la pestaña de diversidad alfa.",
+ "VERSION": "0.6.1",
+ "GROUP": {
+  "key": "kenti-fitobentos-v1",
+  "appId": "kenti-fitobentos",
+  "prefix": "FI-",
+  "estadoLabel": "Estado del sitio para fitobentos",
+  "simpleTable": true,
+  "archivoRespaldo": "datos-fitobentos.respaldo.json",
+  "tablaIntro": "Una planilla: la primera fila son los sitios y la primera columna, los taxones. Una celda vacía cuenta como cero. Los fisicoquímicos (opcionales) se cargan en la pestaña de diversidad alfa.",
+  "fito": false,
+  "taxonline": false,
+  "noConjunto": true,
+  "viewNote": "",
+  "conjuntoLabel": "Fitobentos",
+  "conjuntoPl": "fitobentos",
+  "subgroups": [
+   {
+    "id": "fitobentos",
+    "label": "Fitobentos",
+    "pl": "fitobentos",
+    "one": "Taxón",
+    "match": "fitob|phytob|bent|perif",
+    "indices": [],
+    "attrs": []
+   }
+  ],
+  "alphaIndices": [
+   "S",
+   "N",
+   "H",
+   "Simp",
+   "D",
+   "Mg",
+   "J"
+  ],
+  "fq": [
+   {
+    "id": "ph",
+    "name": "pH",
+    "units": [
+     ""
+    ]
+   },
+   {
+    "id": "temp",
+    "name": "Temperatura",
+    "units": [
+     "°C"
+    ]
+   },
+   {
+    "id": "cond",
+    "name": "Conductividad",
+    "units": [
+     "µS/cm",
+     "mS/cm"
+    ]
+   },
+   {
+    "id": "od",
+    "name": "OD",
+    "units": [
+     "mg/L",
+     "% sat."
+    ]
+   },
+   {
+    "id": "tds",
+    "name": "TDS",
+    "units": [
+     "mg/L",
+     "g/L"
+    ]
+   }
+  ],
+  "units": [
+   {
+    "id": "conteo",
+    "label": "Conteo (células, individuos o valvas)",
+    "plural": "conteo"
+   },
+   {
+    "id": "cel_cm2",
+    "label": "Densidad (cél/cm²)",
+    "plural": "cél/cm²",
+    "nLabel": "Densidad total (N)",
+    "nShort": "Densidad",
+    "note": "Con densidades, N es la suma de las densidades y las proporciones se calculan sobre esa suma. Margalef se pensó para conteos: con densidad sirve sólo para comparar sitios entre sí."
+   }
+  ],
+  "sites": [],
+  "species": [],
+  "grupoPl": "fitobentos",
+  "nombre": "Kenti Fitobentos",
+  "slug": "Kenti-Fitobentos",
+  "taxLabel": "Taxón",
+  "taxOne": "taxón",
+  "taxPl": "taxones",
+  "descartarCodigo": true
+ }
+}

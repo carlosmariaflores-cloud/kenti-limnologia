@@ -1,0 +1,9 @@
+{"k": 0, "n_num": 1436, "ind": 271, "errs": [], "idiomas": {"en": {"ok": true, "max_dif_rel": 0.0, "errs": [], "hojas": ["1 Data table", "2 Alpha indices", "3 Alpha charts", "4 Beta diversity", "5 Correlation and PCA", "6 Fish · CPUE and sizes", "7 IBI"]}, "pt": {"ok": true, "max_dif_rel": 0.0, "errs": [], "hojas": ["1 Tabela de dados", "2 Índices alfa", "3 Gráficos alfa", "4 Diversidade beta", "5 Correlação e PCA", "6 Peixes · CPUE e tamanhos", "7 IBI"]}}}
+Traceback (most recent call last):
+  File "/tmp/claude-0/val/val_peces_lang.py", line 61, in <module>
+    v, t, e = exportar(lang, C, esf, tr, ind)
+              ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/claude-0/val/val_peces_lang.py", line 46, in exportar
+    wb = openpyxl.load_workbook(f[0], data_only=True)
+                                ~^^^
+IndexError: list index out of range

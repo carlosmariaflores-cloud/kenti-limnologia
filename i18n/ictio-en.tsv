@@ -1,0 +1,648 @@
+# Diccionario complementario (módulo Peces / ictiología): español → inglés. Una entrada por línea: texto en español, TAB, texto traducido.
+# Se suma a i18n/en.tsv y i18n/pt.tsv. Mismos marcadores {0}, {#0}, {t0} que los demás diccionarios; el orden de las claves es el mismo en ictio-en.tsv e ictio-pt.tsv.
+Kenti Ictiológico	Kenti Ichthyology
+Kenti Ictiológico: tabla de peces, diversidad alfa, diversidad beta, correlación y PCA por sitio, con exportación a Excel.	Kenti Ichthyology: fish table, alpha diversity, beta diversity, correlation and PCA by site, with Excel export.
+ictiológico	ichthyology
+Monitoreo ambiental Salar de Olaroz · Campaña 2, junio 2026	Environmental monitoring Salar de Olaroz · Campaign 2, June 2026
+Ictiología	Ichthyology
+Índices	Indices
+Tallas y condición	Sizes and condition
+Individuos por especie y sitio. Una celda vacía en un sitio relevado cuenta como cero; los sitios no relevados o no aplicables quedan como NA y no entran en los análisis.	Individuals per species and site. An empty cell at a surveyed site counts as zero; sites that were not surveyed or do not apply are left as NA and are not included in the analyses.
+Agregar especie	Add species
+peces	fish
+Esfuerzo de muestreo por sitio	Sampling effort by site
+Un valor por sitio, en la unidad que elijas. Con él Kenti calcula la CPUE (captura ÷ esfuerzo) por sitio y por especie.	One value per site, in the unit you choose. With it Kenti calculates the CPUE (catch ÷ effort) by site and by species.
+horas-red, m², minutos…	net-hours, m², minutes…
+Vaciar esfuerzo	Clear effort
+Tallas, peso y condición	Sizes, weight and condition
+Una fila por pez: sitio, especie, longitud y peso (sexo y anomalías, opcionales). Con eso Kenti calcula la relación longitud–peso, el factor de condición y la estructura de tallas. Lo que falte sólo deja sin calcular el resultado que lo necesita.	One row per fish: site, species, length and weight (sex and anomalies, optional). From these Kenti calculates the length–weight relationship, the condition factor and the size structure. Anything missing only leaves the result that needs it uncalculated.
+Longitud	Length
+total (LT)	total (TL)
+estándar (LS)	standard (SL)
+furcal (LF)	fork (FL)
+Cargar de Excel	Load from Excel
+Armar la tabla de la pestaña 1 con estos individuos	Build the table in tab 1 from these individuals
+Cuenta los individuos (o suma los pesos) por especie y sitio y arma con eso la tabla de la pestaña 1	Counts the individuals (or adds up the weights) by species and site and builds the table in tab 1 from them
+Planilla de individuos	Individuals sheet
+Pega desde Excel en la celda A1 (columnas en cualquier orden: Sitio, Especie, Longitud, Peso, Sexo, Anomalías) o escribe fila por fila. El peso va en gramos.	Paste from Excel into cell A1 (columns in any order: Site, Species, Length, Weight, Sex, Anomalies) or type row by row. Weight is in grams.
+Relación longitud–peso por especie	Length–weight relationship by species
+, ajustada por mínimos cuadrados sobre log₁₀ W y log₁₀ L con todos los individuos de la especie (todos los sitios). Hacen falta al menos 5 peces con longitud y peso.	, fitted by least squares on log₁₀ W and log₁₀ L with all the individuals of the species (all sites). At least 5 fish with length and weight are needed.
+Dispersión log–log de	Log–log scatter plot of
+Factor de condición de Fulton por sitio (media ± desvío)	Fulton's condition factor by site (mean ± SD)
+b ≈ 3: crecimiento isométrico; b > 3: alometría positiva (los grandes son más robustos); b < 3: alometría negativa. La prueba compara b con 3 (t de Student, n − 2 grados de libertad). Fulton: K = 100·W/L³ (W en g, L en cm). Condición relativa de Le Cren: Kn = W / (a·L	b ≈ 3: isometric growth; b > 3: positive allometry (larger fish are more robust); b < 3: negative allometry. The test compares b with 3 (Student's t, n − 2 degrees of freedom). Fulton: K = 100·W/L³ (W in g, L in cm). Le Cren's relative condition: Kn = W / (a·L
+), con la curva de la propia especie; Kn ≈ 1 es la condición media de la especie en la campaña.	), using the species' own curve; Kn ≈ 1 is the mean condition of the species in the campaign.
+Condición por especie y sitio	Condition by species and site
+Media del factor de condición de Fulton (K) y de la condición relativa (Kn) con su n. Compara sitios dentro de una misma especie, nunca entre especies.	Mean Fulton's condition factor (K) and relative condition (Kn) with their n. Compare sites within the same species, never between species.
+Estructura de tallas	Size structure
+Histogramas de frecuencia de longitud por sitio para la especie elegida. La línea punteada es la talla de primera madurez, si la cargas.	Length-frequency histograms by site for the selected species. The dotted line is the size at first maturity, if you enter it.
+automática	automatic
+Talla de madurez	Size at maturity
+Anomalías externas y sexos	External anomalies and sex
+Porcentaje de individuos con anomalías (deformidades, erosión de aletas, lesiones, tumores: DELT) por sitio, y proporción de sexos por especie. El porcentaje de anomalías entra como métrica del IBI.	Percentage of individuals with anomalies (deformities, fin erosion, lesions, tumors: DELT) by site, and sex ratio by species. The percentage of anomalies enters the IBI as a metric.
+Ricker, W. E. 1975. Computation and interpretation of biological statistics of fish populations. Bulletin of the Fisheries Research Board of Canada 191. (CPUE y relación longitud–peso.)	Ricker, W. E. 1975. Computation and interpretation of biological statistics of fish populations. Bulletin of the Fisheries Research Board of Canada 191. (CPUE and length–weight relationship.)
+Índice de Integridad Biótica (IBI) de peces	Index of Biotic Integrity (IBI) for fish
+Índice multimétrico de Karr (1981): cada métrica de la comunidad se puntúa 5, 3 o 1 según se parezca a lo esperado en un sitio sin alteración, y el IBI es la suma. No existe una versión calibrada para el NOA, así que las métricas que entran y sus límites los define el profesional para su cuenca; Kenti puntúa, suma, clasifica y deja escrito qué se usó.	Karr's (1981) multimetric index: each community metric is scored 5, 3 or 1 according to how closely it resembles what is expected at an undisturbed site, and the IBI is the sum. There is no calibrated version for the NOA, so the metrics included and their thresholds are defined by the practitioner for their basin; Kenti scores, sums, classifies and records what was used.
+Rasgos por especie	Traits by species
+Las especies salen de la tabla de la pestaña 1. Completa lo que sepas: cada rasgo habilita sus métricas. Una especie sin rasgo queda fuera de esa métrica (se informa), no bloquea el cálculo.	The species come from the table in tab 1. Fill in what you know: each trait enables its metrics. A species with no trait is left out of that metric (this is reported) and does not block the calculation.
+Vaciar rasgos	Clear traits
+Origen: nativa o exótica (introducida, como	Origin: native or exotic (introduced, such as
+). Tolerancia a la degradación del hábitat y la calidad del agua: intolerante, intermedia o tolerante. Gremio trófico del adulto: omnívoro, insectívoro/invertívoro, piscívoro, herbívoro/detritívoro. Hábitat: bentónica o de columna de agua. También se puede pegar una tabla con esas columnas.	). Tolerance to habitat degradation and water quality: intolerant, intermediate or tolerant. Trophic guild of the adult: omnivore, insectivore/invertivore, piscivore, herbivore/detritivore. Habitat: benthic or water column. You can also paste a table with these columns.
+Métricas y límites de puntaje	Metrics and scoring thresholds
+Marca las métricas que entran y escribe los límites: con ↑ la métrica sube con la integridad (≥ límite 5 puntúa 5, ≥ límite 3 puntúa 3, el resto 1); con ↓ baja (≤ límite 5 puntúa 5, ≤ límite 3 puntúa 3, el resto 1).	Check the metrics to include and enter the thresholds: with ↑ the metric rises with integrity (≥ threshold 5 scores 5, ≥ threshold 3 scores 3, otherwise 1); with ↓ it falls (≤ threshold 5 scores 5, ≤ threshold 3 scores 3, otherwise 1).
+Proponer límites	Suggest thresholds
+Trisección del máximo observado para las métricas de riqueza y abundancia (Karr et al. 1986) y los cortes fijos de Karr (1981) para las proporciones	Trisection of the observed maximum for the richness and abundance metrics (Karr et al. 1986) and Karr's (1981) fixed cut-offs for the proportions
+Como el número de métricas lo eliges tú, el IBI se expresa también como porcentaje del máximo posible (5 puntos por métrica) y la clase sale de ese porcentaje. Los cortes se pueden cambiar.	Because you choose the number of metrics, the IBI is also expressed as a percentage of the maximum possible (5 points per metric), and the class is taken from that percentage. The cut-offs can be changed.
+Karr, J. R., K. D. Fausch, P. L. Angermeier, P. R. Yant e I. J. Schlosser. 1986. Assessing biological integrity in running waters: a method and its rationale. Illinois Natural History Survey, Special Publication 5. 28 pp.	Karr, J. R., K. D. Fausch, P. L. Angermeier, P. R. Yant and I. J. Schlosser. 1986. Assessing biological integrity in running waters: a method and its rationale. Illinois Natural History Survey, Special Publication 5. 28 pp.
+Escala orientativa de Kenti, proporcional a las cinco clases de Karr (1981), que con 12 métricas van de 12 a 60 puntos.	Kenti's indicative scale, proportional to Karr's (1981) five classes, which with 12 metrics range from 12 to 60 points.
+Un valor justo en el corte va a la clase superior.	A value exactly at a cut-off goes to the higher class.
+Si tu cuenca tiene una versión regional del IBI con sus propias clases, úsala y declárala en el informe.	If your basin has a regional version of the IBI with its own classes, use it and state it in the report.
+Estado del sitio para peces	Site status for fish
+Una planilla: la primera fila son los sitios y la primera columna, las especies. Los valores son individuos, captura por unidad de esfuerzo o biomasa, según «Medida»; una celda vacía cuenta como cero. Los fisicoquímicos (opcionales) se cargan en la pestaña de diversidad alfa; el esfuerzo de muestreo (opcional), debajo de esta tabla.	A single spreadsheet: the first row holds the sites and the first column the species. Values are individuals, catch per unit of effort or biomass, according to «Measure»; an empty cell counts as zero. Physicochemical data (optional) are entered in the alpha diversity tab; sampling effort (optional), below this table.
+Red de espera	Gillnet
+Red de arrastre	Seine net
+Pesca eléctrica	Electrofishing
+Atarraya	Cast net
+Trampa	Trap
+Observación directa	Direct observation
+red de espera	gillnet
+red de arrastre	seine net
+pesca eléctrica	electrofishing
+atarraya	cast net
+trampa	trap
+observación directa	direct observation
+Arte de muestreo	Sampling gear
+Individuos (captura)	Individuals (catch)
+CPUE (individuos por unidad de esfuerzo)	CPUE (individuals per unit of effort)
+CPUE total (N)	Total CPUE (N)
+Con CPUE, N es la suma de las capturas por unidad de esfuerzo y las proporciones se calculan sobre esa suma. Margalef se pensó para conteos de individuos: con CPUE sirve sólo para comparar sitios entre sí. Anota en el informe cuál es la unidad de esfuerzo (horas de red, metros de arrastre, minutos de pesca eléctrica).	With CPUE, N is the sum of the catches per unit of effort and the proportions are calculated on that sum. Margalef was designed for counts of individuals: with CPUE it is only useful for comparing sites with one another. Note in the report what the unit of effort is (net-hours, metres of seine haul, minutes of electrofishing).
+Biomasa (g)	Biomass (g)
+Biomasa total (N)	Total biomass (N)
+Biomasa	Biomass
+Con biomasa, N es la suma de los gramos y las proporciones se calculan sobre esa suma: Shannon y Simpson pasan a medir cómo se reparte la biomasa entre especies. Margalef y la comparación con la riqueza pierden sentido con biomasa; úsalos con cuidado.	With biomass, N is the sum of the grams and the proportions are calculated on that sum: Shannon and Simpson come to measure how biomass is distributed among species. Margalef and the comparison with richness lose their meaning with biomass; use them with care.
+biomasa	biomass
+ind/esfuerzo	ind/effort
+gramos	grams
+individuos por {0}	individuals per {0}
+ind/esfuerzo por {0}	ind/effort per {0}
+gramos por {0}	grams per {0}
+Unidad de esfuerzo	Effort unit
+unidad de esfuerzo	unit of effort
+CPUE ({0} por {1})	CPUE ({0} per {1})
+Primero carga la tabla de {0}: los sitios salen de ahí.	First load the {0} table: the sites come from there.
+Esfuerzo ({0})	Effort ({0})
+Esfuerzo	Effort
+Esfuerzo en {0}	Effort at {0}
+CPUE calculada en {#0} de {#1} sitios.	CPUE calculated for {0} of {1} sites.
+Dividir por el esfuerzo no cambia Shannon, Simpson ni Pielou (son proporciones dentro del sitio): cambia la comparación de abundancias entre sitios, Margalef y Bray-Curtis.	Dividing by effort does not change Shannon, Simpson or Pielou (they are proportions within the site): it changes the comparison of abundances between sites, Margalef and Bray-Curtis.
+La CPUE por sitio queda disponible en las pestañas 2 y 4 y en el Excel.	CPUE by site is available in tabs 2 and 4 and in the Excel file.
+Escribe el esfuerzo de cada sitio o pega una columna de valores.	Enter the effort for each site or paste a column of values.
+Si el esfuerzo fue distinto entre sitios, la CPUE es la forma de compararlos.	If effort differed between sites, CPUE is the way to compare them.
+No es un número mayor que cero	Not a number greater than zero
+Se pegaron {#0} valores de esfuerzo	{0} effort values pasted
+Se vació el esfuerzo	Effort cleared
+Peso (g)	Weight (g)
+Sexo	Sex
+Anomalías	Anomalies
+Celda A1 de individuos	Cell A1 of individuals
+Haz clic aquí y pega tu planilla de individuos (Ctrl+V)	Click here and paste your individuals sheet (Ctrl+V)
+Longitud ({0})	Length ({0})
++ pez	+ fish
+Quitar la fila {#0}	Remove row {0}
+Sitio del pez {#0}	Site of fish {0}
+Especie del pez {#0}	Species of fish {0}
+Longitud del pez {#0}	Length of fish {0}
+Peso (g) del pez {#0}	Weight (g) of fish {0}
+Sexo del pez {#0}	Sex of fish {0}
+Anomalías del pez {#0}	Anomalies of fish {0}
+… y {0} filas más (se usan todas en los cálculos; para editarlas, corrige el Excel y vuelve a cargarlo)	… and {0} more rows (all are used in the calculations; to edit them, correct the Excel file and load it again)
+{#0} pez	{0} fish
+{#0} peces	{0} fish
+{#0} con longitud	{0} with length
+{#0} con peso	{0} with weight
+sin individuos	no individuals
+especies que no están en la tabla de la pestaña 1: {0} (se analizan igual; revisa la escritura)	species not in the table in tab 1: {0} (they are analysed anyway; check the spelling)
+No se reconocen las columnas: la primera fila tiene que decir Sitio, Especie, Longitud, Peso…	Columns not recognised: the first row must say Site, Species, Length, Weight…
+Se cargaron {#0} individuos	{0} individuals loaded
+sin columna de: {0}	no column for: {0}
+Se vació la planilla de individuos	Individuals sheet cleared
+No hay individuos con especie	There are no individuals with a species
+Tabla de la pestaña 1 armada con {#0} individuos ({1} por especie y sitio)	Tab 1 table built from {0} individuals ({1} per species and site)
+biomasa en g	biomass in g
+{#0} sitios nuevos	{0} new sites
+{#0} especies nuevas	{0} new species
+{#0} filas sin {1} no se contaron	{0} rows without {1} were not counted
+peso	weight
+sitio	site
+pez	fish
+sólo {#0} {1} con longitud y peso (hacen falta 5)	only {0} {1} with length and weight (5 are needed)
+sin peces con longitud y peso	no fish with length and weight
+todos los peces tienen la misma longitud	all fish have the same length
+alometría positiva	positive allometry
+alometría negativa	negative allometry
+isometría (b no difiere de 3)	isometry (b does not differ from 3)
+Todavía no hay individuos cargados.	No individuals loaded yet.
+Peces	Fish
+Coeficiente	Coefficient
+Exponente	Exponent
+IC 95 %	95% CI
+de b	of b
+Ajuste	Fit
+Rango (cm)	Range (cm)
+Lectura	Interpretation
+No está en la tabla de la pestaña 1	Not in the table in tab 1
+No se ajusta: {0}.	Cannot be fitted: {0}.
+No se ajusta: {0}	Cannot be fitted: {0}
+no se ajusta: {0}	cannot be fitted: {0}
+Sin relación ajustada.	No fitted relationship.
+Sin datos de condición.	No condition data.
+Hacen falta peces con longitud y peso.	Fish with length and weight are needed.
+media (n)	mean (n)
+Todos	All
+Con anomalías	With anomalies
+Machos	Males
+Hembras	Females
+Juveniles / indet.	Juveniles / undetermined
+Sin dato	No data
+Proporción	Ratio
+sólo machos	males only
+Hacen falta peces con longitud.	Fish with length are needed.
+Todos los sitios	All sites
+{#0} % bajo la talla de madurez	{0}% below the size at maturity
+Clase de talla ({0})	Size class ({0})
+n · media ± desvío · mín–máx	n · mean ± SD · min–max
+Histograma de tallas	Size histogram
+Relación longitud–peso de {0}	Length–weight relationship of {0}
+Longitud (cm, escala log)	Length (cm, log scale)
+Peso (g, escala log)	Weight (g, log scale)
+Sin peces con longitud y peso por sitio.	No fish with length and weight by site.
+Factor de condición por sitio de {0}	Condition factor by site of {0}
+línea punteada: media de todos los sitios {#0}	dotted line: mean of all sites {0}
+línea punteada: media de todos los sitios	dotted line: mean of all sites
+madurez	maturity
+IC95 inf	95% CI low
+IC95 sup	95% CI up
+IC95 inf.	95% CI low
+IC95 sup.	95% CI up
+EE de b	SE of b
+L mín (cm)	L min (cm)
+L máx (cm)	L max (cm)
+Índice	Index
+{t0} media	{0} mean
+{t0} desvío	{0} SD
+desvío	SD
+K de Fulton	Fulton's K
+Kn de Le Cren	Le Cren's Kn
+LT	TL
+LS	SL
+LF	FL
+Origen	Origin
+Nativa	Native
+Exótica	Exotic
+Tolerancia	Tolerance
+Intolerante	Intolerant
+Intermedia	Intermediate
+Tolerante	Tolerant
+Gremio trófico	Trophic guild
+Omnívoro	Omnivore
+Insectívoro / invertívoro	Insectivore / invertivore
+Piscívoro	Piscivore
+Herbívoro / detritívoro	Herbivore / detritivore
+Hábitat	Habitat
+Bentónica	Benthic
+Columna de agua	Water column
+origen	origin
+tolerancia	tolerance
+gremio trófico	trophic guild
+hábitat	habitat
+Primero carga la tabla de {0} en la pestaña 1.	First load the {0} table in tab 1.
+Origen de {0}	Origin of {0}
+Tolerancia de {0}	Tolerance of {0}
+Gremio trófico de {0}	Trophic guild of {0}
+Hábitat de {0}	Habitat of {0}
+Hacen falta una fila de encabezados y al menos una especie.	A header row and at least one species are needed.
+No se reconocen columnas de rasgos: la primera fila tiene que decir Origen, Tolerancia, Gremio trófico o Hábitat.	Trait columns not recognised: the first row must say Origin, Tolerance, Trophic guild or Habitat.
+Se vaciaron los rasgos	Traits cleared
+Límites propuestos para {#0} métricas: revísalos y ajústalos a tu cuenca	Thresholds suggested for {0} metrics: review them and adjust them to your basin
+No hay métricas con datos para proponer límites	There are no metrics with data to suggest thresholds
+Se quitaron los límites: el IBI no se calcula hasta cargar otros	Thresholds removed: the IBI is not calculated until others are entered
+Quitar límites	Remove thresholds
+Riqueza total de especies	Total species richness
+Riqueza de especies nativas	Native species richness
+Riqueza de especies intolerantes	Intolerant species richness
+Riqueza de especies bentónicas	Benthic species richness
+% de individuos de especies nativas	% of individuals of native species
+% de individuos de especies exóticas	% of individuals of exotic species
+% de individuos de especies tolerantes	% of individuals of tolerant species
+% de individuos omnívoros	% of omnivorous individuals
+% de individuos insectívoros / invertívoros	% of insectivorous / invertivorous individuals
+% de individuos piscívoros	% of piscivorous individuals
+Abundancia total (N o CPUE del sitio)	Total abundance (N or site CPUE)
+% de individuos con anomalías (DELT)	% of individuals with anomalies (DELT)
+% de individuos exóticos	% of exotic individuals
+% exót	% exot
+Propuesta: para riqueza y abundancia, trisección del máximo observado entre los sitios (≥ 2/3 del máximo puntúa 5, ≥ 1/3 puntúa 3), como en Karr et al. (1986); para las proporciones, los cortes de Karr (1981): omnívoros < 20 / 20–45 / > 45 %, insectívoros > 45 / 20–45 / < 20 %, piscívoros > 5 / 1–5 / < 1 %, anomalías < 2 / 2–5 / > 5 %; para tolerantes y exóticas, < 5 / 5–20 / > 20 % (propuesta de Kenti, sin cita).	Suggestion: for richness and abundance, trisection of the maximum observed among the sites (≥ 2/3 of the maximum scores 5, ≥ 1/3 scores 3), as in Karr et al. (1986); for the proportions, Karr's (1981) cut-offs: omnivores < 20 / 20–45 / > 45%, insectivores > 45 / 20–45 / < 20%, piscivores > 5 / 1–5 / < 1%, anomalies < 2 / 2–5 / > 5%; for tolerant and exotic species, < 5 / 5–20 / > 20% (Kenti's suggestion, no citation).
+Son un punto de partida, no una calibración.	They are a starting point, not a calibration.
+ninguna especie presente tiene {0}	no species present has {0}
+sin especies presentes	no species present
+sin individuos cargados en la pestaña 5	no individuals loaded in tab 5
+sin valor	no value
+sin datos	no data
+Integridad comparable a la de un sitio sin alteración	Integrity comparable to that of an undisturbed site
+Riqueza algo menor que la esperada; especies sensibles presentes	Somewhat lower richness than expected; sensitive species present
+Faltan especies intolerantes; dominan tolerantes y omnívoros	Intolerant species are missing; tolerant and omnivorous species dominate
+Pocas especies, mayoría tolerantes; peces en mal estado	Few species, mostly tolerant; fish in poor condition
+Casi sin peces, o sólo tolerantes con anomalías	Almost no fish, or only tolerant ones with anomalies
+Excelente	Excellent
+Pobre	Poor
+Muy pobre	Very poor
+Entra	Included
+Métrica	Metric
+Necesita	Needs
+Límite 5	Threshold 5
+Límite 3	Threshold 3
+Valores observados	Observed values
+Dirección: ↑ sube con la integridad, ↓ baja	Direction: ↑ rises with integrity, ↓ falls
+individuos (pestaña 5)	individuals (tab 5)
+Incluir {0}	Include {0}
+Límite para 5 puntos de {0}	Threshold for 5 points of {0}
+Límite para 3 puntos de {0}	Threshold for 3 points of {0}
+Sitio {#0}	Site {0}
+{#0} métricas entran en el IBI (máximo {#1} puntos).	{0} metrics are included in the IBI (maximum {1} points).
+Ninguna métrica tiene límites: el IBI no se calcula.	No metric has thresholds: the IBI is not calculated.
+Marca las métricas y escribe sus límites, o usa «Proponer límites».	Check the metrics and enter their thresholds, or use «Suggest thresholds».
+Marcadas pero sin los dos límites (no entran): {0}.	Checked but without both thresholds (not included): {0}.
+IBI (% del máximo)	IBI (% of maximum)
+Valor de cada métrica y, debajo, su puntaje (5 · 3 · 1).	Value of each metric and, below it, its score (5 · 3 · 1).
+IBI = suma de puntajes; % = IBI sobre el máximo posible con las métricas que pudieron calcularse en ese sitio.	IBI = sum of scores; % = IBI over the maximum possible with the metrics that could be calculated at that site.
+Las métricas se muestran igual aunque no haya límites; sin límites no hay puntaje ni IBI.	The metrics are shown anyway even if there are no thresholds; without thresholds there is no score or IBI.
+Sin límites: no puntúa	No thresholds: not scored
+Suma	Sum
+% máx.	% max.
+Calculada sobre el {#0} % de los individuos (el resto son especies sin {1})	Calculated on {0}% of the individuals (the rest are species without {1})
+de {#0} ({#1} de {#2} métricas)	of {0} ({1} of {2} metrics)
+especies sin rasgo que quedan fuera de alguna métrica: {0}	species without a trait that are left out of some metric: {0}
+IBI con {#0} de {#1} métricas: {2}	IBI with {0} of {1} metrics: {2}
+Máximo	Maximum
+Métricas	Metrics
+% del máximo	% of maximum
+Cargar la planilla de individuos	Load the individuals sheet
+Reemplaza la planilla de individuos.	Replaces the individuals sheet.
+Una fila por pez.	One row per fish.
+Primera fila: encabezados (Sitio, Especie, Longitud, Peso, Sexo, Anomalías, en cualquier orden; sobran las que no tengas).	First row: headers (Site, Species, Length, Weight, Sex, Anomalies, in any order; leave out any you do not have).
+Si el encabezado de longitud dice «mm» o «cm», se toma esa unidad.	If the length header says «mm» or «cm», that unit is used.
+El peso en gramos.	Weight in grams.
+Cargar individuos	Load individuals
+Cargar los rasgos por especie	Load the traits by species
+Agrega o corrige los rasgos de las especies que coincidan por nombre con la tabla de la pestaña 1.	Adds or corrects the traits of the species whose names match the table in tab 1.
+Primera fila: Especie y alguna de Origen, Tolerancia, Gremio trófico, Hábitat.	First row: Species and any of Origin, Tolerance, Trophic guild, Habitat.
+Valores: nativa/exótica; intolerante/intermedia/tolerante; omnívoro/insectívoro/piscívoro/herbívoro; bentónica/columna.	Values: native/exotic; intolerant/intermediate/tolerant; omnivore/insectivore/piscivore/herbivore; benthic/column.
+Cargar rasgos	Load traits
+Rasgos cargados: {#0} valores ({1})	Traits loaded: {0} values ({1})
+especies que no están en la tabla: {0}	species not in the table: {0}
+valores no reconocidos: {0}	unrecognised values: {0}
+6 Peces · CPUE y tallas	6 Fish · CPUE and sizes
+Esfuerzo y CPUE · relación longitud–peso · condición · tallas	Effort and CPUE · length–weight relationship · condition · sizes
+Esfuerzo de muestreo y CPUE por sitio	Sampling effort and CPUE by site
+no declarada	not declared
+Unidad de esfuerzo: {0}. CPUE = {1} del sitio ÷ esfuerzo. La CPUE por especie está más abajo.	Effort unit: {0}. CPUE = {1} of the site ÷ effort. CPUE by species is shown further down.
+Sin esfuerzo cargado: no se calculó la CPUE.	No effort entered: CPUE was not calculated.
+CPUE por especie y sitio	CPUE by species and site
+log₁₀ W = log₁₀ a + b · log₁₀ L, con L en cm y W en g, todos los sitios juntos; mínimo 5 peces.	log₁₀ W = log₁₀ a + b · log₁₀ L, with L in cm and W in g, all sites pooled; at least 5 fish.
+Longitud cargada: {0} en {1}.	Length entered: {0} in {1}.
+Intervalo de confianza del 95 % de b y prueba t de b = 3 (n − 2 g.l.).	95% confidence interval of b and t-test of b = 3 (n − 2 d.f.).
+Sin individuos cargados.	No individuals loaded.
+K de Fulton = 100·W/L³ (W en g, L en cm).	Fulton's K = 100·W/L³ (W in g, L in cm).
+Kn de Le Cren = W / (a·L^b) con la curva de la propia especie.	Le Cren's Kn = W / (a·L^b) using the species' own curve.
+Media, desvío y n por sitio.	Mean, SD and n by site.
+± desvío	± SD
+Sin peces con longitud y peso.	No fish with length and weight.
+Estructura de tallas ({0}, {1})	Size structure ({0}, {1})
+frecuencias por clase y sitio	frequencies by class and site
+talla de madurez {#0}	size at maturity {0}
+clase de {#0} {t1}	{0} {1} class
+Clase de talla	Size class
+Media	Mean
+% bajo la talla de madurez	% below the size at maturity
+Anomalías externas (DELT) por sitio	External anomalies (DELT) by site
+Longitud–peso	Length–weight
+Relación longitud–peso	Length–weight relationship
+Factor de condición de Fulton por sitio	Fulton's condition factor by site
+Media ± desvío (n)	Mean ± SD (n)
+Condición por sitio	Condition by site
+Índice multimétrico de Karr (1981): cada métrica puntúa 5, 3 o 1 según los límites definidos por el profesional para la cuenca; el IBI es la suma.	Karr's (1981) multimetric index: each metric scores 5, 3 or 1 according to the thresholds defined by the practitioner for the basin; the IBI is the sum.
+Sin versión calibrada para el NOA: los límites usados se declaran abajo.	No calibrated version for the NOA: the thresholds used are stated below.
+Métricas que entran: {0} (máximo {#1} puntos). % = IBI sobre el máximo posible con las métricas calculables en cada sitio.	Metrics included: {0} (maximum {1} points). % = IBI over the maximum possible with the metrics that can be calculated at each site.
+No había límites cargados: las métricas se informan sin puntaje y no hay IBI.	No thresholds had been entered: the metrics are reported without scores and there is no IBI.
+Avisos por sitio	Notices by site
+especies sin rasgo, fuera de alguna métrica: {0}	species without a trait, outside some metric: {0}
+IBI con {#0} de {#1} métricas; sin calcular: {2}	IBI with {0} of {1} metrics; not calculated: {2}
+{t0} calculada sobre el {#1} % de los individuos	{0} calculated on {1}% of the individuals
+Todas las métricas se calcularon con todas las especies presentes.	All metrics were calculated with all the species present.
+Métricas y límites usados	Metrics and thresholds used
+Dirección	Direction
+sube con la integridad	rises with integrity
+baja con la integridad	falls with integrity
+sí	yes
+no	no
+individuos (anomalías)	individuals (anomalies)
+Clases (porcentaje del máximo posible)	Classes (percentage of the maximum possible)
+IBI por sitio	IBI by site
+Porcentaje del máximo posible	Percentage of the maximum possible
+{#0} métricas	{0} metrics
+color según la clase	colour according to class
+Código del sitio	Site code
+Nombre del sitio {0}	Name of site {0}
+Estado de {0}	Status of {0}
+Nombre científico	Scientific name
+Clic en A1 y Ctrl+V pega la tabla entera · Enter o flechas para moverte · escribe en «+ sitio» o «+ especie» para agregar	Click A1 and Ctrl+V pastes the whole table · Enter or arrow keys to move · type in «+ site» or «+ species» to add
+especies. La celda de arriba a la izquierda puede tener cualquier cosa o estar vacía. Las filas y columnas de Total, Familia u Orden se ignoran;	species. The top-left cell may hold anything or be empty. Total, Family and Order rows and columns are ignored;
+o	or
+{0} por sitio	{0} by site
+Cocientes de Nygaard	Nygaard quotients
+fitoplancton	phytoplankton
+Cinco cocientes entre grupos de algas, calculados con el	Five quotients between groups of algae, calculated with the
+número de taxones	number of taxa
+de cada grupo presente en el sitio (no con la abundancia). El grupo de cada taxón se carga en la columna «Grupo» de la pestaña 1.	of each group present at the site (not with abundance). The group of each taxon is entered in the «Group» column of tab 1.
+Cuándo y cómo se usan	When and how they are used
+Orientan sobre el estado trófico de lagos, lagunas y embalses a partir de la composición del fitoplancton.	They give guidance on the trophic state of lakes, ponds and reservoirs from the composition of the phytoplankton.
+Idea	Concept
+La hipótesis de Nygaard	Nygaard's hypothesis
+Las	The
+desmidiáceas	desmids
+y las	and the
+diatomeas pennadas	pennate diatoms
+predominan en aguas pobres en nutrientes; las	predominate in nutrient-poor waters; the
+cianobacterias	cyanobacteria
+, las	, the
+diatomeas centrales	centric diatoms
+euglenofitas	euglenophytes
+, en aguas ricas. Cuanto más pesan los segundos frente a los primeros, más alto el cociente.	, in nutrient-rich waters. The more the latter weigh against the former, the higher the quotient.
+Cálculo	Calculation
+Los cinco cocientes	The five quotients
+Cianofíceo	Cyanophycean
+= Cianobacterias / Desmidiáceas	= Cyanobacteria / Desmids
+Clorofíceo	Chlorophycean
+= Chlorococcales / Desmidiáceas	= Chlorococcales / Desmids
+Diatomeas	Diatoms
+= Centrales / Pennadas	= Centric / Pennate
+Euglenofíceo	Euglenophycean
+= Euglenofitas / (Cianobacterias + Chlorococcales)	= Euglenophytes / (Cyanobacteria + Chlorococcales)
+Compuesto	Compound
+= (Cianobacterias + Chlorococcales + Centrales + Euglenofitas) / Desmidiáceas	= (Cyanobacteria + Chlorococcales + Centric + Euglenophytes) / Desmids
+Cada término es el número de taxones del grupo presentes en el sitio.	Each term is the number of taxa of the group present at the site.
+Cuidado	Caution
+Límites	Limits
+Sin desmidiáceas	Without desmids
+(frecuente en lagunas salinas de la Puna) no se calculan el cianofíceo, el clorofíceo ni el compuesto: salen «s/c» y se informa.	(common in saline lagoons of the Puna) the cyanophycean, chlorophycean and compound quotients are not calculated: they show «n/c» and this is reported.
+Los rangos de oligotrofia y eutrofia de los cocientes simples se superponen y varían entre autores: úsalos junto con los nutrientes y la clorofila, no solos.	The oligotrophy and eutrophy ranges of the simple quotients overlap and vary between authors: use them together with nutrients and chlorophyll, not on their own.
+Hace falta identificar al menos a género para asignar el grupo.	Taxa must be identified at least to genus to assign the group.
+Pasa el cursor sobre un cociente para ver su lectura según los rangos de referencia.	Hover over a quotient to see its interpretation according to the reference ranges.
+Escala del cociente compuesto	Compound quotient scale
+Rangos de referencia y citas	Reference ranges and citations
+IBD · Índice Biológico de Diatomeas	IBD · Biological Diatom Index
+fitobentos	phytobenthos
+Calidad biológica del agua a partir de las diatomeas bentónicas, sobre 20. El cruce con la tabla va por el	Biological water quality from benthic diatoms, out of 20. Matching with the table is done through the
+código Omnidia	Omnidia code
+de 4 letras, que se carga en la columna «Código Omnidia» de la pestaña 1.	of 4 letters, which is entered in the «Omnidia code» column of tab 1.
+Cuándo y cómo se usa	When and how it is used
+Norma NF T90-354 con los perfiles de la macro oficial de 2008.	Standard NF T90-354 with the profiles of the official 2008 macro.
+Cuándo	When
+Diatomeas bentónicas	Benthic diatoms
+Ríos y arroyos, con diatomeas raspadas de sustratos duros y un conteo de unas 400 valvas por muestra. Con la tabla de conteos de valvas por taxón y sitio.	Rivers and streams, with diatoms scraped from hard substrates and a count of about 400 valves per sample. With the table of valve counts by taxon and site.
+Perfiles ecológicos	Ecological profiles
+Cada taxón tiene una probabilidad de aparecer en cada una de 7 clases de calidad (P1 a P7) y un valor indicador (V). Con la abundancia relativa en ‰ (A):	Each taxon has a probability of occurring in each of 7 quality classes (P1 to P7) and an indicator value (V). With the relative abundance in ‰ (A):
+= Σ i·F(i), de 1 a 7 ·	= Σ i·F(i), from 1 to 7 ·
+= 4,75·B − 8,5, acotado entre 1 y 20.	= 4.75·B − 8.5, bounded between 1 and 20.
+Entran los taxones con código en la tabla y abundancia igual o mayor que el umbral.	Taxa with a code in the table and an abundance equal to or above the threshold are included.
+La tabla es europea (2008): taxones andinos o con nomenclatura nueva pueden no estar. Kenti informa, por sitio, qué parte del conteo entra en el cálculo; si es poca, el IBD representa poco de la muestra.	The table is European (2008): Andean taxa or taxa with new nomenclature may be missing. Kenti reports, by site, what part of the count enters the calculation; if it is small, the IBD represents little of the sample.
+Kenti no cruza por nombre: propone códigos cuando el nombre coincide exacto con la tabla, y tú decides si los usas.	Kenti does not match by name: it suggests codes when the name exactly matches the table, and you decide whether to use them.
+Tabla del IBD	IBD table
+Se carga desde Excel o CSV y queda guardada con tus datos. Sin tabla, el IBD no se calcula.	It is loaded from Excel or CSV and stays saved with your data. Without a table, the IBD is not calculated.
+Abundancia mínima por taxón (‰)	Minimum abundance per taxon (‰)
+Por defecto 1 ‰, el umbral de la macro de 2008 con la que se verificó el cálculo.	Default 1 ‰, the threshold of the 2008 macro against which the calculation was verified.
+Queda anotado en el Excel.	It is recorded in the Excel file.
+Completar esos códigos	Complete those codes
+B es el promedio ponderado de las 7 clases; el IBD lo lleva a una nota sobre 20.	B is the weighted mean of the 7 classes; the IBD converts it to a score out of 20.
+Clases de calidad del IBD	IBD quality classes
+p. ej. 74	e.g. 74
+especies. La celda A1 puede tener cualquier cosa o estar vacía.	species. Cell A1 may hold anything or be empty.
+Escala de clases: Cammaerts, R., D. Cammaerts, M. Riboux y R. Vargas (2008), citada en Leaño Sanabria, S. y M. Pérez Barriga. 2020. Acta Nova 9 (4): 569-591.	Class scale: Cammaerts, R., D. Cammaerts, M. Riboux and R. Vargas (2008), cited in Leaño Sanabria, S. and M. Pérez Barriga. 2020. Acta Nova 9 (4): 569-591.
+Domínguez y Fernández (1998) definen el ASPT' pero no publican rangos de interpretación para el NOA.	Domínguez and Fernández (1998) define the ASPT' but do not publish interpretation ranges for the NOA.
+Esta escala viene de otra región: úsala como referencia orientativa y cítala en el informe.	This scale comes from another region: use it as an indicative reference and cite it in the report.
+No hay rangos universales: los límites se calculan por cuenca.	There are no universal ranges: the limits are calculated for each basin.
+El límite Excelente/Bueno es el percentil 25 del ABI de los sitios de referencia de la cuenca; los otros límites son el 61 %, 36 % y 15 % de ese valor (ejemplos publicados: Guayllabamba, Ecuador, 96; Cañete, Perú, 74).	The Excellent/Good limit is the 25th percentile of the ABI of the basin's reference sites; the other limits are 61%, 36% and 15% of that value (published examples: Guayllabamba, Ecuador, 96; Cañete, Peru, 74).
+Agua de calidad no alterada	Water of unaltered quality
+No contaminada o de manera no perceptible	Not polluted or not perceptibly so
+Pésimo	Very bad
+Calidad excelente	Excellent quality
+Calidad moderada	Moderate quality
+Calidad pésima	Very bad quality
+rango {0}	range {0}
+Carga el valor de referencia de la cuenca en «Tablas de puntaje»	Enter the basin reference value in «Scoring tables»
+Color según la escala de Cammaerts et al. (2008), orientativa	Colour according to the scale of Cammaerts et al. (2008), indicative
+Límites: 100 %, 61 %, 36 % y 15 % del valor de referencia.	Limits: 100%, 61%, 36% and 15% of the reference value.
+Diatomeas centrales	Centric diatoms
+Diatomeas pennadas	Pennate diatoms
+Euglenofitas	Euglenophytes
+Otro	Other
+Cian.	Cyan.
+Indica si es una diatomea central o pennada: cada una va en un cociente distinto	Indicates whether it is a centric or pennate diatom: each goes into a different quotient
+Indica si es Chlorococcales, Desmidiáceas u Otro	Indicates whether it is Chlorococcales, Desmids or Other
+Grupo no reconocido: usa Cianobacterias, Chlorococcales, Desmidiáceas, Diatomeas centrales, Diatomeas pennadas, Euglenofitas u Otro	Group not recognised: use Cyanobacteria, Chlorococcales, Desmids, Centric diatoms, Pennate diatoms, Euglenophytes or Other
+Cianobacterias / Desmidiáceas	Cyanobacteria / Desmids
+sin desmidiáceas	without desmids
+Chlorococcales / Desmidiáceas	Chlorococcales / Desmids
+Centrales / Pennadas	Centric / Pennate
+sin diatomeas pennadas	without pennate diatoms
+Euglenofitas / (Cianobacterias + Chlorococcales)	Euglenophytes / (Cyanobacteria + Chlorococcales)
+sin cianobacterias ni Chlorococcales	without cyanobacteria or Chlorococcales
+(Cianobacterias + Chlorococcales + Centrales + Euglenofitas) / Desmidiáceas	(Cyanobacteria + Chlorococcales + Centric + Euglenophytes) / Desmids
+Nygaard (1949)	Nygaard (1949)
+Oligotrófico	Oligotrophic
+Menor que 1: aguas pobres en nutrientes	Less than 1: nutrient-poor waters
+Eutrófico	Eutrophic
+1 o más: aguas ricas en nutrientes (valores cercanos a 1 con desmidiáceas pueden indicar distrofia)	1 or more: nutrient-rich waters (values close to 1 with desmids may indicate dystrophy)
+Nygaard, G. 1949. Hydrobiological studies on some Danish ponds and lakes. Part II: The quotient hypothesis and some new or little known phytoplankton organisms. Det Kongelige Danske Videnskabernes Selskab, Biologiske Skrifter 7 (1): 1-293. Lectura aplicada en el NOA por Mirande, V. y B. C. Tracanna. 2005. Boletín de la Sociedad Argentina de Botánica 40 (3-4).	Nygaard, G. 1949. Hydrobiological studies on some Danish ponds and lakes. Part II: The quotient hypothesis and some new or little known phytoplankton organisms. Det Kongelige Danske Videnskabernes Selskab, Biologiske Skrifter 7 (1): 1-293. Applied reading in the NOA by Mirande, V. and B. C. Tracanna. 2005. Boletín de la Sociedad Argentina de Botánica 40 (3-4).
+Hamaidi-Chergui et al. (2014)	Hamaidi-Chergui et al. (2014)
+Menor que 2	Less than 2
+Mesotrófico	Mesotrophic
+Entre 2 y 6	Between 2 and 6
+Mayor que 6	Greater than 6
+Hamaidi-Chergui, F., M. B. Errahmani, M. S. Hamaidi, F. Benouaklil y H. Kais. 2014. Preliminary survey of phytoplankton of Lakhal Lake Dam (southeast of Algeria) by using Palmer and Nygaard's algal index. Lakes, Reservoirs and Ponds 8 (2): 122-136.	Hamaidi-Chergui, F., M. B. Errahmani, M. S. Hamaidi, F. Benouaklil and H. Kais. 2014. Preliminary survey of phytoplankton of Lakhal Lake Dam (southeast of Algeria) by using Palmer and Nygaard's algal index. Lakes, Reservoirs and Ponds 8 (2): 122-136.
+Rangos de los cuatro cocientes simples: Nygaard (1949), tal como los tabulan Hamaidi-Chergui et al. (2014).	Ranges of the four simple quotients: Nygaard (1949), as tabulated by Hamaidi-Chergui et al. (2014).
+Los rangos de oligotrofia y eutrofia se superponen y varían entre autores.	The oligotrophy and eutrophy ranges overlap and vary between authors.
+Superpuesto	Overlapping
+El valor cae en los dos rangos: no discrimina	The value falls in both ranges: it does not discriminate
+Dentro del rango oligotrófico ({0})	Within the oligotrophic range ({0})
+Dentro del	Within the
+Por encima del	Above the
+{0} rango eutrófico ({1})	{0} eutrophic range ({1})
+Fuera de rango	Out of range
+Fuera de los rangos de referencia	Outside the reference ranges
+Calidad biológica muy buena	Very good biological quality
+Calidad biológica buena	Good biological quality
+Calidad biológica aceptable (passable)	Acceptable biological quality (passable)
+Calidad biológica mala	Poor biological quality
+Calidad biológica muy mala	Very poor biological quality
+AFNOR. 2007. NF T90-354. Qualité de l'eau: détermination de l'Indice Biologique Diatomées (IBD). Perfiles ecológicos y valores indicadores de la macro oficial del IBD (octubre 2008). Descripción del método en Coste, M., S. Boutry, J. Tison-Rosebery y F. Delmas. 2009. Improvements of the Biological Diatom Index (BDI): description and efficiency of the new version (BDI-2006). Ecological Indicators 9: 621-650.	AFNOR. 2007. NF T90-354. Qualité de l'eau: détermination de l'Indice Biologique Diatomées (IBD). Ecological profiles and indicator values of the official IBD macro (October 2008). Description of the method in Coste, M., S. Boutry, J. Tison-Rosebery and F. Delmas. 2009. Improvements of the Biological Diatom Index (BDI): description and efficiency of the new version (BDI-2006). Ecological Indicators 9: 621-650.
+No se encontraron filas con código, 7 probabilidades que sumen 1 y valor indicador	No rows were found with a code, 7 probabilities that sum to 1, and an indicator value
+Tabla del IBD: {0} taxones cargados	IBD table: {0} taxa loaded
+Cociente compuesto de Nygaard	Nygaard compound quotient
+Taxones por grupo de Nygaard en cada sitio	Taxa per Nygaard group at each site
+Sin grupo reconocido	No recognised group
+Primero carga la tabla de fitoplancton en la pestaña 1.	First load the phytoplankton table in tab 1.
+No se calcula: {0}	Not calculated: {0}
+Ningún taxón tiene grupo todavía. Complétalo en la columna «Grupo» de la pestaña 1: sin grupos, los cocientes no se pueden calcular.	No taxon has a group yet. Fill it in the «Group» column of tab 1: without groups, the quotients cannot be calculated.
+grupo no reconocido	unrecognised group
+no se calcula: {0}	not calculated: {0}
+Los taxones sin grupo o con grupo no reconocido no entran en ningún cociente. «s/c»: sin calcular porque el denominador es cero.	Taxa with no group or with an unrecognised group are not included in any quotient. «s/c»: not calculated because the denominator is zero.
+Todos los taxones presentes tienen un grupo reconocido.	All the taxa present have a recognised group.
+Taxones por grupo	Taxa per group
+Número de taxones presentes de cada grupo de Nygaard	Number of taxa present in each Nygaard group
+Cociente compuesto por sitio	Compound quotient by site
+Sin cargar: el IBD no se calcula	Not loaded: the IBD is not calculated
+Tabla del IBD (código Omnidia, 7 perfiles y valor indicador)	IBD table (Omnidia code, 7 profiles and indicator value)
+código o nombre	code or name
+1 taxón sin código tiene el mismo nombre que un taxón de la tabla.	1 taxon without a code has the same name as a taxon in the table.
+{0} taxones sin código tienen el mismo nombre que un taxón de la tabla.	{0} taxa without a code have the same name as a taxon in the table.
+Primero carga la tabla de fitobentos en la pestaña 1.	First load the phytobenthos table in tab 1.
+Carga la tabla del IBD (arriba) para calcular el índice.	Load the IBD table (above) to calculate the index.
+Conteo	Count
+Con perfil	With profile
+Del conteo	Of the count
+sobre 20	out of 20
+Taxones con código de la tabla y abundancia sobre el umbral	Taxa with a code from the table and an abundance above the threshold
+Porcentaje del conteo que representan los taxones usados	Percentage of the count represented by the taxa used
+Promedio ponderado de las 7 clases	Weighted mean of the 7 classes
+⚠ bajo	⚠ low
+Menos de la mitad del conteo tiene perfil en la tabla: el IBD representa poco de la muestra	Less than half of the count has a profile in the table: the IBD represents little of the sample
+sin código	no code
+código que no está en la tabla	code not in the table
+bajo el umbral de {0} ‰: {1}	below the threshold of {0} ‰: {1}
+Estos taxones cuentan en el total del conteo (el ‰ de cada taxón se calcula sobre todo lo contado) pero no aportan perfil al IBD.	These taxa count towards the total of the count (the ‰ of each taxon is calculated on everything counted) but do not contribute a profile to the IBD.
+Todos los taxones presentes tienen código y perfil en la tabla.	All the taxa present have a code and a profile in the table.
+IBD por sitio	IBD by site
+Sobre 20 · color según la clase de calidad	Out of 20 · colour according to quality class
+Parte del conteo con perfil	Part of the count with a profile
+Porcentaje de las valvas contadas que entran en el cálculo	Percentage of the counted valves that enter the calculation
+Se muestran los primeros 60.	The first 60 are shown.
+Código	Code
+Denominación	Name
+Sin coincidencias.	No matches.
+Lectura aplicada	Applied interpretation
+según la escala elegida	according to the chosen scale
+Cociente	Quotient
+Fórmula (número de taxones)	Formula (number of taxa)
+Clases del IBD	IBD classes
+Límites de la norma NF T90-354. Un valor justo en el límite va a la clase superior.	Limits of standard NF T90-354. A value exactly at the limit goes to the higher class.
+Se completó 1 código	1 code was completed
+Se completaron {0} códigos	{0} codes were completed
+revísalo	review it
+revísalos	review them
+{0} por coincidencia exacta de nombre: {1} en la pestaña 1	{0} by exact name match: {1} in tab 1
+Cobertura (%)	Coverage (%)
+Cob	Cov
+Cobertura	Coverage
+Cob (%)	Cov (%)
+Cobertura (%): un valor por sitio, cargado en la pestaña de diversidad alfa. En la fila Total (γ) va el promedio de los sitios que la tienen.	Coverage (%): one value per site, entered in the alpha diversity tab. In the Total (γ) row, the mean of the sites that have it is shown.
+{#0} filas no válidas ({1})	{0} invalid rows ({1})
+{#0} códigos repetidos, se usó el primero	{0} repeated codes, the first one was used
+{#0} filas descartadas al cargar	{0} rows discarded on loading
+cianofíceo	cyanophycean
+clorofíceo	chlorophycean
+diatomeas	diatoms
+euglenofíceo	euglenophycean
+compuesto	compound
+Se completó 1 código por coincidencia exacta de nombre: revísalo en la pestaña 1	1 code was completed by exact name match: review it in tab 1
+Se completaron {#0} códigos por coincidencia exacta de nombre: revísalos en la pestaña 1	{0} codes were completed by exact name match: review them in tab 1
+bajo el umbral: {0}	below the threshold: {0}
+sin código: {0}	no code: {0}
+código que no está en la tabla: {0}	code not in the table: {0}
+sin grupo: {0}	no group: {0}
+grupo no reconocido: {0}	unrecognised group: {0}
+(la otra tabla y la tabla del IBD no cambian)	(the other table and the IBD table do not change)
+Cada una tiene su propia tabla.	Each one has its own table.
+Planilla de {0}: {#1} sitios. {2}	Sheet of {0}: {1} sites. {2}
+Planilla de {0}: {#1} sitios. Cada clase tiene su propia tabla.	Sheet of {0}: {1} sites. Each class has its own table.
+Suma las dos tablas.	Adds the two tables together.
+Los sitios se reconocen por su nombre: si un sitio está en una sola tabla, la otra clase cuenta 0 allí (NA en la planilla).	Sites are recognised by name: if a site is in only one table, the other class counts 0 there (NA in the sheet).
+Para cargar o agregar, elige {0}.	To load or add, choose {0}.
+{#0} de {#1} sitios con {2} relevados.	{0} of {1} sites with {2} surveyed.
+{0} sin relevar	{0} not surveyed
+no aplica a ninguna clase	does not apply to any class
+Entra un sitio si cada clase fue relevada o no corresponde allí.	A site is included if each class was surveyed or does not apply there.
+Fuera del conjunto: {0}.	Outside the set: {0}.
+Especie nueva	New species
+Valor de una especie nueva	Value of a new species
+No entra en ningún cociente de Nygaard	Not included in any Nygaard quotient
+El código Omnidia tiene 4 letras	The Omnidia code has 4 letters
+Ese código no está en la tabla del IBD cargada	That code is not in the loaded IBD table
+Cargar la tabla del IBD	Load the IBD table
+Reemplaza la tabla del IBD que haya cargada.	Replaces any IBD table already loaded.
+Cada fila necesita el código Omnidia (4 letras), la denominación, las 7 probabilidades del perfil ecológico (clases 1 a 7, que suman 1) y el valor indicador.	Each row needs the Omnidia code (4 letters), the name, the 7 probabilities of the ecological profile (classes 1 to 7, which sum to 1) and the indicator value.
+Conviene que la primera fila tenga los encabezados (Código, Denominación, P1 a P7, V).	It is best if the first row has the headers (Code, Name, P1 to P7, V).
+Una tabla de unos 2000 taxones puede tardar unos segundos en leerse.	A table of about 2000 taxa may take a few seconds to read.
+Si trae una columna «{0}» junto al taxón, se toma también.	If it has a «{0}» column next to the taxon, it is read too.
+Cargar tabla del IBD	Load IBD table
+No se encontraron filas con código Omnidia, 7 probabilidades que sumen 1 y valor indicador.	No rows were found with an Omnidia code, 7 probabilities that sum to 1, and an indicator value.
+Como estás en la vista conjunta, la tabla necesita una columna Clase ({0}) y reemplaza todo.	Because you are in the combined view, the table needs a Class column ({0}) and replaces everything.
+en la tabla de	in the table of
+{#0} filas sin clase reconocida, no se cargaron	{0} rows without a recognised class were not loaded
+Se cargó la tabla de {0}: {#1} {2}. La de {3} no cambió	The {0} table was loaded: {1} {2}. The {3} one did not change
+Se reemplazaron los {0}: {#1} {2}	The {0} were replaced: {1} {2}
+En la vista conjunta hace falta una columna «Clase» con {0}. También puedes elegir primero {1} y pegar cada tabla por separado.	In the combined view a «Class» column with {0} is needed. You can also choose {1} first and paste each table separately.
+No se reconoció la clase de ninguna fila. En la columna Clase usa {0}.	The class of no row was recognised. In the Class column use {0}.
+CPUE total	Total CPUE
+Biomasa total	Total biomass
+cpue	CPUE
+Cobertura (%) de {0}	Coverage (%) of {0}
+Promedio de los sitios con {0}	Mean of the sites with {0}
+cobertura	coverage
+6 Cocientes de Nygaard	6 Nygaard quotients
+Calculados con el número de taxones de cada grupo presente en el sitio (no con la abundancia).	Calculated with the number of taxa of each group present at the site (not with abundance).
+«s/c»: no se calcula porque el denominador es cero.	«n/c»: not calculated because the denominator is zero.
+s/c	n/c
+Escala del cociente compuesto: {0} ({1}).	Compound quotient scale: {0} ({1}).
+Taxones (S)	Taxa (S)
+Lectura del compuesto	Compound interpretation
+Taxones sin grupo, grupos no reconocidos y cocientes sin calcular	Taxa without a group, unrecognised groups and uncalculated quotients
+Todos los taxones tienen grupo reconocido y todos los cocientes se calcularon.	All taxa have a recognised group and all the quotients were calculated.
+Fórmulas y rangos de referencia	Formulas and reference ranges
+escala elegida	chosen scale
+Clases del cociente compuesto	Compound quotient classes
+Grupo asignado a cada taxón	Group assigned to each taxon
+Grupo cargado	Group entered
+Grupo de Nygaard	Nygaard group
+no reconocido	unrecognised
+Taxones por grupo de Nygaard	Taxa per Nygaard group
+sin grupo (gris claro), de abajo hacia arriba	no group (light grey), from bottom to top
+Cociente compuesto	Compound quotient
+«—»: sin desmidiáceas	«—»: without desmids
+Índice Biológico de Diatomeas	Biological Diatom Index
+Tabla del IBD: {#0} taxones, archivo «{1}», cargada el {2}. Umbral de abundancia por taxón: {3} ‰. Cruce por código Omnidia.	IBD table: {0} taxa, file «{1}», loaded on {2}. Abundance threshold per taxon: {3} ‰. Matched by Omnidia code.
+No hay tabla del IBD cargada: el índice no se calculó.	No IBD table is loaded: the index was not calculated.
+F(i) = Σ A·P(i)·V / Σ A·V (A: abundancia relativa en ‰ sobre todo el conteo) · B = Σ i·F(i) · IBD = 4,75·B − 8,5, acotado entre 1 y 20.	F(i) = Σ A·P(i)·V / Σ A·V (A: relative abundance in ‰ over the whole count) · B = Σ i·F(i) · IBD = 4.75·B − 8.5, bounded between 1 and 20.
+Conteo (N)	Count (N)
+% del conteo	% of count
+Taxones que no entran en el cálculo	Taxa not included in the calculation
+Estos taxones cuentan en el total del conteo pero no aportan perfil al IBD.	These taxa count towards the total of the count but do not contribute a profile to the IBD.
+Perfiles usados (taxones con código presentes en algún sitio)	Profiles used (taxa with a code present at some site)
+Taxón cargado	Taxon entered
+Denominación en la tabla	Name in the table
+Porcentaje de las valvas contadas que entran en el cálculo del IBD	Percentage of the counted valves that enter the IBD calculation
+Buscar en la tabla	Search the table
+Se quitó la tabla del IBD	IBD table removed
+La tabla ahora es sólo de individuos: se conservaron tus individuos. La tabla de cobertura por especie ya no se usa y quedó copiada en {0}. La cobertura se carga ahora por sitio, en la pestaña de diversidad alfa.	The table is now individuals only: your individuals were kept. The cover-by-species table is no longer used and was copied to {0}. Coverage is now entered by site, in the alpha diversity tab.
+La tabla ahora es de individuos. Los valores que habías pegado se tomaron como individuos. La cobertura se carga ahora por sitio, en la pestaña de diversidad alfa.	The table is now of individuals. The values you had pasted were taken as individuals. Coverage is now entered by site, in the alpha diversity tab.
+La tabla ahora es sólo de individuos. La cobertura se carga por sitio, en la pestaña de diversidad alfa.	The table is now individuals only. Coverage is entered by site, in the alpha diversity tab.
+Color según la escala Nygaard (1949) · «—»: sin desmidiáceas, no se calcula	Colour according to the Nygaard (1949) scale · «—»: without desmids, not calculated
+Color según la escala Hamaidi-Chergui et al. (2014) · «—»: sin desmidiáceas, no se calcula	Colour according to the Hamaidi-Chergui et al. (2014) scale · «—»: without desmids, not calculated
+Color según la escala Nygaard (1949)	Colour according to the Nygaard (1949) scale
+Color según la escala Hamaidi-Chergui et al. (2014)	Colour according to the Hamaidi-Chergui et al. (2014) scale
+Un valor justo en el límite va a la clase superior.	A value exactly on a limit goes to the higher class.
+Límites de la norma NF T90-354.	Limits of the NF T90-354 standard.
+{#0} filas con un sitio que no está en la tabla de la pestaña 1 ({1}): entran en la relación longitud–peso, no en los resultados por sitio	{0} rows with a site that is not in the tab 1 table ({1}): they enter the length–weight relationship, not the results by site
+Tabla de la pestaña 1 armada con {#0} individuos ({1} por especie y sitio) · {2}	Tab 1 table built from {0} individuals ({1} per species and site) · {2}
+{t0} (sin valor)	{0} (no value)
+{t0} (ninguna especie presente tiene origen)	{0} (no species present has origin)
+arte de muestreo	sampling gear

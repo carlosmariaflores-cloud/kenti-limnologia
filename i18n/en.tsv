@@ -1,0 +1,944 @@
+# Diccionario español → inglés de la interfaz de Kenti. Una entrada por línea: texto en español, TAB, texto en inglés.
+# {0}, {1}… marcan partes variables (números, nombres); en inglés pueden ir en otro orden.
+# Las líneas que empiezan con # se ignoran. Los espacios dentro del texto se comparan colapsados.
+# ---------- Encabezado, pestañas y botones generales ----------
+Kenti Macroinvertebrados	Kenti Macroinvertebrates
+macroinvertebrados	macroinvertebrates
+Macroinvertebrados	Macroinvertebrates
+Macroinvertebrados bentónicos · índices bióticos	Benthic macroinvertebrates · biotic indices
+Logo de Kenti: picaflor cometa (Sappho sparganurus)	Kenti logo: red-tailed comet hummingbird (Sappho sparganurus)
+Datos de ejemplo	Example data
+Cada grupo taxonómico tiene su usuario	Each taxonomic group has its own user
+Usuario	User
+v{0} prueba	v{0} beta
+Secciones	Sections
+Tabla de datos	Data table
+Diversidad alfa	Alpha diversity
+Diversidad beta	Beta diversity
+Correlación y PCA	Correlation and PCA
+Índices bióticos	Biotic indices
+Guarda un libro de Excel con la tabla, los índices y los gráficos de todas las pestañas	Saves an Excel workbook with the table, the indices and the charts of every tab
+Exportar a Excel	Export to Excel
+Grupo a analizar	Group to analyse
+Ver	View
+Idioma · Language	Idioma · Language
+# ---------- Pestaña 1 · datos ----------
+Tabla de {0} por sitio	Table of {0} by site
+Tabla de algas por sitio	Table of algae by site
+Medida	Measure
+Unidad de muestreo	Sampling unit
+Qué representan los números de la tabla. No cambia los cálculos, sólo cómo se nombran.	What the numbers in the table represent. It does not change the calculations, only how they are labelled.
+Cargar tabla de Excel	Load table from Excel
+Pegar tabla desde Excel	Paste table from Excel
+Agregar taxón	Add taxon
+Agregar sitio	Add site
+Vaciar tabla	Clear table
+Estás viendo una tabla de ejemplo con	You are looking at an example table with
+de la Puna. Pega tu planilla para reemplazarla.	from the Puna. Paste your spreadsheet to replace it.
+Restaurar ejemplo	Restore example
+Enter baja a la fila siguiente · puedes pegar un bloque de números sobre cualquier celda	Enter moves to the next row · you can paste a block of numbers onto any cell
+Clasificación en línea	Online classification
+Completar al pegar	Fill in on paste
+Completar	Fill in
+Familia de cada taxón	Family of each taxon
+Kenti propone la familia a partir del género, la especie o la familia escrita en la columna del taxón, y con ella calcula el BMWP', el ASPT' y el ABI.	Kenti proposes the family from the genus, the species or the family written in the taxon column, and uses it to compute the BMWP', the ASPT' and the ABI.
+En azul	In blue
+las propuestas;	its proposals;
+en ámbar	in amber
+las que corrigen una grafía o piden elegir. Lo que escribas tú no se toca; si borras una celda, vuelve la propuesta.	those that correct a spelling or ask you to choose. What you type is never changed; if you clear a cell, the proposal comes back.
+Lo que no está en la lista incorporada se busca en GBIF; necesita internet la primera vez, después queda guardado	Whatever is not in the built-in list is looked up in GBIF; it needs internet the first time, then it is stored
+Buscar en GBIF al pegar	Look up in GBIF on paste
+Buscar en GBIF	Look up in GBIF
+Las propuestas pasan a contar como escritas por ti: ya no cambian si cambias el nombre	Proposals will count as typed by you: they no longer change if you change the name
+Aceptar propuestas	Accept proposals
+Lista incorporada: géneros de macroinvertebrados acuáticos con registros en Sudamérica según GBIF (Backbone Taxonomy), con la familia aceptada. Funciona sin internet. Los ancílidos van como Ancylidae porque así los puntúan el BMWP' y el ABI.	Built-in list: genera of aquatic macroinvertebrates with records in South America according to GBIF (Backbone Taxonomy), with the accepted family. Works offline. Ancylids are kept as Ancylidae because that is how the BMWP' and the ABI score them.
+· Kenti guarda cada cambio en	· Kenti saves every change in
+Abrir carpeta de datos	Open data folder
+Primera fila los sitios; primera columna los taxones, al nivel que se haya llegado: especie, género, familia o un grupo como Oligochaeta. La Familia, a la izquierda, se completa sola: Kenti la propone y la marca en azul; lo que escribas tú no lo cambia. Los índices bióticos se calculan con esa familia. Una celda vacía cuenta como cero.	First row: the sites; first column: the taxa, at whatever level they were identified: species, genus, family or a group such as Oligochaeta. The Family column, on the left, fills itself in: Kenti proposes it and marks it in blue; what you type is never changed. The biotic indices are computed from that family. An empty cell counts as zero.
+Taxón	Taxon
+taxón	taxon
+taxones	taxa
+Taxones	Taxa
+Especie	Species
+especie	species
+especies	species
+una especie	a species
+Familia	Family
+Familias	Families
+familia	family
+Individuos	Individuals
+individuos	individuals
+Sitio	Site
+Sitio nuevo	New site
+Taxón nueva	New taxon
+Taxón {#0}	Taxon {0}
+{t0} en {t1}	{0} at {1}
+Familia de {0}	Family of {0}
+Quitar el sitio {0}	Remove site {0}
+Quitar {0}	Remove {0}
+Quitar columna	Remove column
+Quitar fila	Remove row
+Valor de una taxón nueva	Value for a new taxon
+Valor en un sitio nuevo	Value at a new site
++ sitio	+ site
++ taxón	+ taxon
+Celda A1	Cell A1
+Estado del sitio	Site status
+Relevado	Surveyed
+No relevado	Not surveyed
+No aplicable	Not applicable
+Estado para {0}	Status for {0}
+Total	Total
+Sin familia: sin ella el taxón no entra en el BMWP', el ASPT' ni el ABI	No family: without it the taxon is left out of the BMWP', the ASPT' and the ABI
+Se completa sola desde el nombre del taxón. En azul, propuesta de Kenti; en ámbar, grafía corregida o género ambiguo. Escribe encima para cambiarla; bórrala para volver a la propuesta.	Filled in automatically from the taxon name. Blue: Kenti's proposal; amber: corrected spelling or ambiguous genus. Type over it to change it; clear it to go back to the proposal.
+Haz clic aquí y pega tu tabla de Excel (Ctrl+V)	Click here and paste your Excel table (Ctrl+V)
+Copia la tabla en Excel y pégala en la celda A1: la primera fila son los sitios y la primera columna, las especies	Copy the table in Excel and paste it into cell A1: the first row holds the sites and the first column the species
+Clic en A1 y Ctrl+V pega la tabla entera · Enter o flechas para moverte · escribe en «+ sitio» o «+ taxón» para agregar	Click A1 and Ctrl+V pastes the whole table · Enter or arrow keys to move · type in «+ site» or «+ taxon» to add
+Pegar tabla en A1	Paste table in A1
+Esta tabla se guardó con la versión anterior, que traía datos de ejemplo, y pueden estar mezclados con los tuyos. Si es así, vacíala y vuelve a pegar tus planillas.	This table was saved with the previous version, which came with example data, and it may be mixed with yours. If so, clear it and paste your spreadsheets again.
+Copia la tabla desde Excel y pégala aquí.	Copy the table from Excel and paste it here.
+Primera fila:	First row:
+Primera columna:	First column:
+los sitios, con el código o el nombre que uses.	the sites, with the code or name you use.
+cuentan como 1.	count as 1.
+Todavía no hay datos.	No data yet.
+Copia tu tabla en Excel —primera fila: los sitios; primera columna: {0}— y usa «Pegar tabla desde Excel».	Copy your table in Excel —first row: the sites; first column: {0}— and use «Paste table from Excel».
+La tabla está vacía. Pega una planilla o agrega {0} y sitios.	The table is empty. Paste a spreadsheet or add {0} and sites.
+{0} {1} · {2} sitios en el análisis · en {3}	{0} {1} · {2} sites in the analysis · in {3}
+{0} {1} · {2} sitios en el análisis · en {3}{4}	{0} {1} · {2} sites in the analysis · in {3}{4}
+· {0} fuera del análisis (NA)	· {0} outside the analysis (NA)
+{0} pasó a {1}	{0} became {1}
+La especie	The species
+la fila	the row
+Se quitó {0}	Removed {0}
+Se pegaron {0} celdas	{0} cells pasted
+Se pegó 1 celda	1 cell pasted
+La tabla ya está vacía	The table is already empty
+La tabla de {0} ya está vacía	The {0} table is already empty
+Se vació la tabla de {0}{1}	The {0} table was cleared{1}
+Se vació la tabla (las tablas de puntaje siguen cargadas)	The table was cleared (the score tables are still loaded)
+Se vació la tabla, con todas sus medidas	The table was cleared, with all its measures
+Se restauró la tabla de ejemplo	The example table was restored
+Deshacer	Undo
+Guardando…	Saving…
+Guardado a las {0}	Saved at {0}
+No se pudo guardar. Cierra la ventana y vuelve a abrir Kenti; si sigue, avisa.	Could not save. Close the window and open Kenti again; if it persists, let us know.
+Datos cargados desde el archivo	Data loaded from file
+Todavía no hay datos guardados	No saved data yet
+Todavía no hay datos propios guardados	None of your own data saved yet
+Tabla anterior descartada	Previous table discarded
+Entendido	Got it
+Cada medida tiene su propia tabla. Elige cuál ver, cargar y analizar.	Each measure has its own table. Choose which one to view, load and analyse.
+Medida: {0}	Measure: {0}
+Tabla de {0}	{0} table
+{0} nombres repetidos sumados	{0} repeated names added together
+1 fila sin nombre no se cargó	1 row without a name was not loaded
+{0} filas sin nombre no se cargaron	{0} rows without a name were not loaded
+1 celda no numérica tomada como 0	1 non-numeric cell taken as 0
+{0} celdas no numéricas tomadas como 0	{0} non-numeric cells taken as 0
+, con la columna {0}	, with the {0} column
+Tabla pegada{0}: {1} {2} y {3} sitios{4}	Table pasted{0}: {1} {2} and {3} sites{4}
+Tabla pegada{0}: {1} {2} y {3} sitios	Table pasted{0}: {1} {2} and {3} sites
+Se pegaron {0} valores de {1}	{0} values of {1} pasted
+Se quitó la fila {0}	Row {0} removed
+Se quitó la columna {0}{1}	Column {0} removed{1}
+de esta tabla	from this table
+no se tomó la columna	column not used
+no se tomaron las columnas	columns not used
+(no son sitios)	(they are not sites)
+{0} {1} (no son sitios)	{0} {1} (they are not sites)
+Elige {0} para cargar una tabla	Choose {0} to load a table
+Para cargar una tabla, elige primero {0}	To load a table, first choose {0}
+en la tabla de {0}	in the {0} table
+# ---------- Diálogo de carga ----------
+La tabla que cargues reemplaza la actual.	The table you load replaces the current one.
+Primera fila	First row
+los sitios.	the sites.
+taxones. La celda A1 puede tener cualquier cosa o estar vacía.	taxa. Cell A1 may hold anything or be empty.
+taxones. La celda de arriba a la izquierda puede tener cualquier cosa o estar vacía. Las filas y columnas de Total, Familia u Orden se ignoran;	taxa. The top-left cell may hold anything or be empty. Total, Family and Order rows and columns are ignored;
+Elegir archivo…	Choose file…
+Hoja	Sheet
+o pega aquí la tabla copiada. Lo que leas del archivo también aparece aquí y lo puedes revisar antes de cargar.	or paste the copied table here. What is read from the file also appears here so you can check it before loading.
+Cancelar	Cancel
+Copia la tabla completa con su fila de encabezados: primera columna	Copy the whole table with its header row: first column
+, una columna	, a column
+opcional y una columna por sitio. Las filas de TOTAL se ignoran;	(optional) and one column per site. TOTAL rows are ignored;
+Reemplazar tabla	Replace table
+Cargar desde Excel	Load from Excel
+Vaciar	Clear
+Excel (.xlsx) o CSV	Excel (.xlsx) or CSV
+La hoja «{0}» está vacía.	Sheet «{0}» is empty.
+Cargar fisicoquímicos de Excel	Load physicochemical data from Excel
+Cargar la tabla de puntajes del {0}	Load the {0} score table
+Los fisicoquímicos que cargues reemplazan los actuales. Primera fila: las variables (pH, Temperatura, Conductividad, OD, TDS, en cualquier orden). Primera columna: los sitios, con el mismo nombre que en la tabla de la pestaña 1.	The physicochemical data you load replace the current ones. First row: the variables (pH, Temperature, Conductivity, DO, TDS, in any order). First column: the sites, with the same name as in the tab 1 table.
+Reemplaza la tabla de puntajes del {0} que haya cargada. Hace falta una columna con la familia (o el grupo, como «Oligochaeta» u «Odonata (varias fam.)») y otra con el puntaje, de 0 a 10; conviene que la primera fila diga «Familia» y «Puntaje». Una columna «Orden» es opcional. Si el archivo trae columnas ABI y BMWP juntas, se toma la del {1}.	Replaces the {0} score table currently loaded. It needs one column with the family (or the group, such as «Oligochaeta» or «Odonata (varias fam.)») and another with the score, from 0 to 10; ideally the first row says «Family» and «Score». An «Order» column is optional. If the file has ABI and BMWP columns together, the {1} one is used.
+la otra tabla no cambia.	the other table does not change.
+la otra clase no cambia.	the other class does not change.
+Si trae columnas «{0}» junto al taxón, se toman también.	If it has «{0}» columns next to the taxon, they are read too.
+Se carga en la tabla de {0}; {1}{2}	It is loaded into the {0} table; {1}{2}
+Se carga en la tabla de {0}; {1}	It is loaded into the {0} table; {1}
+Cargar puntajes	Load scores
+Cargar fisicoquímicos	Load physicochemical data
+Cargar tabla	Load table
+los archivos .xls antiguos no se pueden leer: en Excel usa «Guardar como» → Libro de Excel (.xlsx)	old .xls files cannot be read: in Excel use «Save as» → Excel Workbook (.xlsx)
+el archivo no tiene hojas	the file has no sheets
+No se pudo leer el archivo: {0}	Could not read the file: {0}
+No se pudo leer el archivo:	Could not read the file:
+no es un archivo .xlsx válido	not a valid .xlsx file
+formato de compresión no soportado	unsupported compression format
+Elige un archivo o pega una tabla.	Choose a file or paste a table.
+No se encontraron filas con una familia y un puntaje de 0 a 10. Revisa que haya una columna de familias y otra de puntajes.	No rows with a family and a score from 0 to 10 were found. Check that there is a column of families and another of scores.
+Haz clic en la celda A1 (arriba a la izquierda) y pega con Ctrl+V	Click cell A1 (top left) and paste with Ctrl+V
+Se reemplazan sólo los {0}; el resto de la tabla no cambia. Si traes las dos clases juntas, agrega una columna Clase.	Only the {0} are replaced; the rest of the table does not change. If you bring both classes together, add a Class column.
+Se carga en la tabla de {0} y la reemplaza entera; la otra medida no cambia. Especies y sitios se reconocen por su nombre.	It is loaded into the {0} table and replaces it entirely; the other measure does not change. Species and sites are matched by name.
+Se cargaron {0} {1} y {2} sitios{3}	{0} {1} and {2} sites loaded{3}
+Se cargaron {0} {1} y {2} sitios	{0} {1} and {2} sites loaded
+· {0} nombres repetidos sumados	· {0} repeated names added together
+No se reconocen columnas. Copia las celdas directamente desde Excel (van separadas por tabulaciones).	No columns recognised. Copy the cells straight from Excel (they are separated by tabs).
+No se reconocen columnas. Copia las celdas directamente desde Excel (separadas por tabulaciones).	No columns recognised. Copy the cells straight from Excel (separated by tabs).
+Falta la fila de sitios: desde la segunda columna, un código o nombre por sitio.	The site row is missing: from the second column on, one code or name per site.
+La primera fila no tiene sitios: desde la segunda columna tiene que haber un código o nombre por sitio.	The first row has no sites: from the second column on there must be one code or name per site.
+Debajo de la fila de sitios no hay filas con {0}: el nombre va en la primera columna.	There are no rows of {0} under the site row: the name goes in the first column.
+Hacen falta al menos la fila de encabezados y {0}.	At least the header row and {0} are needed.
+No se encontraron columnas de sitios en el encabezado.	No site columns found in the header.
+No se encontraron filas de {0} debajo del encabezado.	No rows of {0} found under the header.
+# ---------- Familia automática ----------
+grupo por encima de familia: los índices lo puntúan como grupo	group above family: the indices score it as a group
+{0} es una subfamilia o tribu de {1}	{0} is a subfamily or tribe of {1}
+{0} es un orden o una clase: el BMWP' y el ABI necesitan la familia	{0} is an order or a class: the BMWP' and the ABI need the family
+el nombre ya es una familia	the name is already a family
+escrito «{0}»; la grafía aceptada es {1}	written «{0}»; the accepted spelling is {1}
+escrito «{0}»: ¿{1}?	written «{0}»: {1}?
+familia de la tabla de puntaje, que no está en la lista incorporada	family from the score table, not in the built-in list
+familia que no está en la lista incorporada: revisa la grafía	family not in the built-in list: check the spelling
+hoy Planorbidae (Ancylinae); va como Ancylidae porque así lo puntúan el BMWP' y el ABI	now Planorbidae (Ancylinae); kept as Ancylidae because that is how the BMWP' and the ABI score it
+el género {0} existe en más de una familia ({1}): elige	the genus {0} exists in more than one family ({1}): choose
+(por el género)	(from the genus)
+GBIF no reconoce «{0}»: revisa la grafía	GBIF does not recognise «{0}»: check the spelling
+género escrito «{0}»: ¿{1}?	genus written «{0}»: {1}?
+no está en la lista incorporada	not in the built-in list
+no está en la lista incorporada. Busca en GBIF (abajo) o escríbela.	not in the built-in list. Look it up in GBIF (below) or type it.
+No queda nada por buscar en GBIF	Nothing left to look up in GBIF
+No se pudo consultar GBIF ({0}): sin internet o la red lo bloquea. Escribe esas familias a mano o reintenta más tarde.	Could not query GBIF ({0}): no internet or the network blocks it. Type those families by hand or try again later.
+familia encontrada	family found
+familias encontradas	families found
+GBIF: {0} {1} de {2}	GBIF: {0} {1} of {2}
+lista de géneros de Sudamérica (GBIF)	list of South American genera (GBIF)
+consulta a GBIF	GBIF query
+grupo que los índices puntúan entero	group the indices score as a whole
+grafía corregida	corrected spelling
+género en más de una familia	genus in more than one family
+rango superior a familia	rank above family
+¿cuál?	which?
+falta familia	family missing
+buscar en GBIF	look up in GBIF
+sin familia	no family
+{0} sin familia	{0} without family
+Escrita por ti: Kenti no la cambia	Typed by you: Kenti does not change it
+Propuesta de Kenti: {0}. Si está bien, déjala o usa «Aceptar propuestas»; si no, escribe la correcta.	Kenti's proposal: {0}. If it is right, leave it or use «Accept proposals»; if not, type the correct one.
+Propuesta de Kenti · {0}. Escribe encima para cambiarla; bórrala para volver a la propuesta.	Kenti's proposal · {0}. Type over it to change it; clear it to go back to the proposal.
+Consultando GBIF…	Querying GBIF…
+Buscar {0} en GBIF	Look up {0} in GBIF
+Nada que buscar	Nothing to look up
+con familia	with family
+{#0} de {#1}	{0} of {1}
+{0} {1} de Kenti	{0} {1} from Kenti
+{0} {1} por ti	{0} {1} by you
+propuesta de Kenti	proposal from Kenti
+propuestas de Kenti	proposals from Kenti
+escrita por ti	typed by you
+escritas por ti	typed by you
+Sin conexión con GBIF ({0})	No connection to GBIF ({0})
+Nada para revisar: todas las familias salen de la lista incorporada, del propio nombre o las escribiste tú.	Nothing to review: every family comes from the built-in list, from the name itself or was typed by you.
+Por qué	Why
+familia aceptada	family accepted
+familias aceptadas	families accepted
+{0} {1}: ahora cuentan como escritas por ti	{0} {1}: they now count as typed by you
+Al pegar, lo que no esté en la lista se buscará en GBIF	On paste, whatever is not in the list will be looked up in GBIF
+Ya no se consulta GBIF al pegar: usa el botón cuando quieras	GBIF is no longer queried on paste: use the button whenever you want
+Buscar 1 en GBIF	Look up 1 in GBIF
+# ---------- Pestaña 2 · alfa ----------
+Resultados ecológicos por sitio	Ecological results by site
+Riqueza, abundancia e índices de diversidad calculados sobre los sitios relevados.	Richness, abundance and diversity indices computed over the surveyed sites.
+Riqueza, {0} e índices de diversidad calculados sobre los sitios relevados{1}.	Richness, {0} and diversity indices computed over the surveyed sites{1}.
+, con la tabla de	, with the table of
+Índices por sitio	Indices by site
+La última fila agrupa todos los sitios relevados (diversidad gamma).	The last row pools all surveyed sites (gamma diversity).
+Copiar tabla para Excel	Copy table for Excel
+Fórmulas	Formulas
+Dominancia de Simpson	Simpson's dominance
+Simpson (diversidad)	Simpson (diversity)
+Equitatividad de Pielou	Pielou's evenness
+Variables fisicoquímicas	Physicochemical variables
+opcional	optional
+Un valor por sitio. Los sitios son los de la tabla de la pestaña 1. Se usan en la pestaña 4 para correlacionarlos con la comunidad.	One value per site. The sites are those in the tab 1 table. They are used in tab 4 to correlate them with the community.
+Los sitios son los de la tabla de la pestaña 1; se usan en la pestaña 4 para correlacionarlos con la comunidad.	The sites are those in the tab 1 table; they are used in tab 4 to correlate them with the community.
+Para pegar una tabla, haz clic en la celda de arriba a la izquierda y usa Ctrl+V: primera columna, los sitios; primera fila, las variables ({0}, en cualquier orden). Un valor como «<0,01» (bajo el límite de detección) se guarda tal cual, pero no entra en las correlaciones.	To paste a table, click the top-left cell and use Ctrl+V: first column, the sites; first row, the variables ({0}, in any order). A value such as «<0.01» (below the detection limit) is stored as is, but it is left out of the correlations.
+Primero carga la tabla de {0} en la pestaña 1: los sitios salen de ahí.	First load the {0} table in tab 1: the sites come from there.
+No es un número (por ejemplo, bajo el límite de detección): no entra en las correlaciones	Not a number (for example, below the detection limit): left out of the correlations
+No se reconocen las columnas: la primera fila tiene que traer {0}	Columns not recognised: the first row must contain {0}
+Fisicoquímicos cargados: {0} valores de {1} variables	Physicochemical data loaded: {0} values of {1} variables
+· sitios que no están en la tabla: {0}	· sites not in the table: {0}
+· columnas ignoradas: {0}	· columns ignored: {0}
+Se pegó 1 valor	1 value pasted
+Se pegaron {0} valores	{0} values pasted
+Se vaciaron los fisicoquímicos	Physicochemical data cleared
+Celda A1 de fisicoquímicos	Cell A1 of physicochemical data
+Haz clic aquí y pega tu tabla de fisicoquímicos (Ctrl+V)	Click here and paste your physicochemical table (Ctrl+V)
+Los sitios salen de la tabla de la pestaña 1	Sites come from the tab 1 table
+Un valor por sitio. Escríbelo o pega una columna de valores.	One value per site. Type it or paste a column of values.
+Unidad de {0}	Unit of {0}
+Se carga en la pestaña 2, Diversidad alfa	It is loaded in tab 2, Alpha diversity
+Fisicoquímicos	Physicochemical data
+Temperatura	Temperature
+Conductividad	Conductivity
+OD	DO
+{0} en Sitio {1}	{0} at Site {1}
+Altitud (m s.n.m.)	Altitude (m a.s.l.)
+Altitud (m s.n.m.) de {0}	Altitude (m a.s.l.) of {0}
+Altitud (m s.n.m.): un valor por sitio. El ABI está calibrado para los Andes desde 2000 m; bajo esa altitud se calcula igual y se marca.	Altitude (m a.s.l.): one value per site. The ABI is calibrated for the Andes from 2000 m; below that altitude it is still computed and flagged.
+Altitud	Altitude
+altitud	altitude
+Alt (m)	Alt (m)
+Promedio de los sitios con altitud	Mean of the sites with altitude
+Cada eje y se ajusta al rango de su propia variable, para comparar la forma de las curvas y no su magnitud. La r de Pearson resume cuánto se mueven juntas entre sitios: cerca de 1, en el mismo sentido; cerca de −1, en sentido opuesto.	Each y axis fits the range of its own variable, to compare the shape of the curves rather than their magnitude. Pearson's r summarises how much they move together across sites: close to 1, in the same direction; close to −1, in opposite directions.
+Riqueza (S)	Richness (S)
+Riqueza	Richness
+Riqueza total	Total richness
+Abundancia (N)	Abundance (N)
+Abundancia	Abundance
+Abundancia total	Total abundance
+Shannon (H′)	Shannon (H′)
+Shannon medio por sitio	Mean Shannon per site
+H′ gamma {0}	Gamma H′ {0}
+Sitios en el análisis	Sites in the analysis
+Dominancia (D)	Dominance (D)
+Dominancia	Dominance
+Simpson (1 − D)	Simpson (1 − D)
+Pielou (J′)	Pielou (J′)
+Margalef (DMg)	Margalef (DMg)
+Menhinick (DMn)	Menhinick (DMn)
+Total (γ)	Total (γ)
+No hay sitios relevados.	There are no surveyed sites.
+Invertir eje de dominancia	Invert dominance axis
+Riqueza y abundancia	Richness and abundance
+Riqueza y diversidad	Richness and diversity
+Riqueza y	Richness and
+Shannon y	Shannon and
+Shannon y abundancia	Shannon and abundance
+Shannon y dominancia	Shannon and dominance
+Margalef y Shannon	Margalef and Shannon
+Margalef y Menhinick	Margalef and Menhinick
+Abundancia y diversidad	Abundance and diversity
+y diversidad	and diversity
+{0} y {1} por sitio	{0} and {1} by site
+{0} en x · {1} en y	{0} on x · {1} on y
+r —	r —
+Diversidad	Diversity
+Índice de diversidad en los gráficos	Diversity index in the charts
+Shannon H′	Shannon H′
+Simpson 1 − D	Simpson 1 − D
+presente	present
+# ---------- Pestaña 3 · beta ----------
+Similitud entre sitios	Similarity between sites
+Cuánto se parecen los sitios en su composición de	How similar the sites are in their composition of
+. Menhinick mide riqueza dentro de cada sitio (diversidad alfa), por eso quedó en la pestaña 2 junto a Margalef.	. Menhinick measures richness within each site (alpha diversity), which is why it is in tab 2 next to Margalef.
+· sólo presencia o ausencia: especies compartidas sobre el total de ambos sitios.	· presence or absence only: shared species over the total of both sites.
+· usa abundancias; pesa las especies dominantes y es poco sensible a la riqueza y al tamaño de muestra.	· uses abundances; weights the dominant species and is fairly insensitive to richness and sample size.
+· usa abundancias; compara las cantidades especie por especie.	· uses abundances; compares quantities species by species.
+Índice del cluster	Cluster index
+Presencia / ausencia	Presence / absence
+escala roja	red scale
+escala azul	blue scale
+escala verde	green scale
+Similitud	Similarity
+Similitud:	Similarity:
+Similitud · {0}	Similarity · {0}
+Similitud ({0})	Similarity ({0})
+Similitud {0}	Similarity {0}
+Hacen falta al menos dos sitios relevados con registros.	At least two surveyed sites with records are needed.
+Copiar matriz	Copy matrix
+Matriz de {0} copiada	{0} matrix copied
+{0} · ligamiento promedio · correlación cofenética {1}	{0} · average linkage · cophenetic correlation {1}
+Mapa de calor de similitud {0}	{0} similarity heat map
+Mapa de calor de {0}	{0} heat map
+Dendrograma UPGMA	UPGMA dendrogram
+Dendrograma UPGMA de {0}	UPGMA dendrogram of {0}
+Correlación de Pearson entre sitios	Pearson correlation across sites
+# ---------- Pestaña 4 · correlación y PCA ----------
+Correlación y componentes principales	Correlation and principal components
+Cada punto es un sitio de monitoreo. La recta resume la tendencia entre sitios y la banda sombreada es su intervalo de confianza del 95 %.	Each point is a monitoring site. The line summarises the trend across sites and the shaded band is its 95% confidence interval.
+Correlación con variables fisicoquímicas	Correlation with physicochemical variables
+Variable fisicoquímica	Physicochemical variable
+Variable de la comunidad	Community variable
+Variables del PCA	PCA variables
+Puntajes por sitio y matriz de correlación	Site scores and correlation matrix
+El PCA trabaja con las variables estandarizadas (media 0, desvío 1), así la abundancia no pesa más sólo por tener números grandes. Las flechas muestran la correlación de cada variable con los dos ejes, escaladas para verse junto a los sitios: sitios hacia donde apunta una flecha tienen valores altos de esa variable. Qué variables entran lo decides tú; si dos están muy correlacionadas, el primer eje queda dominado por ellas.	The PCA works on standardised variables (mean 0, SD 1), so abundance does not weigh more just for having large numbers. The arrows show the correlation of each variable with the two axes, scaled to be seen next to the sites: sites towards which an arrow points have high values of that variable. You choose which variables go in; if two are strongly correlated, the first axis is dominated by them.
+Todavía no hay variables fisicoquímicas con valores en al menos 3 sitios. Se cargan en la pestaña 2, Diversidad alfa (son opcionales).	There are no physicochemical variables with values in at least 3 sites yet. They are loaded in tab 2, Alpha diversity (optional).
+r de Pearson entre cada variable fisicoquímica y la comunidad ({0} sitios). En negrita y con *, p < 0,05. Haz clic en una celda para ver su gráfico.	Pearson's r between each physicochemical variable and the community ({0} sites). In bold and with *, p < 0.05. Click a cell to see its chart.
+Con {0} sitios, |r| tiene que superar {1} para que p < 0,05.	With {0} sites, |r| must exceed {1} for p < 0.05.
+Con {0} sitios, |r| tiene que superar {1} para que p < 0,05: con pocos sitios, tómalo como orientativo.	With {0} sites, |r| must exceed {1} for p < 0.05: with few sites, take it as a rough guide.
+Muchas correlaciones a la vez: alguna puede salir significativa por azar. Una correlación no demuestra causa. Los valores bajo el límite de detección no entran.	Many correlations at once: some may come out significant by chance. A correlation does not prove causation. Values below the detection limit are left out.
+Hacen falta al menos 3 sitios con valores.	At least 3 sites with values are needed.
+Una de las variables no cambia entre sitios.	One of the variables does not vary across sites.
+Elige al menos dos variables.	Choose at least two variables.
+Hacen falta al menos 3 sitios con valores en todas las variables elegidas.	At least 3 sites with values in all the chosen variables are needed.
+Hacen falta al menos dos variables que cambien entre sitios.	At least two variables that vary across sites are needed.
+r de Pearson = {0} · p {1} · n = {2}	Pearson's r = {0} · p {1} · n = {2}
+r de Pearson — · n = {0}	Pearson's r — · n = {0}
+r de Pearson =	Pearson's r =
+r de Pearson	Pearson's r
+No hay sitios con valores.	There are no sites with values.
+Residuo: {0}{1}	Residual: {0}{1}
+CP 1	PC 1
+CP 2	PC 2
+CP 3	PC 3
+CP 4	PC 4
+CP {0}	PC {0}
+CP 1 · {0} % de la varianza	PC 1 · {0}% of variance
+CP 2 · {0} % de la varianza	PC 2 · {0}% of variance
+El PCA necesita al menos dos variables	The PCA needs at least two variables
+La r de Pearson mide cuánto se alinean los sitios sobre la recta: cerca de 1 o −1, mucho; cerca de 0, nada.	Pearson's r measures how closely the sites line up along the line: close to 1 or −1, a lot; close to 0, not at all.
+La pendiente dice cuánto cambia la diversidad por cada unidad más en el eje x.	The slope tells how much diversity changes for each extra unit on the x axis.
+La r de Pearson mide cuánto se alinean los sitios sobre la recta: cerca de 1 o −1, mucho; cerca de 0, nada. La pendiente dice cuánto cambia la diversidad por cada unidad más en el eje x.	Pearson's r measures how closely the sites line up along the line: close to 1 or −1, a lot; close to 0, not at all. The slope tells how much diversity changes for each extra unit on the x axis.
+La r de Pearson mide cuánto se alinean los sitios sobre la recta: cerca de 1 o −1, mucho; cerca de 0, nada. Con {0} sitios, |r| tiene que superar {1} para que p < 0,05: con pocos sitios, tómalo como orientativo. La pendiente dice cuánto cambia la diversidad por cada unidad más en el eje x.	Pearson's r measures how closely the sites line up along the line: close to 1 or −1, a lot; close to 0, not at all. With {0} sites, |r| must exceed {1} for p < 0.05: with few sites, take it as a rough guide. The slope tells how much diversity changes for each extra unit on the x axis.
+(por ejemplo, la {0})	(for example, {0})
+(por ejemplo, un fisicoquímico vacío o bajo el límite de detección)	(for example, an empty physicochemical value or one below the detection limit)
+Quedan fuera {0}: les falta algún valor en las variables elegidas{1}, o tienen una sola {2} y Pielou no se puede calcular.	{0} are left out: they lack some value in the chosen variables{1}, or they have a single {2} and Pielou cannot be computed.
+{0} no cambia entre sitios y no entra.	{0} does not vary across sites and is left out.
+{t0} y {t1} están muy correlacionadas (r = {#2})	{0} and {1} are strongly correlated (r = {2})
+: el primer eje queda dominado por ellas.	: the first axis is dominated by them.
+{0} sitios · {1} variables estandarizadas · CP 1 y CP 2 explican {2} % de la varianza	{0} sites · {1} standardised variables · PC 1 and PC 2 explain {2}% of the variance
+Autovalor:	Eigenvalue:
+Varianza:	Variance:
+Acumulada: {0} %	Cumulative: {0}%
+Eje	Axis
+Autovalor	Eigenvalue
+% varianza	% variance
+% acumulado	% cumulative
+Variable	Variable
+Cargas: correlación de cada variable con el eje	Loadings: correlation of each variable with the axis
+Porcentaje de varianza explicada por cada eje	Percentage of variance explained by each axis
+Biplot del PCA	PCA biplot
+Análisis de componentes principales (PCA)	Principal component analysis (PCA)
+Varianza explicada por eje	Variance explained by axis
+# ---------- Pestaña 5 · índices bióticos ----------
+BMWP', ASPT' y ABI por sitio, calculados con las familias de la tabla de la pestaña 1. Estos índices usan presencia: cuántos individuos haya de cada familia no cambia el puntaje.	BMWP', ASPT' and ABI by site, computed from the families in the tab 1 table. These indices use presence: how many individuals of each family there are does not change the score.
+Cada índice tiene su propia tabla de puntajes, sus clases y su cita. No se mezclan ni se comparan valores entre índices.	Each index has its own score table, its classes and its citation. Values are neither mixed nor compared between indices.
+Qué índice usar	Which index to use
+Cuándo usarlo:	When to use it:
+Cómo se calcula:	How it is computed:
+Tener en cuenta:	Keep in mind:
+ríos y arroyos de montaña y pedemonte del Noroeste Argentino. Es el índice de referencia para la región y el principal para informar.	mountain and piedmont rivers and streams of northwestern Argentina. It is the reference index for the region and the main one to report.
+suma del puntaje (de 1 a 10) de cada familia presente en el sitio. Las familias sensibles a la contaminación puntúan alto; las tolerantes, bajo. Clases de calidad de I a V.	sum of the score (1 to 10) of each family present at the site. Pollution-sensitive families score high; tolerant ones, low. Quality classes I to V.
+es una suma, así que depende del esfuerzo de muestreo: más muestras o más hábitats relevados dan más familias y más puntaje. Compara sólo sitios muestreados con el mismo método.	it is a sum, so it depends on sampling effort: more samples or more habitats surveyed give more families and a higher score. Compare only sites sampled with the same method.
+Puntaje promedio por familia	Average score per family
+siempre junto al BMWP', nunca solo. Ayuda cuando los sitios tienen distinto esfuerzo de muestreo o muy distinto número de familias, porque es un promedio y no una suma.	always alongside the BMWP', never alone. It helps when sites have different sampling effort or very different numbers of families, because it is an average and not a sum.
+BMWP' dividido por el número de familias que tienen puntaje. Va de 1 a 10. Usa la misma tabla que el BMWP'.	BMWP' divided by the number of families that have a score. It ranges from 1 to 10. It uses the same table as the BMWP'.
+con pocas familias, una sola mueve mucho el promedio.	with few families, a single one moves the average a lot.
+Andean Biotic Index	Andean Biotic Index
+ríos altoandinos, desde 2000 m s.n.m. hasta el límite de las nieves (Puna, prepuna y quebradas altas). Bajo 2000 m no está calibrado: Kenti lo calcula igual y lo marca con ⚠. La altitud de cada sitio se carga en la pestaña 2.	high-Andean rivers, from 2000 m a.s.l. up to the snow line (Puna, pre-Puna and high ravines). Below 2000 m it is not calibrated: Kenti still computes it and flags it with ⚠. The altitude of each site is entered in tab 2.
+suma del puntaje de cada familia presente, con su propia tabla, distinta de la del BMWP' (la misma familia puede puntuar distinto).	sum of the score of each family present, with its own table, different from the BMWP' one (the same family may score differently).
+Familias sin puntaje	Families without a score
+· una familia presente que no está en la tabla no suma y se informa por sitio. Si son muchas, el índice subestima.	· a family present that is not in the table adds nothing and is reported by site. If there are many, the index underestimates.
+Familia antes que orden	Family before order
+· si la tabla trae «Odonata (varias fam.)» y también Libellulidae, Libellulidae usa su propio puntaje.	· if the table has «Odonata (varias fam.)» and also Libellulidae, Libellulidae uses its own score.
+Chironomidae rojos	Red Chironomidae
+· para que puntúen aparte, cárgalos en la pestaña 1 como «Chironomidae (rojos)», en su propia fila.	· to score them separately, enter them in tab 1 as «Chironomidae (rojos)», in their own row.
+Scirtidae y Helodidae	Scirtidae and Helodidae
+· son la misma familia: cualquiera de los dos nombres encuentra su puntaje.	· they are the same family: either name finds its score.
+Tablas de puntaje	Score tables
+Se cargan desde Excel o CSV: una columna con la familia y otra con el puntaje. Quedan guardadas con tus datos. Sin tabla, el índice no se calcula.	They are loaded from Excel or CSV: one column with the family and another with the score. They are saved with your data. Without a table, the index is not computed.
+Valor de referencia del ABI para la cuenca	ABI reference value for the basin
+Pasa el cursor sobre una clase para ver su significado y su rango.	Hover over a class to see its meaning and range.
+Clases de calidad de cada índice	Quality classes of each index
+BMWP' del NOA	NOA BMWP'
+BMWP/Bol · complemento del BMWP' del NOA	BMWP/Bol · complement to the NOA BMWP'
+ABI · Andean Biotic Index	ABI · Andean Biotic Index
+Domínguez, E. y H. R. Fernández. 1998. Calidad de los ríos de la Cuenca del Salí (Tucumán, Argentina) medida por un índice biótico. Serie Conservación de la Naturaleza 12, Fundación Miguel Lillo. Puntajes modificados de Alba-Tercedor y Sánchez-Ortega (1988).	Domínguez, E. & H. R. Fernández. 1998. Calidad de los ríos de la Cuenca del Salí (Tucumán, Argentina) medida por un índice biótico. Serie Conservación de la Naturaleza 12, Fundación Miguel Lillo. Scores modified from Alba-Tercedor & Sánchez-Ortega (1988).
+Leaño Sanabria, J. y R. Pérez Barriga. 2020. Acta Nova 9 (4): 569-591; puntajes del MMAyA (Bolivia), 2012. Sólo completa las familias que no están en la tabla del NOA; la clase sigue siendo la del BMWP' del NOA.	Leaño Sanabria, J. & R. Pérez Barriga. 2020. Acta Nova 9 (4): 569-591; MMAyA (Bolivia) scores, 2012. It only fills in the families missing from the NOA table; the class is still that of the NOA BMWP'.
+Ríos-Touma, B., R. Acosta y N. Prat. 2014. The Andean Biotic Index (ABI): revised tolerance to pollution values for macroinvertebrate families and index performance evaluation. Revista de Biología Tropical 62 (Supl. 2): 249-273. Tabla también en Prat et al. 2009, en Domínguez y Fernández (eds.), Macroinvertebrados bentónicos sudamericanos, Fundación Miguel Lillo.	Ríos-Touma, B., R. Acosta & N. Prat. 2014. The Andean Biotic Index (ABI): revised tolerance to pollution values for macroinvertebrate families and index performance evaluation. Revista de Biología Tropical 62 (Suppl. 2): 249-273. Table also in Prat et al. 2009, in Domínguez & Fernández (eds.), Macroinvertebrados bentónicos sudamericanos, Fundación Miguel Lillo.
+Cammaerts, D., R. Cammaerts, A. Riboux y M. Vargas. 2008. Escala citada en Leaño Sanabria, J. J. y D. Pérez Barriga. 2020. Acta Nova 9 (4): 569-591 (Tabla 3).	Cammaerts, D., R. Cammaerts, A. Riboux & M. Vargas. 2008. Scale cited in Leaño Sanabria, J. J. & D. Pérez Barriga. 2020. Acta Nova 9 (4): 569-591 (Table 3).
+Escala de Cammaerts et al. (2008): ≥ 6,00 muy limpia; 5,40–5,99 buena; 4,90–5,39 aceptable; 4,00–4,89 dudosa; 3,00–3,99 crítica; < 3,00 muy crítica. Kenti clasifica con el valor sin redondear: 5,395 es aceptable.	Cammaerts et al. (2008) scale: ≥ 6.00 very clean; 5.40–5.99 good; 4.90–5.39 acceptable; 4.00–4.89 doubtful; 3.00–3.99 critical; < 3.00 very critical. Kenti classifies with the unrounded value: 5.395 is acceptable.
+Kenti usa por defecto la escala de la guía argentina para zonas andinas sobre 2000 m: > 96 muy buena, 59–95 buena, 35–58 regular, 14–34 mala, < 14 muy mala (referencia 96, la de la cuenca del Guayllabamba en Ríos-Touma et al. 2014). Los límites son el 100 %, 61 %, 36 % y 15 % de la referencia, redondeados: si cargas el valor de tu cuenca (percentil 25 de los sitios de referencia), las clases se recalculan. Con 74 (Cañete, Perú) dan 74, 45, 27 y 11.	By default Kenti uses the scale of the Argentine guide for Andean areas above 2000 m: > 96 very good, 59–95 good, 35–58 fair, 14–34 poor, < 14 very poor (reference 96, that of the Guayllabamba basin in Ríos-Touma et al. 2014). The limits are 100%, 61%, 36% and 15% of the reference, rounded: if you enter the value for your basin (25th percentile of the reference sites), the classes are recalculated. With 74 (Cañete, Peru) they are 74, 45, 27 and 11.
+Aguas muy limpias	Very clean water
+Aguas no contaminadas	Unpolluted water
+Con algún grado de contaminación	Some degree of pollution
+Aguas contaminadas	Polluted water
+Aguas muy contaminadas	Very polluted water
+Aguas fuertemente contaminadas	Heavily polluted water
+Muy limpia	Very clean
+Agua muy limpia (de calidad no alterada)	Very clean water (unaltered quality)
+Buena	Good
+Agua no contaminada o de manera no perceptible	Unpolluted or not perceptibly polluted water
+Aceptable	Acceptable
+Agua con algún grado de contaminación	Water with some degree of pollution
+Dudosa	Doubtful
+Agua contaminada	Polluted water
+Crítica	Critical
+Agua muy contaminada	Very polluted water
+Muy crítica	Very critical
+Agua fuertemente contaminada	Heavily polluted water
+Muy buena	Very good
+Regular	Fair
+Mala	Poor
+Muy mala	Very poor
+Calidad muy buena	Very good quality
+Calidad buena	Good quality
+Calidad regular	Fair quality
+Calidad mala	Poor quality
+Calidad muy mala	Very poor quality
+{0} · rango {1}	{0} · range {1}
+Tabla 5 de Prat et al. 2009, en Domínguez y Fernández (eds.), Macroinvertebrados bentónicos sudamericanos, p. 643 (72 familias y grupos; Ríos-Touma et al. 2014)	Table 5 of Prat et al. 2009, in Domínguez & Fernández (eds.), Macroinvertebrados bentónicos sudamericanos, p. 643 (72 families and groups; Ríos-Touma et al. 2014)
+Tabla 8 de Domínguez y Fernández 1998, Serie Conservación de la Naturaleza 12, p. 39 (53 entradas)	Table 8 of Domínguez & Fernández 1998, Serie Conservación de la Naturaleza 12, p. 39 (53 entries)
+Tabla 1 de Leaño Sanabria y Pérez Barriga 2020, Acta Nova 9 (4): 569-591 (BMWP/Bol, MMAyA 2012; 88 entradas)	Table 1 of Leaño Sanabria & Pérez Barriga 2020, Acta Nova 9 (4): 569-591 (BMWP/Bol, MMAyA 2012; 88 entries)
+No se encontraron filas con familia y puntaje (de 0 a 10) para {0}	No rows with family and score (0 to 10) found for {0}
+tabla pegada	pasted table
+{0}: {1} entradas cargadas	{0}: {1} entries loaded
+· {0} filas sin puntaje válido: {1}{2}	· {0} rows without a valid score: {1}{2}
+· {0} filas sin puntaje válido: {1}	· {0} rows without a valid score: {1}
+Cargada: {0} entradas · {1}	Loaded: {0} entries · {1}
+Desactivado: las familias que no están en la tabla del NOA quedan sin puntaje	Disabled: families missing from the NOA table get no score
+Sin cargar: el índice no se calcula	Not loaded: the index is not computed
+Reemplazar	Replace
+Desactivar	Disable
+Activar	Enable
+Volver a la de Kenti	Back to Kenti's
+Quitar	Remove
+Orden	Order
+{0}: {1} entradas	{0}: {1} entries
+Familia o grupo	Family or group
+Puntaje	Score
+Sin valor de referencia el ABI se calcula, pero sale sin clase. Es el percentil 25 del ABI de los sitios de referencia de tu cuenca.	Without a reference value the ABI is computed, but without a class. It is the 25th percentile of the ABI of the reference sites in your basin.
+Clases:	Classes:
+Primero carga la tabla de familias en la pestaña 1.	First load the table of families in tab 1.
+Todavía no hay tablas de puntaje cargadas. Carga la del BMWP' del NOA, la del ABI o las dos en «Tablas de puntaje», arriba.	No score tables loaded yet. Load the NOA BMWP' table, the ABI one or both under «Score tables», above.
+Alt	Alt
+Altitud (m)	Altitude (m)
+Clase	Class
+Con puntaje	With score
+BMWP' / n	BMWP' / n
+Bajo 2000 m s.n.m.: el ABI está calibrado para ríos altoandinos sobre 2000 m. Se calcula igual; tómalo con cautela.	Below 2000 m a.s.l.: the ABI is calibrated for high-Andean rivers above 2000 m. It is still computed; use it with caution.
+Sin altitud: cárgala en la pestaña 2 para comprobar si el sitio está sobre 2000 m s.n.m.	No altitude: enter it in tab 2 to check whether the site is above 2000 m a.s.l.
+? altitud	? altitude
+sin ref.	no ref.
+sin puntaje: {0}	no score: {0}
+completadas con la tabla boliviana (+{0}; sólo NOA: {1}): {2}	filled in with the Bolivian table (+{0}; NOA only: {1}): {2}
+por grupo superior o nombre equivalente: {0}	via a higher group or equivalent name: {0}
+Todas las familias presentes tienen puntaje en las tablas cargadas.	All families present have a score in the loaded tables.
+BMWP' por sitio	BMWP' by site
+Color según la clase de calidad del BMWP' del NOA	Colour by NOA BMWP' quality class
+ASPT' por sitio	ASPT' by site
+Color según la escala de Cammaerts et al. (2008)	Colour by the Cammaerts et al. (2008) scale
+ABI por sitio	ABI by site
+Sin valor de referencia de la cuenca: sin clases	No basin reference value: no classes
+Color según las clases calculadas con el valor de referencia	Colour by the classes computed from the reference value
+{0} por sitio por sitio	{0} by site
+Familias que encontraron puntaje en la tabla	Families that found a score in the table
+Rango	Range
+Significado	Meaning
+Un valor justo en el límite va a la clase superior: 40 es clase I, 30 es II, 20 es III y 10 es IV.	A value exactly on a limit goes to the higher class: 40 is class I, 30 is II, 20 is III and 10 is IV.
+Carga el valor de referencia de la cuenca en «Tablas de puntaje» para ver las clases. {0}	Enter the basin reference value under «Score tables» to see the classes. {0}
+ABI · referencia de la cuenca {0}	ABI · basin reference {0}
+Límites: 100 %, 61 %, 36 % y 15 % del valor de referencia, redondeados. Un valor justo en el límite va a la clase superior.	Limits: 100%, 61%, 36% and 15% of the reference value, rounded. A value exactly on a limit goes to the higher class.
+Nombre	Name
+Clase BMWP'	BMWP' class
+Familias con puntaje	Families with score
+Clase ASPT'	ASPT' class
+Clase ABI	ABI class
+Aviso ABI	ABI warning
+sin altitud	no altitude
+bajo 2000 m s.n.m.	below 2000 m a.s.l.
+No hay sitios para copiar	There are no sites to copy
+Tabla copiada: pégala en Excel	Table copied: paste it in Excel
+No se pudo copiar desde el navegador	Could not copy from the browser
+Complemento boliviano desactivado: el BMWP' usa sólo la tabla del NOA	Bolivian complement disabled: the BMWP' uses the NOA table only
+Complemento boliviano activado	Bolivian complement enabled
+Se quitó la tabla de {0}	The {0} table was removed
+Cargada: {0}	Loaded: {0}
+BMWP': {0} entradas	BMWP': {0} entries
+ABI: {0} entradas	ABI: {0} entries
+BMWP/Bol: {0} entradas	BMWP/Bol: {0} entries
+Hemiptera (varias fam.)	Hemiptera (varias fam.)
+Odonata (varias fam.)	Odonata (varias fam.)
+Chironomidae (rojos)	Chironomidae (rojos)
+Scirtidae (Helodidae)	Scirtidae (Helodidae)
+# ---------- Exportación a Excel ----------
+· datos de ejemplo	· example data
+Exportado el {0} con {1} v{2} · medida: {3}{4}{5}	Exported on {0} with {1} v{2} · measure: {3}{4}{5}
+Exportado el {0} con {1} v{2} · medida: {3}	Exported on {0} with {1} v{2} · measure: {3}
+1 Tabla de datos	1 Data table
+Una celda vacía cuenta como cero. Los totales y las filas de riqueza y abundancia son fórmulas.	An empty cell counts as zero. The totals and the richness and abundance rows are formulas.
+Una celda vacía cuenta como cero. Los totales y las filas de riqueza y {0} son fórmulas.	An empty cell counts as zero. The totals and the richness and {0} rows are formulas.
+Una celda NA es un sitio no relevado o no aplicable para ese registro: no entra en los análisis. Los totales y las filas de riqueza y abundancia son fórmulas.	An NA cell is a site not surveyed or not applicable for that record: it is left out of the analyses. The totals and the richness and abundance rows are formulas.
+Origen de la familia	Source of the family
+propuesta de Kenti:	proposed by Kenti:
+propuesta de Kenti: {0}	proposed by Kenti: {0}
+Nombre del sitio	Site name
+Sitios fuera del análisis: {0}.	Sites outside the analysis: {0}.
+En la columna Total, la riqueza y la abundancia cuentan sólo los sitios que entran en el análisis.	In the Total column, richness and abundance count only the sites in the analysis.
+2 Índices alfa	2 Alpha indices
+Diversidad alfa por sitio	Alpha diversity by site
+Sitios en el análisis: {0}.	Sites in the analysis: {0}.
+Sitios en el análisis: {0} de {1}. Fuera del análisis: {2}.	Sites in the analysis: {0} of {1}. Outside the analysis: {2}.
+Todos los sitios del análisis	All sites in the analysis
+DMg = (S − 1) / ln N	DMg = (S − 1) / ln N
+DMn = S / √N	DMn = S / √N
+Valores como «<0,01» (bajo el límite de detección) se muestran como texto y no entran en las correlaciones.	Values such as «<0.01» (below the detection limit) are shown as text and are left out of the correlations.
+{0}: un valor por sitio, cargado en la pestaña de diversidad alfa.	{0}: one value per site, entered in the alpha diversity tab.
+Una celda vacía indica que el índice no se puede calcular (por ejemplo, Pielou con un solo taxón o Margalef con N = 1).	An empty cell means the index cannot be computed (for example, Pielou with a single taxon or Margalef with N = 1).
+3 Gráficos alfa	3 Alpha charts
+Diversidad alfa · gráficos por sitio	Alpha diversity · charts by site
+Cada eje y se ajusta al rango de su propia variable. La r de Pearson resume cuánto se mueven juntas las dos variables entre sitios.	Each y axis fits the range of its own variable. Pearson's r summarises how much the two variables move together across sites.
+(eje invertido)	(inverted axis)
+{0} · {1}{2} · r de Pearson {3}	{0} · {1}{2} · Pearson's r {3}
+4 Diversidad beta	4 Beta diversity
+Diversidad beta · similitud entre sitios	Beta diversity · similarity between sites
+Cada índice usa una escala de un solo tono, de claro (0: nada en común) a oscuro (1: composición idéntica). Cluster UPGMA: ligamiento promedio sobre 1 − similitud.	Each index uses a single-hue scale, from light (0: nothing in common) to dark (1: identical composition). UPGMA cluster: average linkage on 1 − similarity.
+Correlación cofenética (UPGMA)	Cophenetic correlation (UPGMA)
+Cluster UPGMA · {0}	UPGMA cluster · {0}
+Ligamiento promedio · correlación cofenética {0}	Average linkage · cophenetic correlation {0}
+5 Correlación y PCA	5 Correlation and PCA
+Correlación entre sitios y análisis de componentes principales	Correlation across sites and principal component analysis
+Correlación de Pearson y regresión lineal	Pearson correlation and linear regression
+Relación	Relationship
+Eje x	x axis
+Eje y	y axis
+Pendiente	Slope
+Ordenada	Intercept
+Sitios de monitoreo · recta de mínimos cuadrados con intervalo de confianza del 95 %	Monitoring sites · least-squares line with 95% confidence interval
+La banda sombreada de los gráficos es el intervalo de confianza del 95 % de la recta. p bilateral (t de Student con n − 2 grados de libertad).	The shaded band in the charts is the 95% confidence interval of the line. Two-sided p (Student's t with n − 2 degrees of freedom).
+Valores por sitio	Values by site
+Correlación con variables fisicoquímicas (r de Pearson)	Correlation with physicochemical variables (Pearson's r)
+n = {0} sitios. En negrita, p < 0,05. Los valores bajo el límite de detección no entran.	n = {0} sites. In bold, p < 0.05. Values below the detection limit are left out.
+p (bilateral)	p (two-sided)
+n (sitios con valor)	n (sites with a value)
+Correlación con variable fisicoquímica	Correlation with a physicochemical variable
+Variables: {0}. Estandarizadas (media 0, desvío 1): PCA sobre la matriz de correlación. n = {1} sitios.	Variables: {0}. Standardised (mean 0, SD 1): PCA on the correlation matrix. n = {1} sites.
+Sitios que no entran (les falta alguna variable): {0}.	Sites left out (missing some variable): {0}.
+Variables que no cambian entre sitios y no entran: {0}.	Variables that do not vary across sites and are left out: {0}.
+Muy correlacionadas (|r| ≥ 0,9):	Strongly correlated (|r| ≥ 0.9):
+% de la varianza	% of variance
+Puntajes de los sitios	Site scores
+Matriz de correlación entre las variables	Correlation matrix of the variables
+Biplot: las flechas son las cargas (correlación con CP 1 y CP 2) escaladas para verse junto a los sitios. El signo de cada eje es arbitrario.	Biplot: the arrows are the loadings (correlation with PC 1 and PC 2) scaled to be seen next to the sites. The sign of each axis is arbitrary.
+PCA · biplot de sitios y variables	PCA · biplot of sites and variables
+CP 1 y CP 2 explican {0} % de la varianza · {1} sitios · {2} variables	PC 1 and PC 2 explain {0}% of the variance · {1} sites · {2} variables
+Porcentaje de la varianza total de las variables estandarizadas	Percentage of the total variance of the standardised variables
+6 Índices bióticos	6 Biotic indices
+Índices bióticos de calidad del agua	Biotic water-quality indices
+{0} entradas, archivo «{1}», cargada el {2}	{0} entries, file «{1}», loaded on {2}
+sin cargar (no se calcula)	not loaded (not computed)
+Presencia de familias: la abundancia no cambia el puntaje. Cada índice usa sólo su propia tabla, sus clases y su cita.	Presence of families: abundance does not change the score. Each index uses only its own table, its classes and its citation.
+sin cargar (el ABI sale sin clase)	not loaded (the ABI has no class)
+· valor de referencia del ABI para la cuenca: {0}	· ABI reference value for the basin: {0}
+Tablas de puntaje · BMWP' del NOA: {0} · ABI: {1}{2}.	Score tables · NOA BMWP': {0} · ABI: {1}{2}.
+Resultados por sitio	Results by site
+Con puntaje (n)	With score (n)
+No hay tablas de puntaje cargadas: los índices no se calcularon.	No score tables loaded: the indices were not computed.
+sin referencia	no reference
+Familias sin puntaje (no suman) y equivalencias usadas	Families without a score (they add nothing) and equivalences used
+BMWP' sin puntaje: {0}	BMWP' without score: {0}
+BMWP' completadas con la tabla boliviana (+{0}; sólo NOA: {1}): {2}	BMWP' filled in with the Bolivian table (+{0}; NOA only: {1}): {2}
+ABI sin puntaje: {0}	ABI without score: {0}
+por grupo superior: {0}	via a higher group: {0}
+Ríos y arroyos de montaña y pedemonte del Noroeste Argentino; índice principal para la región. Suma del puntaje (1 a 10) de cada familia presente. Depende del esfuerzo de muestreo: compara sólo sitios muestreados con el mismo método.	Mountain and piedmont rivers and streams of northwestern Argentina; main index for the region. Sum of the score (1 to 10) of each family present. It depends on sampling effort: compare only sites sampled with the same method.
+Siempre junto al BMWP'. BMWP' dividido por el número de familias con puntaje: al ser un promedio, depende menos del esfuerzo de muestreo. Con pocas familias, una sola mueve mucho el valor.	Always alongside the BMWP'. BMWP' divided by the number of families with a score: being an average, it depends less on sampling effort. With few families, a single one moves the value a lot.
+Ríos altoandinos desde 2000 m s.n.m. hasta el límite de las nieves. Suma del puntaje de cada familia presente, con su propia tabla. Bajo 2000 m no está calibrado: se calcula igual y se marca.	High-Andean rivers from 2000 m a.s.l. up to the snow line. Sum of the score of each family present, with its own table. Below 2000 m it is not calibrated: it is still computed and flagged.
+Clases del BMWP' del NOA	NOA BMWP' classes
+Clases del ASPT'	ASPT' classes
+Clases del ABI · valor de referencia de la cuenca: {0}	ABI classes · basin reference value: {0}
+Clases del ABI	ABI classes
+Sin valor de referencia de la cuenca: el ABI no tiene clase.	No basin reference value: the ABI has no class.
+Tablas de puntaje usadas	Score tables used
+Color según las clases con referencia {0}	Colour by the classes with reference {0}
+La tabla está vacía: pega tus datos antes de exportar	The table is empty: paste your data before exporting
+Preparando…	Preparing…
+Excel guardado: {0}	Excel saved: {0}
+Abrir	Open
+Ver en la carpeta	Show in folder
+Libro de Excel descargado	Excel workbook downloaded
+Descarga cancelada	Download cancelled
+Ya hay una descarga esperando confirmación	A download is already waiting for confirmation
+Esta vista no permite descargar el Excel. Usa la aplicación de escritorio de Kenti.	This view cannot download the Excel file. Use the Kenti desktop app.
+Libro de Excel generado. Si la descarga no aparece, usa la aplicación de escritorio de Kenti.	Excel workbook generated. If the download does not appear, use the Kenti desktop app.
+No se pudo exportar el Excel: {0}	Could not export the Excel file: {0}
+No se pudo exportar el Excel:	Could not export the Excel file:
+{0} · resultados	{0} · results
+# ---------- Avisos de versiones anteriores ----------
+(se quitaron {0}, que estaban sin relevar y vacíos)	(removed {0}, which were not surveyed and empty)
+el respaldo	the backup
+el archivo de respaldo	the backup file
+Se conservó tu tabla. La tabla ahora es una planilla: ya no tiene fila de estado ni columna de familia, y todos los sitios entran en los análisis{0}. La versión anterior quedó copiada en {1}.	Your table was kept. The table is now a spreadsheet: it no longer has a status row or a family column, and every site goes into the analyses{0}. The previous version was copied to {1}.
+La tabla guardada por la versión anterior tenía datos de ejemplo{0} y se descartó: ahora el programa arranca vacío. Si la necesitas, quedó copiada en {1}, en la carpeta de datos. Carga o pega tu tabla.	The table saved by the previous version had example data{0} and was discarded: the program now starts empty. If you need it, it was copied to {1}, in the data folder. Load or paste your table.
+# ---------- Agregados tras la primera revisión en inglés ----------
+de {#0}	of {0}
+Primero carga la tabla.	First load the table.
+Grupo	Group
+Cianobacterias	Cyanobacteria
+Desmidiáceas	Desmids
+Quedan fuera {0}: les falta algún valor en las variables elegidas, o tienen una sola {1} y Pielou no se puede calcular.	{0} are left out: they lack some value in the chosen variables, or they have a single {1} and Pielou cannot be computed.
+{t0} y {t1} están muy correlacionadas (r = {#2}): el primer eje queda dominado por ellas.	{0} and {1} are strongly correlated (r = {2}): the first axis is dominated by them.
+no se tomó la columna {0} (no son sitios)	column {0} not used (it is not a site)
+no se tomaron las columnas {0} y {1} (no son sitios)	columns {0} and {1} not used (they are not sites)
+abundancia	abundance
+presencia / ausencia	presence / absence
+{0} entradas · {1}	{0} entries · {1}
+# ---------- AMBI ----------
+AMBI	AMBI
+AMBI · índice biótico marino de AZTI	AMBI · AZTI's Marine Biotic Index
+Cada taxón pertenece a un grupo ecológico, de los sensibles a la perturbación (I) a los oportunistas de primer orden (V). El AMBI resume la proporción de cada grupo en el sitio en un valor de 0 (sin perturbación) a 6, y 7 si no hay organismos. Usa la abundancia de la tabla de la pestaña 1.	Each taxon belongs to an ecological group, from disturbance-sensitive (I) to first-order opportunistic (V). AMBI summarises the proportion of each group at a site as a value from 0 (undisturbed) to 6, and 7 if there are no organisms. It uses the abundance in the table on tab 1.
+Lista de especies	Species list
+La lista con el grupo de cada taxón es de AZTI (ambi.azti.es) y Kenti no la incluye. Se carga desde Excel o CSV con una columna de taxón y otra de grupo (0 a 5; 0 = sin asignar). Queda guardada en su propio archivo, fuera de tus datos.	The list with each taxon's group comes from AZTI (ambi.azti.es) and Kenti does not include it. Load it from Excel or CSV with a taxon column and a group column (0 to 5; 0 = unassigned). It is saved in its own file, apart from your data.
+Lista de especies del AMBI (AZTI)	AMBI species list (AZTI)
+Sin cargar: el AMBI no se calcula	Not loaded: AMBI is not calculated
+Cargar lista	Load list
+Coincidencia	Matching
+· el nombre de la tabla se busca tal cual en la lista; si no está, se prueba sin «sp.», «cf.», «aff.» o texto entre paréntesis, así «Capitella cf. capitata» o «Spionidae (indet.)» encuentran su entrada. A una especie que no está en la lista no se le asigna el grupo de su género.	· the name in the table is looked up as written; if it is not there, it is tried without «sp.», «cf.», «aff.» or text in parentheses, so «Capitella cf. capitata» or «Spionidae (indet.)» find their entry. A species that is not in the list is not given the group of its genus.
+Taxones sin grupo	Taxa without a group
+· los que no están en la lista o figuran con grupo 0 no entran en los porcentajes. Con más de 20 % de la abundancia sin grupo, o con menos de 3 taxones o 6 individuos, el sitio lleva un aviso. Los grupos de esos taxones se pueden asignar a mano más abajo.	· those that are not in the list or have group 0 are left out of the percentages. With more than 20 % of the abundance without a group, or fewer than 3 taxa or 6 individuals, the site gets a warning. The groups of those taxa can be assigned by hand below.
+Asigna un grupo a mano si lo conoces (p. ej. el de un sinónimo); vale para todos los sitios y queda guardado con tus datos.	Assign a group by hand if you know it (e.g. that of a synonym); it applies to all sites and is saved with your data.
+Pasa el cursor sobre el estado ecológico para ver su rango de AMBI.	Hover over the ecological status to see its AMBI range.
+Copiar tabla para Excel	Copy table for Excel
+Clases	Classes
+Grupos ecológicos por sitio	Ecological groups by site
+AMBI por sitio	AMBI by site
+Porcentaje de la abundancia de cada grupo; gris = sin grupo	Percentage of the abundance of each group; grey = no group
+Color según el estado ecológico equivalente (Tabla 2 de Muxika et al. 2005)	Colour by the equivalent ecological status (Table 2 of Muxika et al. 2005)
+Color según el estado ecológico equivalente	Colour by the equivalent ecological status
+El estado ecológico de la última columna es el equivalente que proponen Muxika et al. (2005) para la Directiva Marco del Agua; la evaluación formal combina el AMBI con la diversidad y la riqueza (M-AMBI), que Kenti todavía no calcula.	The ecological status is the equivalent proposed by Muxika et al. (2005) for the Water Framework Directive; the formal assessment combines AMBI with diversity and richness (M-AMBI), which Kenti does not calculate yet.
+Estado ecológico	Ecological status
+Comunidad bentónica	Benthic community
+Perturbación	Disturbance
+Perturbación · estado ecológico	Disturbance · ecological status
+Avisos	Warnings
+Taxones	Taxa
+Grupo I	Group I
+Grupo II	Group II
+Grupo III	Group III
+Grupo IV	Group IV
+Grupo V	Group V
+Sin grupo	No group
+sin grupo	no group
+Valor	Value
+Abundancia total	Total abundance
+% del total	% of total
+Alto	High
+Bueno	Good
+Moderado	Moderate
+Deficiente	Poor
+Malo	Bad
+Estado alto	High status
+Estado bueno	Good status
+Estado moderado	Moderate status
+Estado deficiente	Poor status
+Estado malo	Bad status
+Normal	Normal
+Empobrecida	Impoverished
+Desbalanceada	Unbalanced
+En transición a contaminada	Transitional to polluted
+Contaminada	Polluted
+En transición a muy contaminada	Transitional to heavily polluted
+Muy contaminada	Heavily polluted
+Azoica	Azoic
+No perturbado	Undisturbed
+Ligeramente perturbado	Slightly disturbed
+Moderadamente perturbado	Moderately disturbed
+Muy perturbado	Heavily disturbed
+Extremadamente perturbado	Extremely disturbed
+Carga la lista de especies del AMBI (arriba) para calcular el índice.	Load the AMBI species list (above) to calculate the index.
+Carga la lista de especies del AMBI para calcular el índice.	Load the AMBI species list to calculate the index.
+Primero carga la tabla de taxones en la pestaña 1.	First load the taxa table on tab 1.
+Cargar la lista de especies del AMBI	Load the AMBI species list
+Reemplaza la lista que haya cargada. Hace falta una columna con el taxón y otra con el grupo ecológico, de 0 a 5 (0 = sin asignar; también se aceptan I a V). Conviene que la primera fila diga «Taxón» y «Grupo»; otras columnas se ignoran. Si el archivo oficial de AZTI es un .mat, conviértelo antes a Excel o CSV.	Replaces the list that is loaded. A column with the taxon and another with the ecological group, from 0 to 5 (0 = unassigned; I to V are also accepted), are needed. It is best if the first row says «Taxón» and «Grupo»; other columns are ignored. If the official AZTI file is a .mat, convert it to Excel or CSV first.
+No se encontraron filas con un taxón y un grupo de 0 a 5. Revisa que haya una columna de taxones y otra de grupos.	No rows with a taxon and a group from 0 to 5 were found. Check that there is a taxa column and a group column.
+No se encontraron filas con un taxón y un grupo de 0 a 5	No rows with a taxon and a group from 0 to 5 were found
+Se quitó la lista de especies del AMBI	The AMBI species list was removed
+No hay resultados para copiar	There are no results to copy
+Quitar	Remove
+Reemplazar	Replace
+Sin sitios o sin lista	No sites or list
+sin organismos: AMBI 7 (azoico)	no organisms: AMBI 7 (azoic)
+ningún taxón tiene grupo: no se puede calcular	no taxon has a group: it cannot be calculated
+menos de 3 taxones	fewer than 3 taxa
+menos de 6 individuos	fewer than 6 individuals
+Se muestran los 300 de mayor abundancia.	The 300 with the highest abundance are shown.
+
+Cargada: {#0} taxones	Loaded: {0} taxa
+{#0} % de la abundancia sin grupo (más de 20 %)	{0} % of the abundance without a group (more than 20 %)
+AMBI: {#0} taxones cargados (grupos I a V: {1}; sin asignar: {#2})	AMBI: {0} taxa loaded (groups I to V: {1}; unassigned: {2})
+{#0} taxones presentes	{0} taxa present
+{#0} coinciden con la lista	{0} match the list
+{#0} coinciden al quitar «sp.», «cf.» o similares (reciben el grupo del género o la familia)	{0} match after removing «sp.», «cf.» or similar (they receive the group of the genus or family)
+{#0} asignados a mano	{0} assigned by hand
+{#0} sin grupo (no entran en el cálculo)	{0} without a group (left out of the calculation)
+Un valor justo en el límite va a la clase de abajo (1,2 es «No perturbado»; 3,3 es «Ligeramente perturbado»), como en la Tabla 2 original.	A value exactly on a boundary goes to the lower class (1.2 is «Undisturbed»; 3.3 is «Slightly disturbed»), as in the original Table 2.
+Grupos	Groups
+Sensibles a la perturbación	Sensitive to disturbance
+Indiferentes	Indifferent
+Tolerantes	Tolerant
+Oportunistas de segundo orden	Second-order opportunists
+Oportunistas de primer orden	First-order opportunists
+# ---------- Cocientes de Nygaard, densidades y módulos (v0.6) ----------
+Cocientes de Nygaard	Nygaard quotients
+Cinco cocientes entre grupos de algas, calculados con el	Five quotients between algal groups, calculated from the
+número de taxones	number of taxa
+de cada grupo presente en el sitio (no con la abundancia). El grupo de cada taxón se carga en la columna «Grupo» de la pestaña 1.	of each group present at the site (not from abundance). Each taxon's group is entered in the «Group» column of tab 1.
+Cuándo y cómo se usan	When and how they are used
+Orientan sobre el estado trófico de lagos, lagunas y embalses a partir de la composición del fitoplancton.	They give guidance on the trophic state of lakes, lagoons and reservoirs from the composition of the phytoplankton.
+Idea	Idea
+La hipótesis de Nygaard	The Nygaard hypothesis
+Las	The
+desmidiáceas	desmids
+y las	and the
+diatomeas pennadas	pennate diatoms
+predominan en aguas pobres en nutrientes; las	predominate in nutrient-poor waters; the
+cianobacterias	cyanobacteria
+, las	, the
+diatomeas centrales	centric diatoms
+euglenofitas	euglenophytes
+, en aguas ricas. Cuanto más pesan los segundos frente a los primeros, más alto el cociente.	, in nutrient-rich waters. The more the latter weigh against the former, the higher the quotient.
+Cálculo	Calculation
+Los cinco cocientes	The five quotients
+Cianofíceo	Cyanophycean
+Clorofíceo	Chlorophycean
+Diatomeas	Diatom
+Euglenofíceo	Euglenophycean
+Compuesto	Compound
+= Cianobacterias / Desmidiáceas	= Cyanobacteria / Desmids
+= Chlorococcales / Desmidiáceas	= Chlorococcales / Desmids
+= Centrales / Pennadas	= Centrales / Pennales
+= Euglenofitas / (Cianobacterias + Chlorococcales)	= Euglenophytes / (Cyanobacteria + Chlorococcales)
+= (Cianobacterias + Chlorococcales + Centrales + Euglenofitas) / Desmidiáceas	= (Cyanobacteria + Chlorococcales + Centrales + Euglenophytes) / Desmids
+Cianobacterias / Desmidiáceas	Cyanobacteria / Desmids
+Chlorococcales / Desmidiáceas	Chlorococcales / Desmids
+Centrales / Pennadas	Centrales / Pennales
+Euglenofitas / (Cianobacterias + Chlorococcales)	Euglenophytes / (Cyanobacteria + Chlorococcales)
+(Cianobacterias + Chlorococcales + Centrales + Euglenofitas) / Desmidiáceas	(Cyanobacteria + Chlorococcales + Centrales + Euglenophytes) / Desmids
+Cada término es el número de taxones del grupo presentes en el sitio.	Each term is the number of taxa of the group present at the site.
+Cuidado	Caution
+Límites	Limits
+Sin desmidiáceas	Without desmids
+(frecuente en lagunas salinas de la Puna) no se calculan el cianofíceo, el clorofíceo ni el compuesto: salen «s/c» y se informa.	(common in saline lagoons of the Puna) the cyanophycean, chlorophycean and compound quotients are not calculated: they show «n/c» and this is reported.
+Los rangos de oligotrofia y eutrofia de los cocientes simples se superponen y varían entre autores: úsalos junto con los nutrientes y la clorofila, no solos.	The oligotrophic and eutrophic ranges of the simple quotients overlap and vary among authors: use them together with nutrients and chlorophyll, not on their own.
+Hace falta identificar al menos a género para asignar el grupo.	Taxa must be identified at least to genus to assign the group.
+Pasa el cursor sobre un cociente para ver su lectura según los rangos de referencia.	Hover over a quotient to see its reading against the reference ranges.
+Escala del cociente compuesto	Scale of the compound quotient
+Rangos de referencia y citas	Reference ranges and citations
+Cuándo y cómo se usa	When and how it is used
+Cuándo	When
+Rangos de los cuatro cocientes simples: Nygaard (1949), tal como los tabulan Hamaidi-Chergui et al. (2014).	Ranges of the four simple quotients: Nygaard (1949), as tabulated by Hamaidi-Chergui et al. (2014).
+Los rangos de oligotrofia y eutrofia se superponen y varían entre autores.	The oligotrophic and eutrophic ranges overlap and vary among authors.
+Cociente	Quotient
+Fórmula (número de taxones)	Formula (number of taxa)
+Oligotrófico	Oligotrophic
+Mesotrófico	Mesotrophic
+Eutrófico	Eutrophic
+según la escala elegida	according to the chosen scale
+Conteo (células, individuos o valvas)	Count (cells, individuals or valves)
+Densidad (cél/mL)	Density (cells/mL)
+Densidad (cél/L)	Density (cells/L)
+Densidad (cél/cm²)	Density (cells/cm²)
+Densidad (ind/L)	Density (ind/L)
+Densidad (ind/m³)	Density (ind/m³)
+Individuos (conteo)	Individuals (count)
+Densidad total (N)	Total density (N)
+Densidad total	Total density
+Densidad	Density
+cél/L	cells/L
+cél/mL	cells/mL
+cél/cm²	cells/cm²
+Nada pendiente	Nothing pending
+Grupo de Nygaard según la clasificación de GBIF · api.gbif.org/v1/species/match. Lo consultado queda guardado: la próxima vez no hace falta internet.	Nygaard group according to the GBIF classification · api.gbif.org/v1/species/match. What was queried is saved: next time no internet is needed.
+{#0} de {#1} con grupo.	{0} of {1} with a group.
+Grupo de Nygaard: Cianobacterias, Chlorococcales, Desmidiáceas, Diatomeas centrales, Diatomeas pennadas, Euglenofitas u Otro	Nygaard group: Cyanobacteria, Chlorococcales, Desmids, Centric diatoms, Pennate diatoms, Euglenophytes or Other
+Grupo no reconocido: usa Cianobacterias, Chlorococcales, Desmidiáceas, Diatomeas centrales, Diatomeas pennadas, Euglenofitas u Otro	Unrecognized group: use Cyanobacteria, Chlorococcales, Desmids, Centric diatoms, Pennate diatoms, Euglenophytes or Other
+Indica si es una diatomea central o pennada: cada una va en un cociente distinto	Say whether it is a centric or pennate diatom: each goes into a different quotient
+Indica si es Chlorococcales, Desmidiáceas u Otro	Say whether it is Chlorococcales, Desmids or Other
+Grupo de {0}	Group of {0}
+Diatomeas centrales	Centric diatoms
+Diatomeas pennadas	Pennate diatoms
+Euglenofitas	Euglenophytes
+Otro	Other
+Cian.	Cyano.
+Ciano.	Cyano.
+Cloro.	Chloro.
+Chloroc.	Chloroc.
+Diato.	Diat.
+Eugle.	Euglen.
+Comp.	Comp.
+Con densidades, N es la suma de las densidades y las proporciones se calculan sobre esa suma.	With densities, N is the sum of the densities and the proportions are calculated over that sum.
+Margalef se pensó para conteos: con densidad sirve sólo para comparar sitios entre sí.	Margalef was designed for counts: with density it is only useful for comparing sites with each other.
+Margalef se pensó para conteos de individuos: con densidad sirve sólo para comparar sitios entre sí.	Margalef was designed for counts of individuals: with density it is only useful for comparing sites with each other.
+Nygaard usa número de taxones: la medida no lo cambia.	Nygaard uses the number of taxa: the measure does not change it.
+Riqueza y densidad	Richness and density
+Shannon y densidad	Shannon and density
+Densidad y diversidad	Density and diversity
+Riqueza y biomasa	Richness and biomass
+Shannon y biomasa	Shannon and biomass
+Biomasa y diversidad	Biomass and diversity
+Cociente compuesto de Nygaard	Nygaard compound quotient
+Menor que 1: aguas pobres en nutrientes	Less than 1: nutrient-poor waters
+1 o más: aguas ricas en nutrientes (valores cercanos a 1 con desmidiáceas pueden indicar distrofia)	1 or more: nutrient-rich waters (values close to 1 with desmids may indicate dystrophy)
+Menor que 2	Less than 2
+Entre 2 y 6	Between 2 and 6
+Mayor que 6	Greater than 6
+Lectura	Reading
+s/c	n/c
+Superpuesto	Overlapping
+El valor cae en los dos rangos: no discrimina	The value falls in both ranges: it does not discriminate
+Fuera de rango	Out of range
+Fuera de los rangos de referencia	Outside the reference ranges
+Dentro del rango oligotrófico ({0})	Within the oligotrophic range ({0})
+Dentro del rango eutrófico ({0})	Within the eutrophic range ({0})
+Por encima del rango eutrófico ({0})	Above the eutrophic range ({0})
+No se calcula: sin desmidiáceas	Not calculated: no desmids
+No se calcula: sin diatomeas pennadas	Not calculated: no pennate diatoms
+No se calcula: sin cianobacterias ni Chlorococcales	Not calculated: no cyanobacteria or Chlorococcales
+sin desmidiáceas	no desmids
+sin diatomeas pennadas	no pennate diatoms
+sin cianobacterias ni Chlorococcales	no cyanobacteria or Chlorococcales
+grupo no reconocido	unrecognized group
+no se calcula: {0}	not calculated: {0}
+cianofíceo (sin desmidiáceas)	cyanophycean (no desmids)
+clorofíceo (sin desmidiáceas)	chlorophycean (no desmids)
+compuesto (sin desmidiáceas)	compound (no desmids)
+diatomeas (sin diatomeas pennadas)	diatom (no pennate diatoms)
+euglenofíceo (sin cianobacterias ni Chlorococcales)	euglenophycean (no cyanobacteria or Chlorococcales)
+Los taxones sin grupo o con grupo no reconocido no entran en ningún cociente.	Taxa with no group or an unrecognized group do not enter any quotient.
+«s/c»: sin calcular porque el denominador es cero.	«n/c»: not calculated because the denominator is zero.
+Taxones por grupo	Taxa per group
+Número de taxones presentes de cada grupo de Nygaard	Number of taxa present in each Nygaard group
+Sin grupo reconocido	No recognized group
+Cociente compuesto por sitio	Compound quotient by site
+Color según la escala Hamaidi-Chergui et al. (2014) · «—»: sin desmidiáceas, no se calcula	Color by the Hamaidi-Chergui et al. (2014) scale · «—»: no desmids, not calculated
+Color según la escala Nygaard (1949) · «—»: sin desmidiáceas, no se calcula	Color by the Nygaard (1949) scale · «—»: no desmids, not calculated
+Una planilla: la primera fila son los sitios y la primera columna, los taxones.	A spreadsheet: the first row holds the sites and the first column the taxa.
+Sigue una columna con el Grupo (para los cocientes de Nygaard; se completa solo desde GBIF).	A Group column follows (for the Nygaard quotients; it fills in automatically from GBIF).
+Una celda vacía cuenta como cero.	An empty cell counts as zero.
+Los fisicoquímicos (opcionales) se cargan en la pestaña de diversidad alfa.	Physicochemical variables (optional) are entered in the alpha diversity tab.
+Los valores son individuos o densidad, según «Medida»; una celda vacía cuenta como cero.	Values are individuals or density, depending on «Measure»; an empty cell counts as zero.
+{#0} para revisar	{0} to review
+Sitio {#0}	Site {0}
+Especie {#0}	Species {0}
++ especie	+ species
+Zooplancton	Zooplankton
+zooplancton	zooplankton
+Fitoplancton	Phytoplankton
+fitoplancton	phytoplankton
+Fitobentos	Phytobenthos
+fitobentos	phytobenthos
+Peces	Fish
+peces	fish
+algas	algae
+Kenti Fitoplancton	Kenti Phytoplankton
+Kenti Fitobentos	Kenti Phytobenthos
+Kenti Zooplancton	Kenti Zooplankton
+Kenti Peces	Kenti Fish
+← Kenti Limnología	← Kenti Limnology
+densidad	density
+biomasa	biomass
+conteo	count
+CPUE	CPUE
+captura	catch
+{#0} Cocientes de Nygaard	{0} Nygaard quotients
