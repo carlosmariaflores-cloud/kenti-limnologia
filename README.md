@@ -4,6 +4,7 @@ Free, open-source program for the routine analysis of freshwater community data,
 
 Programa gratuito y de código abierto para el análisis rutinario de datos de comunidades de agua dulce, en español, inglés y portugués. Funciona en tu computadora, sin instalar nada y sin internet.
 
+- DOI: [10.5281/zenodo.23349591](https://doi.org/10.5281/zenodo.23349591)
 - Version: 0.6.1 · Licence: MIT · Author: Carlos María Flores (Atoj S.A.S., Tucumán, Argentina)
 - Download the Windows executable from the *Releases* page (or build it yourself, below).
 - Cite: see `CITATION.cff` and the article *Kenti Limnología: free, offline and trilingual software for the analysis of freshwater community data, with validation against independent implementations* (submitted).

@@ -4,6 +4,7 @@ title: "Kenti Limnología"
 version: 0.6.1
 date-released: 2026-10-13
 license: MIT
+doi: 10.5281/zenodo.23349591
 repository-code: "https://github.com/carlosmariaflores-cloud/kenti-limnologia"
 authors:
   - family-names: Flores
